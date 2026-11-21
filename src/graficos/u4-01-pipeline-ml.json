@@ -1,0 +1,76 @@
+{
+  "title": "Pipeline de machine learning en cinco pasos",
+  "topic": "U4 · Ciencia de Datos Aplicada",
+  "order": 10,
+  "width": 1040,
+  "height": 250,
+  "fuente": "Ozdemir, cap. 1, fig. 1.2 (pág. 6 del PDF) · Notas U4 («agregar gráfico de ML pipeline»)",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 34,
+      "y": 54,
+      "w": 162,
+      "h": 84,
+      "answer": "Definir el dominio del problema",
+      "level": "clave",
+      "accept": [
+        "Definir el problema",
+        "Dominio del problema"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 236,
+      "y": 54,
+      "w": 162,
+      "h": 84,
+      "answer": "Obtener datos + EDA",
+      "level": "clave",
+      "accept": [
+        "Obtener datos",
+        "Obtención de datos",
+        "Obtener datos y EDA"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 438,
+      "y": 54,
+      "w": 162,
+      "h": 84,
+      "answer": "Feature engineering",
+      "level": "clave",
+      "accept": [
+        "Ingeniería de features",
+        "Ingeniería de características"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 640,
+      "y": 54,
+      "w": 162,
+      "h": 84,
+      "answer": "Selección y entrenamiento del modelo",
+      "level": "clave",
+      "accept": [
+        "Selección del modelo y entrenamiento",
+        "Entrenamiento del modelo"
+      ]
+    },
+    {
+      "id": "b5",
+      "x": 842,
+      "y": 54,
+      "w": 162,
+      "h": 84,
+      "answer": "Despliegue y evaluación del modelo",
+      "level": "clave",
+      "accept": [
+        "Despliegue y evaluación",
+        "Deployment y evaluación"
+      ]
+    }
+  ]
+}

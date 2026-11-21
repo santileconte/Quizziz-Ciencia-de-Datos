@@ -1,0 +1,138 @@
+{
+  "title": "Los cinco tipos de feature engineering",
+  "topic": "U4 · Ciencia de Datos Aplicada",
+  "order": 60,
+  "width": 1040,
+  "height": 470,
+  "fuente": "Ozdemir, cap. 1, pág. 8 y cap. 2, págs. 24–30 del PDF · Notas U4 («Tipos de ingeniería de características»)",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 25,
+      "y": 69,
+      "w": 180,
+      "h": 56,
+      "answer": "Mejora",
+      "level": "clave",
+      "accept": [
+        "Feature improvement",
+        "Improvement"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 625,
+      "y": 69,
+      "w": 390,
+      "h": 56,
+      "answer": "Imputar temperaturas faltantes",
+      "level": "extra",
+      "accept": [
+        "Imputar valores faltantes"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 25,
+      "y": 135,
+      "w": 180,
+      "h": 56,
+      "answer": "Construcción",
+      "level": "clave",
+      "accept": [
+        "Feature construction",
+        "Construction"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 625,
+      "y": 135,
+      "w": 390,
+      "h": 56,
+      "answer": "Precio / pies² = precio por pie²",
+      "level": "extra",
+      "accept": [
+        "Precio por pie cuadrado"
+      ]
+    },
+    {
+      "id": "b5",
+      "x": 25,
+      "y": 201,
+      "w": 180,
+      "h": 56,
+      "answer": "Selección",
+      "level": "clave",
+      "accept": [
+        "Feature selection",
+        "Selection"
+      ]
+    },
+    {
+      "id": "b6",
+      "x": 625,
+      "y": 201,
+      "w": 390,
+      "h": 56,
+      "answer": "Eliminar las dos columnas originales",
+      "level": "extra",
+      "accept": [
+        "Eliminar columnas que no aportan"
+      ]
+    },
+    {
+      "id": "b7",
+      "x": 25,
+      "y": 267,
+      "w": 180,
+      "h": 56,
+      "answer": "Extracción",
+      "level": "clave",
+      "accept": [
+        "Feature extraction",
+        "Extraction"
+      ]
+    },
+    {
+      "id": "b8",
+      "x": 625,
+      "y": 267,
+      "w": 390,
+      "h": 56,
+      "answer": "PCA, SVD, bag-of-words, BERT",
+      "level": "extra",
+      "accept": [
+        "PCA",
+        "BERT"
+      ]
+    },
+    {
+      "id": "b9",
+      "x": 25,
+      "y": 333,
+      "w": 180,
+      "h": 56,
+      "answer": "Aprendizaje",
+      "level": "clave",
+      "accept": [
+        "Feature learning",
+        "Learning",
+        "Representation learning"
+      ]
+    },
+    {
+      "id": "b10",
+      "x": 625,
+      "y": 333,
+      "w": 390,
+      "h": 56,
+      "answer": "GANs, autoencoders",
+      "level": "extra",
+      "accept": [
+        "GANs",
+        "Autoencoders"
+      ]
+    }
+  ]
+}

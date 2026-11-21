@@ -1,0 +1,1462 @@
+{
+ "figuras": [
+  {
+   "id": "f02-01",
+   "tema": "02",
+   "orden": 1,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "El lugar del feature engineering en el flujo de ML",
+   "w": 1005,
+   "h": 453,
+   "refs": [
+    {
+     "archivo": "[Caps 1 y 3 OBLIGATORIOS] Zheng - Feature Engineering for ML.pdf",
+     "corto": "Zheng",
+     "pag": 4,
+     "nota": "Figura 1-2"
+    }
+   ],
+   "mostrada": "Zheng, figura 1-2, pág. 4 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_zheng_1-2"
+  },
+  {
+   "id": "f04-01",
+   "tema": "04",
+   "orden": 1,
+   "rank": 2,
+   "nivel": "Pedida en clase",
+   "title": "Pipeline de ML en cinco pasos",
+   "w": 1005,
+   "h": 266,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf",
+     "corto": "Ozdemir",
+     "pag": 6,
+     "nota": "Figura 1.2"
+    }
+   ],
+   "mostrada": "Ozdemir, figura 1.2, pág. 6 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "Las notas dicen «*agregar gráfico de ML pipeline».",
+   "legib": null,
+   "origen": "u4_ozd_1-2"
+  },
+  {
+   "id": "f04-02",
+   "tema": "04",
+   "orden": 2,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Enfoque model-centric vs data-centric",
+   "w": 1005,
+   "h": 448,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf",
+     "corto": "Ozdemir",
+     "pag": 3,
+     "nota": "Figura 1.1"
+    }
+   ],
+   "mostrada": "Ozdemir, figura 1.1, pág. 3 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_ozd_1-1"
+  },
+  {
+   "id": "f04-03",
+   "tema": "04",
+   "orden": 3,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Pipeline de feature engineering: comprensión, estructuración, optimización y evaluación",
+   "w": 1005,
+   "h": 655,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf",
+     "corto": "Ozdemir",
+     "pag": 10,
+     "nota": "Figura 1.5"
+    }
+   ],
+   "mostrada": "Ozdemir, figura 1.5, pág. 10 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_ozd_1-5"
+  },
+  {
+   "id": "f04-04",
+   "tema": "04",
+   "orden": 4,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Enfoque del libro para el feature engineering",
+   "w": 1005,
+   "h": 611,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf",
+     "corto": "Ozdemir",
+     "pag": 33,
+     "nota": "Figura 2.13"
+    }
+   ],
+   "mostrada": "Ozdemir, figura 2.13, pág. 33 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_ozd_2-13"
+  },
+  {
+   "id": "f04-05",
+   "tema": "04",
+   "orden": 5,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Datos crudos (texto, imágenes) transformados en vectores",
+   "w": 1005,
+   "h": 666,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf",
+     "corto": "Ozdemir",
+     "pag": 7,
+     "nota": "Figura 1.3"
+    }
+   ],
+   "mostrada": "Ozdemir, figura 1.3, pág. 7 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_ozd_1-3"
+  },
+  {
+   "id": "f06-01",
+   "tema": "06",
+   "orden": 1,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Los cuatro niveles de datos",
+   "w": 1005,
+   "h": 1079,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf",
+     "corto": "Ozdemir",
+     "pag": 23,
+     "nota": "Figura 2.6"
+    }
+   ],
+   "mostrada": "Ozdemir, figura 2.6, pág. 23 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_ozd_2-6"
+  },
+  {
+   "id": "f06-02",
+   "tema": "06",
+   "orden": 2,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Features dummy (one-hot) a partir de una feature nominal",
+   "w": 1005,
+   "h": 488,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf",
+     "corto": "Ozdemir",
+     "pag": 17,
+     "nota": "Figura 2.2"
+    }
+   ],
+   "mostrada": "Ozdemir, figura 2.2, pág. 17 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_ozd_2-2"
+  },
+  {
+   "id": "f06-03",
+   "tema": "06",
+   "orden": 3,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Medias aritmética, geométrica y armónica",
+   "w": 1005,
+   "h": 238,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf",
+     "corto": "Ozdemir",
+     "pag": 21,
+     "nota": "Figura 2.5"
+    }
+   ],
+   "mostrada": "Ozdemir, figura 2.5, pág. 21 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_ozd_2-5"
+  },
+  {
+   "id": "f08-01",
+   "tema": "08",
+   "orden": 1,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Texto crudo convertido en un vector bag-of-words",
+   "w": 983,
+   "h": 1150,
+   "refs": [
+    {
+     "archivo": "[Caps 1 y 3 OBLIGATORIOS] Zheng - Feature Engineering for ML.pdf",
+     "corto": "Zheng",
+     "pag": 41,
+     "nota": "Figura 3-1"
+    }
+   ],
+   "mostrada": "Zheng, figura 3-1, pág. 41 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_zheng_3-1"
+  },
+  {
+   "id": "f09-01",
+   "tema": "09",
+   "orden": 1,
+   "rank": 2,
+   "nivel": "Pedida en clase",
+   "title": "Tareas de NLP de fácil a difícil",
+   "w": 1005,
+   "h": 804,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Vajjala - Practical NLP.pdf",
+     "corto": "Vajjala",
+     "pag": 6,
+     "nota": "Figura 1-2"
+    }
+   ],
+   "mostrada": "Vajjala, figura 1-2, pág. 6 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "Las notas piden el «gráfico flecha de easy a hard».",
+   "legib": null,
+   "origen": "u4_vaj_1-2"
+  },
+  {
+   "id": "f09-02",
+   "tema": "09",
+   "orden": 2,
+   "rank": 2,
+   "nivel": "Pedida en clase",
+   "title": "Bloques del lenguaje y sus aplicaciones",
+   "w": 1005,
+   "h": 754,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Vajjala - Practical NLP.pdf",
+     "corto": "Vajjala",
+     "pag": 7,
+     "nota": "Figura 1-3"
+    }
+   ],
+   "mostrada": "Vajjala, figura 1-3, pág. 7 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "Las notas piden el «gráfico blocks of language y sus aplicaciones».",
+   "legib": null,
+   "origen": "u4_vaj_1-3"
+  },
+  {
+   "id": "f09-03",
+   "tema": "09",
+   "orden": 3,
+   "rank": 2,
+   "nivel": "Pedida en clase",
+   "title": "Relación entre IA, ML, DL y NLP",
+   "w": 1005,
+   "h": 626,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Vajjala - Practical NLP.pdf",
+     "corto": "Vajjala",
+     "pag": 13,
+     "nota": "Figura 1-8"
+    }
+   ],
+   "mostrada": "Vajjala, figura 1-8, pág. 13 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "Las notas piden el «gráfico círculos IA».",
+   "legib": null,
+   "origen": "u4_vaj_1-8"
+  },
+  {
+   "id": "f09-04",
+   "tema": "09",
+   "orden": 4,
+   "rank": 2,
+   "nivel": "Pedida en clase",
+   "title": "SVM: límite de decisión con el mayor margen",
+   "w": 1005,
+   "h": 1002,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Vajjala - Practical NLP.pdf",
+     "corto": "Vajjala",
+     "pag": 18,
+     "nota": "Figura 1-11"
+    }
+   ],
+   "mostrada": "Vajjala, figura 1-11, pág. 18 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "Las notas: «Enfoque ML: Support Vector Machine – *gráfico flujo».",
+   "legib": null,
+   "origen": "u4_vaj_1-11"
+  },
+  {
+   "id": "f09-05",
+   "tema": "09",
+   "orden": 5,
+   "rank": 2,
+   "nivel": "Pedida en clase",
+   "title": "Red neuronal recurrente (RNN) desenrollada",
+   "w": 1005,
+   "h": 328,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Vajjala - Practical NLP.pdf",
+     "corto": "Vajjala",
+     "pag": 20,
+     "nota": "Figura 1-13"
+    }
+   ],
+   "mostrada": "Vajjala, figura 1-13, pág. 20 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "Las notas: «saber concepto RRN y cómo se relaciona con LSTM».",
+   "legib": null,
+   "origen": "u4_vaj_1-13"
+  },
+  {
+   "id": "f09-06",
+   "tema": "09",
+   "orden": 6,
+   "rank": 2,
+   "nivel": "Pedida en clase",
+   "title": "Celda LSTM",
+   "w": 1005,
+   "h": 397,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Vajjala - Practical NLP.pdf",
+     "corto": "Vajjala",
+     "pag": 21,
+     "nota": "Figura 1-14"
+    }
+   ],
+   "mostrada": "Vajjala, figura 1-14, pág. 21 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "Las notas: «saber concepto RRN y cómo se relaciona con LSTM».",
+   "legib": null,
+   "origen": "u4_vaj_1-14"
+  },
+  {
+   "id": "f09-07",
+   "tema": "09",
+   "orden": 7,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Tareas y aplicaciones de NLP",
+   "w": 1005,
+   "h": 513,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Vajjala - Practical NLP.pdf",
+     "corto": "Vajjala",
+     "pag": 3,
+     "nota": "Figura 1-1"
+    }
+   ],
+   "mostrada": "Vajjala, figura 1-1, pág. 3 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_vaj_1-1"
+  },
+  {
+   "id": "f10-01",
+   "tema": "10",
+   "orden": 1,
+   "rank": 2,
+   "nivel": "Pedida en clase",
+   "title": "Pipeline genérico de NLP",
+   "w": 1005,
+   "h": 319,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Vajjala - Practical NLP.pdf",
+     "corto": "Vajjala",
+     "pag": 33,
+     "nota": "Figura 2-1"
+    }
+   ],
+   "mostrada": "Vajjala, figura 2-1, pág. 33 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "Las notas piden el «gráfico generic nlp pipeline».",
+   "legib": null,
+   "origen": "u4_vaj_2-1"
+  },
+  {
+   "id": "f10-02",
+   "tema": "10",
+   "orden": 2,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Stemming vs lematización",
+   "w": 1005,
+   "h": 370,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Vajjala - Practical NLP.pdf",
+     "corto": "Vajjala",
+     "pag": 49,
+     "nota": "Figura 2-7"
+    }
+   ],
+   "mostrada": "Vajjala, figura 2-7, pág. 49 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_vaj_2-7"
+  },
+  {
+   "id": "f10-03",
+   "tema": "10",
+   "orden": 3,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Pasos comunes de preprocesamiento",
+   "w": 1005,
+   "h": 778,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Vajjala - Practical NLP.pdf",
+     "corto": "Vajjala",
+     "pag": 51,
+     "nota": "Figura 2-8"
+    }
+   ],
+   "mostrada": "Vajjala, figura 2-8, pág. 51 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_vaj_2-8"
+  },
+  {
+   "id": "f11-01",
+   "tema": "11",
+   "orden": 1,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Pipeline de clasificación de texto",
+   "w": 1005,
+   "h": 857,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Vajjala - Practical NLP.pdf",
+     "corto": "Vajjala",
+     "pag": 113,
+     "nota": "Figura 4-3"
+    }
+   ],
+   "mostrada": "Vajjala, figura 4-3, pág. 113 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_vaj_4-3"
+  },
+  {
+   "id": "f13-01",
+   "tema": "13",
+   "orden": 1,
+   "rank": 1,
+   "nivel": "Consigna real",
+   "title": "Vista de datos y vista tecnológica separadas",
+   "w": 1005,
+   "h": 457,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Strengholt - Data Management at Scale - Chapter 4. Data Product Management.pdf",
+     "corto": "Strengholt DMS",
+     "pag": 3,
+     "nota": "Figura 4-1"
+    }
+   ],
+   "mostrada": "Strengholt DMS, figura 4-1, pág. 3 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "P8 del 1er parcial que entra ahora (data as a product vs data product).",
+   "legib": null,
+   "origen": "u4_str_4-1"
+  },
+  {
+   "id": "f13-02",
+   "tema": "13",
+   "orden": 2,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "CQRS: comandos y consultas separados",
+   "w": 1005,
+   "h": 475,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Strengholt - Data Management at Scale - Chapter 4. Data Product Management.pdf",
+     "corto": "Strengholt DMS",
+     "pag": 6,
+     "nota": "Figura 4-2"
+    }
+   ],
+   "mostrada": "Strengholt DMS, figura 4-2, pág. 6 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_str_4-2"
+  },
+  {
+   "id": "f13-03",
+   "tema": "13",
+   "orden": 3,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Colaboración descentralizada entre proveedores y consumidores",
+   "w": 1005,
+   "h": 531,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Strengholt - Data Management at Scale - Chapter 4. Data Product Management.pdf",
+     "corto": "Strengholt DMS",
+     "pag": 7,
+     "nota": "Figura 4-3"
+    }
+   ],
+   "mostrada": "Strengholt DMS, figura 4-3, pág. 7 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_str_4-3"
+  },
+  {
+   "id": "f13-04",
+   "tema": "13",
+   "orden": 4,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Arquitectura de un data product",
+   "w": 1005,
+   "h": 681,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Strengholt - Data Management at Scale - Chapter 4. Data Product Management.pdf",
+     "corto": "Strengholt DMS",
+     "pag": 17,
+     "nota": "Figura 4-5"
+    }
+   ],
+   "mostrada": "Strengholt DMS, figura 4-5, pág. 17 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u4_str_4-5"
+  },
+  {
+   "id": "f14-01",
+   "tema": "14",
+   "orden": 1,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Pirámide de necesidades de la ciencia de datos",
+   "w": 1005,
+   "h": 618,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 1.pdf",
+     "corto": "Reis cap. 1",
+     "pag": 8,
+     "nota": "Figura 1-5"
+    }
+   ],
+   "mostrada": "Reis cap. 1, figura 1-5, pág. 8 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_1-5"
+  },
+  {
+   "id": "f14-02",
+   "tema": "14",
+   "orden": 2,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Modelo de madurez de datos",
+   "w": 1005,
+   "h": 243,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 1.pdf",
+     "corto": "Reis cap. 1",
+     "pag": 10,
+     "nota": "Figura 1-8"
+    }
+   ],
+   "mostrada": "Reis cap. 1, figura 1-8, pág. 10 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_1-8"
+  },
+  {
+   "id": "f14-03",
+   "tema": "14",
+   "orden": 3,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Stakeholders técnicos de la ingeniería de datos",
+   "w": 1005,
+   "h": 435,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 1.pdf",
+     "corto": "Reis cap. 1",
+     "pag": 19,
+     "nota": "Figura 1-12"
+    }
+   ],
+   "mostrada": "Reis cap. 1, figura 1-12, pág. 19 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_1-12"
+  },
+  {
+   "id": "f15-01",
+   "tema": "15",
+   "orden": 1,
+   "rank": 1,
+   "nivel": "Consigna real",
+   "title": "Ciclo de vida de la ingeniería de datos y sus corrientes subyacentes",
+   "w": 1005,
+   "h": 508,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 2.pdf",
+     "corto": "Reis cap. 2",
+     "pag": 2,
+     "nota": "Figura 2-1"
+    }
+   ],
+   "mostrada": "Reis cap. 2, figura 2-1, pág. 2 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "P2 y P3 del parcial 2025 (etapas; batch vs streaming). Las notas piden el «gráfico de ciclo de vida del dato».",
+   "legib": null,
+   "origen": "u5_reis_2-1"
+  },
+  {
+   "id": "f15-02",
+   "tema": "15",
+   "orden": 2,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "El ciclo de la ingeniería de datos dentro del ciclo de vida del dato",
+   "w": 836,
+   "h": 562,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 2.pdf",
+     "corto": "Reis cap. 2",
+     "pag": 3,
+     "nota": "Figura 2-2"
+    }
+   ],
+   "mostrada": "Reis cap. 2, figura 2-2, pág. 3 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_2-2"
+  },
+  {
+   "id": "f15-03",
+   "tema": "15",
+   "orden": 3,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Tipos de analytics",
+   "w": 1005,
+   "h": 309,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 2.pdf",
+     "corto": "Reis cap. 2",
+     "pag": 12,
+     "nota": "Figura 2-5"
+    }
+   ],
+   "mostrada": "Reis cap. 2, figura 2-5, pág. 12 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_2-5"
+  },
+  {
+   "id": "f15-04",
+   "tema": "15",
+   "orden": 4,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Reverse ETL",
+   "w": 1005,
+   "h": 551,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 2.pdf",
+     "corto": "Reis cap. 2",
+     "pag": 15,
+     "nota": "Figura 2-6"
+    }
+   ],
+   "mostrada": "Reis cap. 2, figura 2-6, pág. 15 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_2-6"
+  },
+  {
+   "id": "f15-05",
+   "tema": "15",
+   "orden": 5,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Los tres pilares de DataOps",
+   "w": 1005,
+   "h": 100,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 2.pdf",
+     "corto": "Reis cap. 2",
+     "pag": 25,
+     "nota": "Figura 2-8"
+    }
+   ],
+   "mostrada": "Reis cap. 2, figura 2-8, pág. 25 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_2-8"
+  },
+  {
+   "id": "f16-01",
+   "tema": "16",
+   "orden": 1,
+   "rank": 1,
+   "nivel": "Consigna real",
+   "title": "La arquitectura de datos, subconjunto de la empresarial",
+   "w": 1005,
+   "h": 164,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf",
+     "corto": "Reis cap. 3",
+     "pag": 1,
+     "nota": "Figura 3-1"
+    }
+   ],
+   "mostrada": "Reis cap. 3, figura 3-1, pág. 1 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "P4 del parcial 2025 (arquitectura de negocios vs de datos). Las notas piden el «gráfico enterprise architecture».",
+   "legib": null,
+   "origen": "u5_reis_3-1"
+  },
+  {
+   "id": "f16-02",
+   "tema": "16",
+   "orden": 2,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Arquitectura de datos operacional y técnica",
+   "w": 1005,
+   "h": 240,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf",
+     "corto": "Reis cap. 3",
+     "pag": 5,
+     "nota": "Figura 3-2"
+    }
+   ],
+   "mostrada": "Reis cap. 3, figura 3-2, pág. 5 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_3-2"
+  },
+  {
+   "id": "f17-01",
+   "tema": "17",
+   "orden": 1,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Data warehouse básico con ETL",
+   "w": 1005,
+   "h": 358,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf",
+     "corto": "Reis cap. 3",
+     "pag": 25,
+     "nota": "Figura 3-10"
+    }
+   ],
+   "mostrada": "Reis cap. 3, figura 3-10, pág. 25 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_3-10"
+  },
+  {
+   "id": "f17-02",
+   "tema": "17",
+   "orden": 2,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "ELT",
+   "w": 1005,
+   "h": 285,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf",
+     "corto": "Reis cap. 3",
+     "pag": 25,
+     "nota": "Figura 3-11"
+    }
+   ],
+   "mostrada": "Reis cap. 3, figura 3-11, pág. 25 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_3-11"
+  },
+  {
+   "id": "f17-03",
+   "tema": "17",
+   "orden": 3,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "ETL o ELT con data marts",
+   "w": 1005,
+   "h": 257,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf",
+     "corto": "Reis cap. 3",
+     "pag": 26,
+     "nota": "Figura 3-12"
+    }
+   ],
+   "mostrada": "Reis cap. 3, figura 3-12, pág. 26 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_3-12"
+  },
+  {
+   "id": "f17-04",
+   "tema": "17",
+   "orden": 4,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Arquitectura Lambda",
+   "w": 1005,
+   "h": 231,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf",
+     "corto": "Reis cap. 3",
+     "pag": 29,
+     "nota": "Figura 3-14"
+    }
+   ],
+   "mostrada": "Reis cap. 3, figura 3-14, pág. 29 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_3-14"
+  },
+  {
+   "id": "f17-05",
+   "tema": "17",
+   "orden": 5,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Arquitectura Kappa",
+   "w": 1005,
+   "h": 158,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf",
+     "corto": "Reis cap. 3",
+     "pag": 30,
+     "nota": "Figura 3-15"
+    }
+   ],
+   "mostrada": "Reis cap. 3, figura 3-15, pág. 30 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_3-15"
+  },
+  {
+   "id": "f17-06",
+   "tema": "17",
+   "orden": 6,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Enfoque de Inmon (top-down)",
+   "w": 1005,
+   "h": 639,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf",
+     "corto": "Medallion",
+     "pag": 9,
+     "nota": "Figura 1-4"
+    }
+   ],
+   "mostrada": "Medallion, figura 1-4, pág. 9 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_med_1-4"
+  },
+  {
+   "id": "f17-07",
+   "tema": "17",
+   "orden": 7,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Metodología de Kimball (bottom-up)",
+   "w": 1005,
+   "h": 487,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf",
+     "corto": "Medallion",
+     "pag": 10,
+     "nota": "Figura 1-5"
+    }
+   ],
+   "mostrada": "Medallion, figura 1-5, pág. 10 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_med_1-5"
+  },
+  {
+   "id": "f17-08",
+   "tema": "17",
+   "orden": 8,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Arquitectura lakehouse",
+   "w": 1005,
+   "h": 637,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf",
+     "corto": "Medallion",
+     "pag": 22,
+     "nota": "Figura 1-8"
+    }
+   ],
+   "mostrada": "Medallion, figura 1-8, pág. 22 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_med_1-8"
+  },
+  {
+   "id": "f17-09",
+   "tema": "17",
+   "orden": 9,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Modern data stack",
+   "w": 1005,
+   "h": 148,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf",
+     "corto": "Reis cap. 3",
+     "pag": 28,
+     "nota": "Figura 3-13"
+    }
+   ],
+   "mostrada": "Reis cap. 3, figura 3-13, pág. 28 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_3-13"
+  },
+  {
+   "id": "f17-10",
+   "tema": "17",
+   "orden": 10,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Data lake típico (Hadoop)",
+   "w": 1005,
+   "h": 613,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf",
+     "corto": "Medallion",
+     "pag": 13,
+     "nota": "Figura 1-6"
+    }
+   ],
+   "mostrada": "Medallion, figura 1-6, pág. 13 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_med_1-6"
+  },
+  {
+   "id": "f18-01",
+   "tema": "18",
+   "orden": 1,
+   "rank": 1,
+   "nivel": "Consigna real",
+   "title": "Dimensiones de cambio de Data Mesh",
+   "w": 1322,
+   "h": 2018,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO CAP 1] Data Mesh Delivering Data-Driven Value at Scale (Dehghani, Zhamak).pdf",
+     "corto": "Dehghani",
+     "pag": 47,
+     "nota": "Figura 1-1"
+    }
+   ],
+   "mostrada": "Dehghani, figura 1-1, pág. 47 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "P6 del parcial 2025 (cambios de Data Mesh).",
+   "legib": null,
+   "origen": "u5_dm_1-1"
+  },
+  {
+   "id": "f18-02",
+   "tema": "18",
+   "orden": 2,
+   "rank": 1,
+   "nivel": "Consigna real",
+   "title": "Los cuatro principios de Data Mesh y su interacción",
+   "w": 1572,
+   "h": 2340,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO CAP 1] Data Mesh Delivering Data-Driven Value at Scale (Dehghani, Zhamak).pdf",
+     "corto": "Dehghani",
+     "pag": 54,
+     "nota": "Figura 1-2"
+    }
+   ],
+   "mostrada": "Dehghani, figura 1-2, pág. 54 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "P7 del parcial 2025 (principios de Data Mesh).",
+   "legib": null,
+   "origen": "u5_dm_1-2"
+  },
+  {
+   "id": "f18-03",
+   "tema": "18",
+   "orden": 3,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Modelo operativo de Data Mesh",
+   "w": 1572,
+   "h": 2340,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO CAP 1] Data Mesh Delivering Data-Driven Value at Scale (Dehghani, Zhamak).pdf",
+     "corto": "Dehghani",
+     "pag": 56,
+     "nota": "Figura 1-3"
+    }
+   ],
+   "mostrada": "Dehghani, figura 1-3, pág. 56 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_dm_1-3"
+  },
+  {
+   "id": "f18-04",
+   "tema": "18",
+   "orden": 4,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Ejemplo simplificado de data mesh",
+   "w": 1005,
+   "h": 840,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf",
+     "corto": "Reis cap. 3",
+     "pag": 33,
+     "nota": "Figura 3-18"
+    }
+   ],
+   "mostrada": "Reis cap. 3, figura 3-18, pág. 33 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_reis_3-18"
+  },
+  {
+   "id": "f19-01",
+   "tema": "19",
+   "orden": 1,
+   "rank": 1,
+   "nivel": "Consigna real",
+   "title": "Las tres capas de la arquitectura Medallion",
+   "w": 1005,
+   "h": 478,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf",
+     "corto": "Medallion",
+     "pag": 40,
+     "nota": "Figura 3-1"
+    }
+   ],
+   "mostrada": "Medallion, figura 3-1, pág. 40 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "P8 del parcial 2025 (qué va en cada capa). Las notas piden el «gráfico que tiene la medallion arquitectura».",
+   "legib": null,
+   "origen": "u5_med_3-1"
+  },
+  {
+   "id": "f19-02",
+   "tema": "19",
+   "orden": 2,
+   "rank": 1,
+   "nivel": "Consigna real",
+   "title": "La arquitectura Medallion en la capa de distribución",
+   "w": 1005,
+   "h": 355,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf",
+     "corto": "Medallion",
+     "pag": 4,
+     "nota": "Figura 1-2"
+    }
+   ],
+   "mostrada": "Medallion, figura 1-2, pág. 4 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "P8 del parcial 2025.",
+   "legib": null,
+   "origen": "u5_med_1-2"
+  },
+  {
+   "id": "f19-03",
+   "tema": "19",
+   "orden": 3,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Diseño de tres capas: proveedores, distribución y consumidores",
+   "w": 1005,
+   "h": 297,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf",
+     "corto": "Medallion",
+     "pag": 2,
+     "nota": "Figura 1-1"
+    }
+   ],
+   "mostrada": "Medallion, figura 1-1, pág. 2 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u5_med_1-1"
+  },
+  {
+   "id": "f22-01",
+   "tema": "22",
+   "orden": 1,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Componentes centrales de un sistema de agentes",
+   "w": 1005,
+   "h": 436,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO CAP 1 y 2] Michael Albada - Building Applications with AI Agents.pdf",
+     "corto": "Albada",
+     "pag": 21,
+     "nota": "Figura 2-1"
+    }
+   ],
+   "mostrada": "Albada, figura 2-1, pág. 21 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u6_alb_2-1"
+  },
+  {
+   "id": "f23-01",
+   "tema": "23",
+   "orden": 1,
+   "rank": 1,
+   "nivel": "Consigna real",
+   "title": "Indexing pipeline y generation pipeline",
+   "w": 1005,
+   "h": 848,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Kimothi - A Simple Guide to Retrieval Augmented Generation.pdf",
+     "corto": "Kimothi",
+     "pag": 6,
+     "nota": "Figura 2.3"
+    }
+   ],
+   "mostrada": "Kimothi, figura 2.3, pág. 6 del PDF",
+   "tipo": "Figura del libro",
+   "nota": "P10 del parcial 2025 (embeddings en RAG).",
+   "legib": null,
+   "origen": "u6_kim_2-3"
+  },
+  {
+   "id": "f23-02",
+   "tema": "23",
+   "orden": 2,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Tríada de evaluación RAG",
+   "w": 1005,
+   "h": 550,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Kimothi - A Simple Guide to Retrieval Augmented Generation.pdf",
+     "corto": "Kimothi",
+     "pag": 10,
+     "nota": "Figura 2.7"
+    }
+   ],
+   "mostrada": "Kimothi, figura 2.7, pág. 10 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u6_kim_2-7"
+  },
+  {
+   "id": "f23-03",
+   "tema": "23",
+   "orden": 3,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Componentes de un sistema RAG productivo",
+   "w": 1005,
+   "h": 673,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Kimothi - A Simple Guide to Retrieval Augmented Generation.pdf",
+     "corto": "Kimothi",
+     "pag": 6,
+     "nota": "Figura 2.4"
+    }
+   ],
+   "mostrada": "Kimothi, figura 2.4, pág. 6 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u6_kim_2-4"
+  },
+  {
+   "id": "f24-01",
+   "tema": "24",
+   "orden": 1,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Arquitectura RAG básica",
+   "w": 795,
+   "h": 595,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] AI_Engineering_Chapter_6_RAG_and_Agents.pdf",
+     "corto": "Huyen",
+     "pag": 4,
+     "nota": "Figura 6-2"
+    }
+   ],
+   "mostrada": "Huyen, figura 6-2, pág. 4 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u6_huy_6-2"
+  },
+  {
+   "id": "f24-02",
+   "tema": "24",
+   "orden": 2,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Retriever basado en embeddings",
+   "w": 1048,
+   "h": 740,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] AI_Engineering_Chapter_6_RAG_and_Agents.pdf",
+     "corto": "Huyen",
+     "pag": 9,
+     "nota": "Figura 6-3"
+    }
+   ],
+   "mostrada": "Huyen, figura 6-3, pág. 9 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u6_huy_6-3"
+  },
+  {
+   "id": "f25-01",
+   "tema": "25",
+   "orden": 1,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Un agente ReAct en acción",
+   "w": 1041,
+   "h": 1092,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] AI_Engineering_Chapter_6_RAG_and_Agents.pdf",
+     "corto": "Huyen",
+     "pag": 42,
+     "nota": "Figura 6-12"
+    }
+   ],
+   "mostrada": "Huyen, figura 6-12, pág. 42 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u6_huy_6-12"
+  },
+  {
+   "id": "f25-02",
+   "tema": "25",
+   "orden": 2,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Jerarquía de información de un agente",
+   "w": 792,
+   "h": 633,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] AI_Engineering_Chapter_6_RAG_and_Agents.pdf",
+     "corto": "Huyen",
+     "pag": 50,
+     "nota": "Figura 6-16"
+    }
+   ],
+   "mostrada": "Huyen, figura 6-16, pág. 50 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u6_huy_6-16"
+  },
+  {
+   "id": "f25-03",
+   "tema": "25",
+   "orden": 3,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Planificación desacoplada de la ejecución",
+   "w": 1200,
+   "h": 487,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] AI_Engineering_Chapter_6_RAG_and_Agents.pdf",
+     "corto": "Huyen",
+     "pag": 31,
+     "nota": "Figura 6-9"
+    }
+   ],
+   "mostrada": "Huyen, figura 6-9, pág. 31 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u6_huy_6-9"
+  },
+  {
+   "id": "f26-01",
+   "tema": "26",
+   "orden": 1,
+   "rank": 3,
+   "nivel": "Libro obligatorio",
+   "title": "Los cuatro tipos de IA",
+   "w": 1005,
+   "h": 754,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Nika - Chapter 1. The Role of AI Product Managers 2.pdf",
+     "corto": "Nika",
+     "pag": 3,
+     "nota": "Figura 1-1"
+    }
+   ],
+   "mostrada": "Nika, figura 1-1, pág. 3 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u6_nika_1-1"
+  },
+  {
+   "id": "f26-02",
+   "tema": "26",
+   "orden": 2,
+   "rank": 4,
+   "nivel": "Complementaria",
+   "title": "Skill set del AI PM",
+   "w": 1005,
+   "h": 142,
+   "refs": [
+    {
+     "archivo": "[OBLIGATORIO] Nika - Chapter 1. The Role of AI Product Managers 2.pdf",
+     "corto": "Nika",
+     "pag": 13,
+     "nota": "Figura 1-4"
+    }
+   ],
+   "mostrada": "Nika, figura 1-4, pág. 13 del PDF",
+   "tipo": "Figura del libro",
+   "nota": null,
+   "legib": null,
+   "origen": "u6_nika_1-4"
+  }
+ ],
+ "tambien": {
+  "19": [
+   "f17-08"
+  ],
+  "15": [],
+  "23": [
+   "f24-01"
+  ]
+ }
+}

@@ -1,0 +1,132 @@
+{
+  "title": "Un sistema RAG: indexing pipeline y generation pipeline",
+  "topic": "U6 · Inteligencia Artificial Generativa",
+  "order": 30,
+  "width": 1040,
+  "height": 450,
+  "fuente": "Kimothi, cap. 2, fig. 2.1, 2.2, 2.3 y 2.5 (págs. 2–9 del PDF) · P10 del parcial 2025",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 12,
+      "y": 11,
+      "w": 304,
+      "h": 30,
+      "answer": "Indexing pipeline",
+      "level": "clave",
+      "accept": [
+        "Pipeline de indexación",
+        "Indexación"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 225,
+      "y": 54,
+      "w": 167,
+      "h": 62,
+      "answer": "Carga: conectar, extraer y parsear",
+      "level": "clave",
+      "accept": [
+        "Carga de datos",
+        "Data loading",
+        "Carga"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 426,
+      "y": 54,
+      "w": 167,
+      "h": 62,
+      "answer": "Splitting (chunking)",
+      "level": "clave",
+      "accept": [
+        "Chunking",
+        "Splitting",
+        "División en chunks"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 627,
+      "y": 54,
+      "w": 167,
+      "h": 62,
+      "answer": "Conversión a embeddings",
+      "level": "clave",
+      "accept": [
+        "Embeddings",
+        "Conversión"
+      ]
+    },
+    {
+      "id": "b5",
+      "x": 828,
+      "y": 54,
+      "w": 167,
+      "h": 62,
+      "answer": "Base vectorial",
+      "level": "clave",
+      "accept": [
+        "Vector DB",
+        "Vector database",
+        "Base de datos vectorial",
+        "Almacenamiento"
+      ]
+    },
+    {
+      "id": "b6",
+      "x": 12,
+      "y": 175,
+      "w": 269,
+      "h": 30,
+      "answer": "Generation pipeline",
+      "level": "clave",
+      "accept": [
+        "Pipeline de generación",
+        "Generación"
+      ]
+    },
+    {
+      "id": "b7",
+      "x": 225,
+      "y": 219,
+      "w": 167,
+      "h": 62,
+      "answer": "Retriever",
+      "level": "clave",
+      "accept": [
+        "Recuperador",
+        "Retrieval"
+      ]
+    },
+    {
+      "id": "b8",
+      "x": 426,
+      "y": 219,
+      "w": 167,
+      "h": 62,
+      "answer": "Prompt: pregunta + contexto recuperado",
+      "level": "clave",
+      "accept": [
+        "Aumentación",
+        "Prompt management",
+        "Gestión del prompt"
+      ]
+    },
+    {
+      "id": "b9",
+      "x": 627,
+      "y": 219,
+      "w": 167,
+      "h": 62,
+      "answer": "LLM",
+      "level": "clave",
+      "accept": [
+        "Modelo de lenguaje",
+        "LLM setup"
+      ]
+    }
+  ]
+}

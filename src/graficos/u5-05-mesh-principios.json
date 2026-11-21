@@ -1,0 +1,103 @@
+{
+  "title": "Los cuatro principios de Data Mesh y cómo se compensan",
+  "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+  "order": 50,
+  "width": 1000,
+  "height": 470,
+  "fuente": "Dehghani, cap. 1, fig. 1-2 (págs. 48–54 del PDF) · P7 del parcial 2025",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 44,
+      "y": 44,
+      "w": 272,
+      "h": 72,
+      "answer": "Propiedad del dominio (domain ownership)",
+      "level": "clave",
+      "accept": [
+        "Domain ownership",
+        "Propiedad del dominio",
+        "Propiedad por dominio"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 684,
+      "y": 44,
+      "w": 272,
+      "h": 72,
+      "answer": "Datos como producto (data as a product)",
+      "level": "clave",
+      "accept": [
+        "Data as a product",
+        "Datos como producto"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 44,
+      "y": 334,
+      "w": 272,
+      "h": 72,
+      "answer": "Gobierno computacional federado",
+      "level": "clave",
+      "accept": [
+        "Federated computational governance",
+        "Gobierno federado"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 684,
+      "y": 334,
+      "w": 272,
+      "h": 72,
+      "answer": "Plataforma de datos self-serve",
+      "level": "clave",
+      "accept": [
+        "Self-serve data platform",
+        "Plataforma self-serve",
+        "Plataforma de autoservicio"
+      ]
+    },
+    {
+      "id": "b5",
+      "x": 417,
+      "y": 46,
+      "w": 166,
+      "h": 28,
+      "answer": "Evita los silos de datos",
+      "level": "extra",
+      "accept": [
+        "Silos",
+        "Prevenir silos"
+      ]
+    },
+    {
+      "id": "b6",
+      "x": 435,
+      "y": 178,
+      "w": 190,
+      "h": 45,
+      "answer": "Baja el costo y el esfuerzo duplicado",
+      "level": "extra",
+      "accept": [
+        "Costo",
+        "Reduce el costo de propiedad"
+      ]
+    },
+    {
+      "id": "b7",
+      "x": 197,
+      "y": 202,
+      "w": 214,
+      "h": 45,
+      "answer": "Evita la incompatibilidad entre dominios",
+      "level": "extra",
+      "accept": [
+        "Incompatibilidad",
+        "Interoperabilidad"
+      ]
+    }
+  ]
+}

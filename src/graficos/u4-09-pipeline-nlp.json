@@ -1,0 +1,111 @@
+{
+  "title": "Pipeline genérico de NLP",
+  "topic": "U4 · Ciencia de Datos Aplicada",
+  "order": 90,
+  "width": 1040,
+  "height": 320,
+  "fuente": "Vajjala, cap. 2, fig. 2-1 (pág. 33 del PDF) · Notas U4 («gráfico generic nlp pipeline»)",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 34,
+      "y": 44,
+      "w": 192,
+      "h": 62,
+      "answer": "Adquisición de datos",
+      "level": "clave",
+      "accept": [
+        "Data acquisition",
+        "Adquisición"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 284,
+      "y": 44,
+      "w": 192,
+      "h": 62,
+      "answer": "Limpieza de texto",
+      "level": "clave",
+      "accept": [
+        "Text cleaning",
+        "Limpieza"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 534,
+      "y": 44,
+      "w": 192,
+      "h": 62,
+      "answer": "Preprocesamiento",
+      "level": "clave",
+      "accept": [
+        "Pre-processing",
+        "Preprocessing"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 784,
+      "y": 44,
+      "w": 192,
+      "h": 62,
+      "answer": "Feature engineering",
+      "level": "clave",
+      "accept": [
+        "Ingeniería de features"
+      ]
+    },
+    {
+      "id": "b5",
+      "x": 34,
+      "y": 194,
+      "w": 192,
+      "h": 62,
+      "answer": "Monitoreo y actualización del modelo",
+      "level": "clave",
+      "accept": [
+        "Monitoreo",
+        "Monitoring and model updating"
+      ]
+    },
+    {
+      "id": "b6",
+      "x": 284,
+      "y": 194,
+      "w": 192,
+      "h": 62,
+      "answer": "Deployment",
+      "level": "clave",
+      "accept": [
+        "Despliegue"
+      ]
+    },
+    {
+      "id": "b7",
+      "x": 534,
+      "y": 194,
+      "w": 192,
+      "h": 62,
+      "answer": "Evaluación",
+      "level": "clave",
+      "accept": [
+        "Evaluation"
+      ]
+    },
+    {
+      "id": "b8",
+      "x": 784,
+      "y": 194,
+      "w": 192,
+      "h": 62,
+      "answer": "Modelado",
+      "level": "clave",
+      "accept": [
+        "Modeling",
+        "Modelo"
+      ]
+    }
+  ]
+}

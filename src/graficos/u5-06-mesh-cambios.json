@@ -1,0 +1,165 @@
+{
+  "title": "Las seis dimensiones de cambio de Data Mesh",
+  "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+  "order": 60,
+  "width": 1040,
+  "height": 470,
+  "fuente": "Dehghani, cap. 1, fig. 1-1 (págs. 45–47 del PDF) · P6 del parcial 2025",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 25,
+      "y": 69,
+      "w": 190,
+      "h": 52,
+      "answer": "Organizacional",
+      "level": "clave",
+      "accept": [
+        "Organizationally",
+        "Organizativo"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 605,
+      "y": 69,
+      "w": 410,
+      "h": 52,
+      "answer": "Propiedad descentralizada en los dominios de negocio",
+      "level": "extra",
+      "accept": [
+        "Descentralizada",
+        "Dominios"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 25,
+      "y": 131,
+      "w": 190,
+      "h": 52,
+      "answer": "Arquitectónico",
+      "level": "clave",
+      "accept": [
+        "Architecturally",
+        "Arquitectural"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 605,
+      "y": 131,
+      "w": 410,
+      "h": 52,
+      "answer": "Malla distribuida de data products",
+      "level": "extra",
+      "accept": [
+        "Malla distribuida",
+        "Distribuida"
+      ]
+    },
+    {
+      "id": "b5",
+      "x": 25,
+      "y": 193,
+      "w": 190,
+      "h": 52,
+      "answer": "Tecnológico",
+      "level": "clave",
+      "accept": [
+        "Technologically"
+      ]
+    },
+    {
+      "id": "b6",
+      "x": 605,
+      "y": 193,
+      "w": 410,
+      "h": 52,
+      "answer": "Datos y código como una unidad autónoma",
+      "level": "extra",
+      "accept": [
+        "Una unidad",
+        "Datos y código juntos"
+      ]
+    },
+    {
+      "id": "b7",
+      "x": 25,
+      "y": 255,
+      "w": 190,
+      "h": 52,
+      "answer": "Operacional",
+      "level": "clave",
+      "accept": [
+        "Operationally",
+        "Operativo"
+      ]
+    },
+    {
+      "id": "b8",
+      "x": 605,
+      "y": 255,
+      "w": 410,
+      "h": 52,
+      "answer": "Gobierno federado con políticas computacionales",
+      "level": "extra",
+      "accept": [
+        "Federado",
+        "Gobierno federado"
+      ]
+    },
+    {
+      "id": "b9",
+      "x": 25,
+      "y": 317,
+      "w": 190,
+      "h": 52,
+      "answer": "De principios",
+      "level": "clave",
+      "accept": [
+        "Principally",
+        "Principios",
+        "De valores"
+      ]
+    },
+    {
+      "id": "b10",
+      "x": 605,
+      "y": 317,
+      "w": 410,
+      "h": 52,
+      "answer": "Datos como producto para servir",
+      "level": "extra",
+      "accept": [
+        "Datos como producto"
+      ]
+    },
+    {
+      "id": "b11",
+      "x": 25,
+      "y": 379,
+      "w": 190,
+      "h": 52,
+      "answer": "De infraestructura",
+      "level": "clave",
+      "accept": [
+        "Infrastructurally",
+        "Infraestructura"
+      ]
+    },
+    {
+      "id": "b12",
+      "x": 605,
+      "y": 379,
+      "w": 410,
+      "h": 52,
+      "answer": "Infraestructura integrada operacional y analítica",
+      "level": "extra",
+      "accept": [
+        "Integrada",
+        "Infraestructura integrada"
+      ]
+    }
+  ]
+}

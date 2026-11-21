@@ -1,0 +1,1683 @@
+[
+ {
+  "id": "s01",
+  "clave": "ml",
+  "unit": "u4",
+  "title": "Machine learning y modelado predictivo",
+  "src": "Notas de clase, U4",
+  "orig": "Zheng, cap. 1, págs. 2–4 · Notas, U2 (supervisado y no supervisado)",
+  "blocks": [
+   {
+    "id": "s01.1",
+    "t": "p",
+    "text": "El **modelado predictivo** tiene tres pasos: predecir si un resultado de interés va a ocurrir en el futuro, usar observaciones detalladas para **entrenar** un modelo y hacer una predicción, y **actuar** en base a esa predicción."
+   },
+   {
+    "id": "s01.2",
+    "t": "li",
+    "text": "**Modelo:** un componente o artefacto de software al que se le hacen llamadas; se puede reentrenar y replicar. Aprende del **historial de datos** cómo se comporta la variable que se quiere predecir, y solo funciona con datos limpios. Si el modelo es preentrenado, hace falta menos historia."
+   },
+   {
+    "id": "s01.3",
+    "t": "li",
+    "text": "**Ventanas:** se divide la historia en ventanas para que el modelo aprenda y se reserva alguna para probar las predicciones y medir el resultado."
+   },
+   {
+    "id": "s01.4",
+    "t": "li",
+    "text": "**Features:** las columnas que se usan para entrenar; «los data points que entrenan al modelo». No tienen que estar tal cual en el historial: se pueden transformar."
+   },
+   {
+    "id": "s01.5",
+    "t": "h",
+    "text": "Supervisado vs no supervisado"
+   },
+   {
+    "id": "s01.6",
+    "t": "table",
+    "rows": [
+     [
+      "",
+      "Supervisado",
+      "No supervisado"
+     ],
+     [
+      "Datos",
+      "Etiquetados: features + respuesta correcta (ground truth)",
+      "Sin etiquetar"
+     ],
+     [
+      "Cómo aprende",
+      "Una función de pérdida compara la predicción con la etiqueta y ajusta parámetros",
+      "Busca estructura, similitudes o grupos por sí solo"
+     ],
+     [
+      "Tareas",
+      "Clasificación (¿es spam?) y regresión (precio de una casa)",
+      "**Clustering** y reducción de dimensionalidad"
+     ],
+     [
+      "En clase",
+      "«Sabemos los resultados y entendemos el modelo»",
+      "«No sabemos los resultados y el modelo los propone»"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s01.7",
+    "t": "callout",
+    "text": "**Clustering es no supervisado.** La P12 del 1er parcial (que entra ahora) afirma que es supervisado: es **falso**."
+   },
+   {
+    "id": "s01.8",
+    "t": "li",
+    "text": "**El ML engineer** casi nunca crea el modelo: busca la forma de que los datos encajen en modelos existentes. Trabaja sobre las capas **Silver o Gold** de una arquitectura Medallion y elige las features entre las columnas de esas tablas."
+   },
+   {
+    "id": "s01.9",
+    "t": "callout",
+    "text": "**No entra la matemática.** En clase: «Deja por fuera todo lo que es matemática». Se pregunta qué es, para qué sirve y cómo se relaciona."
+   }
+  ]
+ },
+ {
+  "id": "s02",
+  "clave": "fe",
+  "unit": "u4",
+  "title": "Feature y feature engineering",
+  "src": "Zheng, cap. 1, págs. 2–4 · Ozdemir, cap. 1, págs. 1–4",
+  "orig": "Videos MIT 6.5–6.6 · Notas, U4",
+  "blocks": [
+   {
+    "id": "s02.1",
+    "t": "p",
+    "text": "Zheng parte de **datos** (observaciones de fenómenos reales, con ruido y faltantes), **tareas** (las preguntas que se quieren responder) y **modelos** (fórmulas que relacionan aspectos de los datos). Los datos pueden ser **incorrectos**, **redundantes** o **faltantes**."
+   },
+   {
+    "id": "s02.2",
+    "t": "p",
+    "text": "Una **feature** es una **representación numérica de datos crudos** (Zheng). Es el puente entre los datos, que muchas veces no son numéricos, y las fórmulas del modelo. También se la describe como una **propiedad medible** de una entidad (edad, monto, frecuencia de compra)."
+   },
+   {
+    "id": "s02.3",
+    "t": "p",
+    "text": "**Feature engineering (Zheng):** el proceso de formular las features más apropiadas **dados los datos, el modelo y la tarea**. **(Ozdemir):** el arte de manipular y transformar datos hacia un formato que represente de forma óptima el problema que el algoritmo intenta modelar y que mitigue las complejidades y sesgos de los datos. **En clase:** manipular + transformar + representar."
+   },
+   {
+    "id": "s02.4",
+    "t": "li",
+    "text": "**Cantidad:** con muy pocas features informativas el modelo no cumple la tarea; con demasiadas o irrelevantes se vuelve caro y difícil de entrenar."
+   },
+   {
+    "id": "s02.5",
+    "t": "li",
+    "text": "**Palanca de doble articulación:** features y modelo se eligen juntos. Buenas features facilitan el modelado; malas features exigen un modelo mucho más complicado para el mismo rendimiento (fig. 1-2: datos crudos → features → modelado → insights)."
+   },
+   {
+    "id": "s02.6",
+    "t": "h",
+    "text": "Tipos de features (video MIT 6.6)"
+   },
+   {
+    "id": "s02.7",
+    "t": "table",
+    "rows": [
+     [
+      "Tipo",
+      "Qué es",
+      "Ejemplo"
+     ],
+     [
+      "**Identity**",
+      "El dato duro de la entidad",
+      "Género, edad"
+     ],
+     [
+      "**Transform**",
+      "Se transforma la columna en categorías u otra forma más útil",
+      "Día de la semana a partir de la fecha"
+     ],
+     [
+      "**Aggregate**",
+      "Funciones de agregación (count, sum)",
+      "Compras en los últimos 30 días"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s02.8",
+    "t": "callout",
+    "text": "**Cómo se pregunta.** P10 del 1er parcial: «cite los tipos de features, seleccione 1 y proponga 1 ejemplo en menos de 50 palabras». P24: solo citarlos. P23: definir feature. P9: «propiedad cuantitativa y medible» → verdadero."
+   },
+   {
+    "id": "s02.9",
+    "t": "li",
+    "text": "Clasificación complementaria por naturaleza del dato (Unidad 2): numéricas (continuas o discretas), categóricas (nominales u ordinales), binarias, temporales, de texto y derivadas o de interacción."
+   }
+  ]
+ },
+ {
+  "id": "s03",
+  "clave": "mvd",
+  "unit": "u4",
+  "title": "Model-centric vs data-centric, pipelines y drift",
+  "src": "Ozdemir, cap. 1, págs. 1–9",
+  "orig": "Notas, U4 (laboratorio Avengers) · fig. 1.1, 1.2 y 1.5",
+  "blocks": [
+   {
+    "id": "s03.1",
+    "t": "table",
+    "rows": [
+     [
+      "Model-centric",
+      "Data-centric"
+     ],
+     [
+      "Cambiar el algoritmo",
+      "Mejorar la representación"
+     ],
+     [
+      "Ajustar hiperparámetros",
+      "Corregir valores faltantes"
+     ],
+     [
+      "Agregar capas, árboles o complejidad",
+      "Crear variables útiles"
+     ],
+     [
+      "Confiar en que el modelo descubra todo",
+      "Seleccionar señal y reducir ruido"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s03.2",
+    "t": "p",
+    "text": "En clase: el enfoque en el modelo puede funcionar, pero el modelo se fuerza y le cuesta mucho más. El trabajo del científico de datos con feature engineering es **data-centric**. Andrew Ng: «machine learning is basically feature engineering»."
+   },
+   {
+    "id": "s03.3",
+    "t": "li",
+    "text": "**Conviene data-centric** con pocas observaciones (<10 K), muchas columnas respecto de las filas (**maldición de la dimensionalidad**), cuando importa la interpretabilidad o el dominio es complejo (finanzas)."
+   },
+   {
+    "id": "s03.4",
+    "t": "li",
+    "text": "**Laboratorio Avengers:** threat_per_hero = threat_level / team_size (9/3 = 3) es una señal más directa que las dos columnas sueltas. Usar «héroes heridos al final de la misión» para predecir antes de empezar es **fuga de datos**. Más columnas pueden empeorar porque meten ruido."
+   },
+   {
+    "id": "s03.5",
+    "t": "li",
+    "text": "**Beneficios:** menor complejidad, mejor convergencia, más velocidad, más interpretabilidad. **No puede:** crear señales inexistentes, reemplazar tener datos suficientes (<1.000 filas) ni arreglar un problema mal definido."
+   },
+   {
+    "id": "s03.6",
+    "t": "h",
+    "text": "Pipeline de ML (5 pasos, fig. 1.2)"
+   },
+   {
+    "id": "s03.7",
+    "t": "li",
+    "text": "1) Definir el dominio del problema · 2) obtener datos que lo representen (y EDA) · 3) **feature engineering** · 4) selección y entrenamiento del modelo · 5) despliegue y evaluación (detectar model decay)."
+   },
+   {
+    "id": "s03.8",
+    "t": "h",
+    "text": "Pipeline de feature engineering (4 pasos, fig. 1.5)"
+   },
+   {
+    "id": "s03.9",
+    "t": "li",
+    "text": "1) **Comprensión** (niveles de datos) → 2) **estructuración** (no estructurado → vectores, por extracción o aprendizaje) → 3) **optimización** (mejora, construcción, extracción, selección) → 4) **evaluación** (comparar contra un baseline con un modelo fijo). En clase: entender → estructurar → optimizar → evaluar."
+   },
+   {
+    "id": "s03.10",
+    "t": "h",
+    "text": "Data drift y concept drift"
+   },
+   {
+    "id": "s03.11",
+    "t": "table",
+    "rows": [
+     [
+      "",
+      "Data drift",
+      "Concept drift"
+     ],
+     [
+      "Qué cambia",
+      "La **distribución** de los datos; el significado sigue igual",
+      "La **relación** entre features y objetivo (nuestra interpretación)"
+     ],
+     [
+      "Libro",
+      "Pandemia: más horas de streaming",
+      "Aviso «¿seguís mirando?» con documentales para mascotas"
+     ],
+     [
+      "Clase",
+      "Amenaza promedio 4,2 → 8,1 en la crisis multiversal",
+      "Más héroes ya no aumenta el éxito"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s03.12",
+    "t": "callout",
+    "text": "Según la clase, el drift lo trabaja **MLOps**."
+   }
+  ]
+ },
+ {
+  "id": "s04",
+  "clave": "niveles",
+  "unit": "u4",
+  "title": "Datos estructurados y los cuatro niveles de datos",
+  "src": "Ozdemir, cap. 2, págs. 13–23",
+  "orig": "fig. 2.2, 2.5 y 2.6 · Notas, U4",
+  "blocks": [
+   {
+    "id": "s04.1",
+    "t": "p",
+    "text": "Proceso del libro: 1) diagnosticar si el dataset es **estructurado o no estructurado**, 2) asignar cada feature a un **nivel de datos**, 3) aplicar los tipos de feature engineering según el nivel."
+   },
+   {
+    "id": "s04.2",
+    "t": "table",
+    "rows": [
+     [
+      "Estructurados",
+      "No estructurados"
+     ],
+     [
+      "Filas y columnas, base relacional",
+      "No entran en una tabla: una «masa» de datos"
+     ],
+     [
+      "Más fáciles como input de ML",
+      "Hay que estructurarlos primero"
+     ],
+     [
+      "Menos almacenamiento",
+      "Más almacenamiento"
+     ],
+     [
+      "~20% de los datos de la empresa",
+      "~80% (Gartner)"
+     ],
+     [
+      "CSV, planillas",
+      "Texto, audio, video, imágenes"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s04.3",
+    "t": "table",
+    "rows": [
+     [
+      "Nivel",
+      "Tipo",
+      "Permite",
+      "Ejemplo",
+      "Tratamiento"
+     ],
+     [
+      "**Nominal**",
+      "Cualitativo sin orden",
+      "Moda, conteos, gráfico de barras",
+      "Tipo de sangre, marca de celular",
+      "Dummificar (one-hot), agrupar categorías raras"
+     ],
+     [
+      "**Ordinal**",
+      "Cualitativo con orden",
+      "Orden y mediana; no restar",
+      "Satisfacción, notas A/B/C",
+      "Enteros crecientes 1, 2, 3"
+     ],
+     [
+      "**Intervalo**",
+      "Cuantitativo sin cero verdadero",
+      "Suma, resta, media, mediana, desvío",
+      "Temperatura en °C",
+      "Imputar con media o mediana"
+     ],
+     [
+      "**Razón**",
+      "Cuantitativo con cero verdadero",
+      "Todo lo anterior + multiplicar y dividir",
+      "Dinero, edad, altura",
+      "Medias aritmética, geométrica o armónica"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s04.4",
+    "t": "li",
+    "text": "**Truco intervalo vs razón:** dividir dos valores; si el cociente tiene sentido aceptado (100 USD es el doble que 50), es razón. 0 °C no es ausencia de temperatura."
+   },
+   {
+    "id": "s04.5",
+    "t": "li",
+    "text": "**Medias pitagóricas:** aritmética (aditiva, unidades iguales), geométrica (multiplicativa, escalas distintas, ej. CSAT y NPS) y armónica (razones: velocidades 20, 60 y 70 mph → 37,1 mph, no 50)."
+   },
+   {
+    "id": "s04.6",
+    "t": "li",
+    "text": "**Outliers:** la media se va hacia los extremos (30…100 → media 56,7, mediana 49). Con muchos outliers, imputar con la mediana."
+   },
+   {
+    "id": "s04.7",
+    "t": "callout",
+    "text": "Confundir intervalo con razón no es grave; lo grave es tratar como cuantitativo algo cualitativo, o al revés."
+   }
+  ]
+ },
+ {
+  "id": "s05",
+  "clave": "tiposfe",
+  "unit": "u4",
+  "title": "Los cinco tipos de feature engineering y cómo evaluarlos",
+  "src": "Ozdemir, cap. 1, pág. 8 · cap. 2, págs. 24–33",
+  "orig": "Notas, U4",
+  "blocks": [
+   {
+    "id": "s05.1",
+    "t": "table",
+    "rows": [
+     [
+      "Tipo",
+      "Qué hace",
+      "Cuándo",
+      "Ejemplo"
+     ],
+     [
+      "**Mejora**",
+      "Transforma features existentes: imputar, estandarizar, normalizar",
+      "Hay faltantes u outliers",
+      "Imputar temperaturas faltantes"
+     ],
+     [
+      "**Construcción**",
+      "Crea features nuevas e interpretables; une con otras fuentes; bucketing",
+      "Falta señal; una versión transformada tiene más señal",
+      "Precio / pies² = precio por pie²"
+     ],
+     [
+      "**Selección**",
+      "Elige el mejor subconjunto",
+      "Maldición de la dimensionalidad, features dependientes, velocidad",
+      "Eliminar las columnas originales"
+     ],
+     [
+      "**Extracción**",
+      "Algoritmos que crean features asumiendo la forma de los datos",
+      "Datos no estructurados; demasiadas features",
+      "PCA, SVD, bag-of-words, BERT"
+     ],
+     [
+      "**Aprendizaje**",
+      "Deep learning no paramétrico aprende una representación latente",
+      "No se puede suponer nada de los datos",
+      "GANs, autoencoders"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s05.2",
+    "t": "li",
+    "text": "La **construcción** es la que más conocimiento del dominio exige. La **extracción** puede empeorar los datos si su supuesto es falso. El **aprendizaje** necesita más datos y da features poco interpretables."
+   },
+   {
+    "id": "s05.3",
+    "t": "h",
+    "text": "Cómo evaluar el feature engineering"
+   },
+   {
+    "id": "s05.4",
+    "t": "li",
+    "text": "**1. Métricas de ML:** baseline antes → aplicar FE → comparar contra un umbral (precision, recall; Davies-Bouldin para clustering)."
+   },
+   {
+    "id": "s05.5",
+    "t": "li",
+    "text": "**2. Interpretabilidad:** poder preguntar «por qué». Mejora, construcción y selección la mantienen; extracción y aprendizaje la reducen."
+   },
+   {
+    "id": "s05.6",
+    "t": "li",
+    "text": "**3. Equidad y sesgo:** solo el 38% de los encuestados (2020) atendía fairness."
+   },
+   {
+    "id": "s05.7",
+    "t": "li",
+    "text": "**4. Complejidad y velocidad:** un modelo que no predice rápido no llega a producción."
+   },
+   {
+    "id": "s05.8",
+    "t": "callout",
+    "text": "No confundir: **tipos de features** (identity, transform, aggregate; MIT) con **tipos de feature engineering** (mejora, construcción, selección, extracción, aprendizaje; Ozdemir)."
+   }
+  ]
+ },
+ {
+  "id": "s06",
+  "clave": "texto",
+  "unit": "u4",
+  "title": "Texto como features (Zheng, cap. 3)",
+  "src": "Zheng, cap. 3, págs. 40–64",
+  "orig": "fig. 3-1",
+  "blocks": [
+   {
+    "id": "s06.1",
+    "t": "li",
+    "text": "**Bag-of-words (BoW):** el documento se vuelve un **vector plano** de conteos, una dimensión por palabra. No conserva orden ni jerarquía; «not bad» y «toy dog» pierden su sentido. Sirve para clasificar y para recuperar información."
+   },
+   {
+    "id": "s06.2",
+    "t": "li",
+    "text": "**Bag-of-n-grams:** cuenta secuencias de n tokens. Más información, pero un espacio más grande, más ralo y más caro."
+   },
+   {
+    "id": "s06.3",
+    "t": "li",
+    "text": "**Filtrado:** stopwords (listas de NLTK), palabras frecuentes del corpus y palabras raras (en Yelp, 189.915 de 357.481 aparecen en una sola reseña; se juntan en un garbage bin)."
+   },
+   {
+    "id": "s06.4",
+    "t": "li",
+    "text": "**Stemming:** reduce a la raíz (Porter). Puede perjudicar: new y news → new. La **lematización** usa reglas lingüísticas y POS."
+   },
+   {
+    "id": "s06.5",
+    "t": "li",
+    "text": "**Parseo y tokenización:** quitar estructura (HTML, email) y cortar el string en tokens; cuidado con Unicode."
+   },
+   {
+    "id": "s06.6",
+    "t": "li",
+    "text": "**Colocaciones:** frases que significan más que sus partes («strong tea» sí, «cute puppy» no). Se detectan por frecuencia, test de razón de verosimilitud o información mutua puntual. **Chunking** y **POS tagging** arman frases más largas."
+   }
+  ]
+ },
+ {
+  "id": "s07",
+  "clave": "nlp",
+  "unit": "u4",
+  "title": "NLP: tareas, bloques del lenguaje y enfoques",
+  "src": "Vajjala, cap. 1, págs. 2–31",
+  "orig": "fig. 1-1, 1-2, 1-3, 1-8, 1-11, 1-13 y 1-14 · Notas, U4 · video MIT 1.1",
+  "blocks": [
+   {
+    "id": "s07.1",
+    "t": "p",
+    "text": "El lenguaje no son solo palabras: es cultura, tradición y comunidad (clase). El NLP resuelve **core tasks**, **aplicaciones generales** e **industry specific** (fig. 1-1)."
+   },
+   {
+    "id": "s07.2",
+    "t": "li",
+    "text": "**De fácil a difícil (fig. 1-2):** spell checking → recuperación por palabra clave → topic modeling → clasificación de texto → extracción de información → agente conversacional de dominio cerrado → resumen → question answering → traducción → agente conversacional de dominio abierto."
+   },
+   {
+    "id": "s07.3",
+    "t": "table",
+    "rows": [
+     [
+      "Bloque (fig. 1-3)",
+      "Qué es",
+      "Aplicaciones"
+     ],
+     [
+      "Fonemas",
+      "Sonidos",
+      "Speech-to-text, identificación del hablante, text-to-speech"
+     ],
+     [
+      "Morfemas y lexemas",
+      "Palabras",
+      "Tokenización, word embeddings, POS tagging"
+     ],
+     [
+      "Sintaxis",
+      "Frases y oraciones",
+      "Parsing, extracción de entidades y relaciones"
+     ],
+     [
+      "Contexto",
+      "Significado",
+      "Resumen, topic modeling, sentimiento"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s07.4",
+    "t": "li",
+    "text": "**Por qué es difícil:** ambigüedad, conocimiento común implícito, creatividad y diversidad entre idiomas."
+   },
+   {
+    "id": "s07.5",
+    "t": "li",
+    "text": "**IA, ML, DL y NLP (fig. 1-8):** ML está dentro de IA y DL dentro de ML; el NLP se superpone con los tres."
+   },
+   {
+    "id": "s07.6",
+    "t": "h",
+    "text": "Enfoques"
+   },
+   {
+    "id": "s07.7",
+    "t": "li",
+    "text": "**Heurísticas o reglas:** diccionarios (WordNet), expresiones regulares, gramáticas (GATE)."
+   },
+   {
+    "id": "s07.8",
+    "t": "li",
+    "text": "**ML clásico:** Naive Bayes, **SVM** (límite de decisión con el mayor margen, fig. 1-11), HMM, CRF."
+   },
+   {
+    "id": "s07.9",
+    "t": "li",
+    "text": "**Deep learning:** **RNN** (procesa la secuencia pasando su estado, fig. 1-13; olvida dependencias largas) y **LSTM** (una RNN con celdas y compuertas que recuerda contexto largo, fig. 1-14); CNN, **Transformers** (self-attention, BERT) y autoencoders."
+   },
+   {
+    "id": "s07.10",
+    "t": "callout",
+    "text": "Línea de tiempo de clase: era pre-transformers → llega la atención y los LLMs (2017) → era GenAI (2022–hoy). DL no es bala de plata: pide muchos datos, es caro y poco interpretable."
+   }
+  ]
+ },
+ {
+  "id": "s08",
+  "clave": "pipnlp",
+  "unit": "u4",
+  "title": "Pipeline de NLP y preprocesamiento",
+  "src": "Vajjala, cap. 2, págs. 32–75",
+  "orig": "fig. 2-1, 2-7 y 2-8 · Notas, U4",
+  "blocks": [
+   {
+    "id": "s08.1",
+    "t": "li",
+    "text": "**Etapas (fig. 2-1):** adquisición de datos → limpieza de texto → preprocesamiento → feature engineering → modelado → evaluación → deployment → monitoreo y actualización del modelo."
+   },
+   {
+    "id": "s08.2",
+    "t": "li",
+    "text": "**Adquisición:** datasets públicos, scraping, aumentación (back translation, sinónimos)."
+   },
+   {
+    "id": "s08.3",
+    "t": "li",
+    "text": "**Limpieza:** HTML, Unicode, ortografía, OCR."
+   },
+   {
+    "id": "s08.4",
+    "t": "li",
+    "text": "**Preprocesamiento:** segmentar oraciones, tokenizar, minúsculas, sacar puntuación y stopwords, stemming y lematización (fig. 2-8). Avanzado: POS tagging, parsing, coreference resolution, NER."
+   },
+   {
+    "id": "s08.5",
+    "t": "table",
+    "rows": [
+     [
+      "Técnica",
+      "Qué hace"
+     ],
+     [
+      "Stemming",
+      "Recorta sufijos con reglas; puede dar no-palabras (airliner → airlin)"
+     ],
+     [
+      "Lematización",
+      "Lleva a la forma base real (better → good, was → be)"
+     ],
+     [
+      "POS tagging",
+      "Etiqueta qué es cada palabra"
+     ],
+     [
+      "Parsing",
+      "Descompone la oración en su estructura sintáctica"
+     ],
+     [
+      "Coreference resolution",
+      "Relaciona expresiones que refieren a lo mismo"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s08.6",
+    "t": "li",
+    "text": "**Evaluación:** intrínseca (métricas del modelo) y extrínseca (impacto en el negocio)."
+   }
+  ]
+ },
+ {
+  "id": "s09",
+  "clave": "repr",
+  "unit": "u4",
+  "title": "Representación y clasificación de texto",
+  "src": "Vajjala, cap. 3, págs. 76–108 · cap. 4, págs. 109–146",
+  "orig": "fig. 4-3",
+  "blocks": [
+   {
+    "id": "s09.1",
+    "t": "li",
+    "text": "**Vectorización básica:** one-hot, bag-of-words, bag-of-n-grams y **TF-IDF** (frecuente en el documento y raro en el corpus pesa más). Problemas: vectores enormes y ralos, sin significado."
+   },
+   {
+    "id": "s09.2",
+    "t": "li",
+    "text": "**Embeddings:** vectores densos donde palabras parecidas quedan cerca. **Word2vec** con **CBOW** (contexto → palabra central) y **SkipGram** (palabra central → contexto); Doc2vec para documentos; t-SNE para visualizarlos."
+   },
+   {
+    "id": "s09.3",
+    "t": "li",
+    "text": "**Clasificación de texto:** asignar una o varias categorías (spam, sentimiento, tickets). Pipeline (fig. 4-3): datos etiquetados → preprocesamiento y features → entrenar y evaluar → predecir textos nuevos. Algoritmos: Naive Bayes, regresión logística, SVM, CNN, LSTM."
+   },
+   {
+    "id": "s09.4",
+    "t": "li",
+    "text": "Se evalúa con matriz de confusión, precision y recall. Sin datos etiquetados: reglas, crowdsourcing o **active learning**."
+   }
+  ]
+ },
+ {
+  "id": "s10",
+  "clave": "recom",
+  "unit": "u4",
+  "title": "Sistemas de recomendación, cross validation y RMSE",
+  "src": "Notas de clase, U4",
+  "orig": "Videos MIT 4.1–4.2 · ejercicio con Surprise (carpeta U4)",
+  "blocks": [
+   {
+    "id": "s10.1",
+    "t": "p",
+    "text": "Un sistema de recomendación nos ayuda a encontrar lo que buscamos sin pedirlo de forma precisa: el objetivo es semántico. En algunos negocios es el centro (YouTube)."
+   },
+   {
+    "id": "s10.2",
+    "t": "table",
+    "rows": [
+     [
+      "Modelo (Surprise)",
+      "Cómo recomienda"
+     ],
+     [
+      "Aleatorio (NormalPredictor)",
+      "Rating al azar según la distribución: baseline"
+     ],
+     [
+      "Filtrado colaborativo usuario-usuario",
+      "Usuarios con gustos parecidos"
+     ],
+     [
+      "Filtrado colaborativo ítem-ítem",
+      "Ítems parecidos a los que el usuario valoró"
+     ],
+     [
+      "Factorización (SVD, NMF)",
+      "Factores latentes de la matriz usuarios × ítems"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s10.3",
+    "t": "li",
+    "text": "**Active learning:** un humano en el bucle, un oráculo que va diciendo la verdad. Google aprende de cada clic; el peso es inversamente proporcional a la posición mostrada."
+   },
+   {
+    "id": "s10.4",
+    "t": "li",
+    "text": "**Cross validation:** se entrena con una parte, se valida con otra y se rota la ventana; con k folds, cada parte es validación una vez y se promedia el error."
+   },
+   {
+    "id": "s10.5",
+    "t": "li",
+    "text": "**RMSE:** raíz del error cuadrático medio. Mide cuánto se equivoca la predicción en las mismas unidades; más bajo es mejor y castiga más los errores grandes. MAE es la versión sin cuadrado."
+   }
+  ]
+ },
+ {
+  "id": "s11",
+  "clave": "dp",
+  "unit": "u4",
+  "title": "Data products (Strengholt, Data Management at Scale, cap. 4)",
+  "src": "Strengholt DMS, cap. 4, págs. 1–37",
+  "orig": "fig. 4-1, 4-2, 4-3 y 4-5 · Notas, U4",
+  "blocks": [
+   {
+    "id": "s11.1",
+    "t": "p",
+    "text": "Hacer responsables a los productores de datos y descentralizar cómo se sirven es una gran forma de escalar."
+   },
+   {
+    "id": "s11.2",
+    "t": "table",
+    "rows": [
+     [
+      "",
+      "Data as a product",
+      "Data product"
+     ],
+     [
+      "Qué es",
+      "Una **forma de pensar**",
+      "Un concepto de **arquitectura**"
+     ],
+     [
+      "Idea",
+      "Los datos son un producto completo del que el equipo es responsable; el consumidor es un cliente",
+      "Lo que se construye para exponer datos"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s11.3",
+    "t": "callout",
+    "text": "**P8 del 1er parcial:** la diferencia es que una se refiere a cómo pensamos los datos y la otra a la arquitectura."
+   },
+   {
+    "id": "s11.4",
+    "t": "li",
+    "text": "**Dehghani:** data product = architectural quantum que encapsula código, datos y metadata, e infraestructura. **Accenture:** datasets, modelos y dashboards."
+   },
+   {
+    "id": "s11.5",
+    "t": "li",
+    "text": "**Por qué no un contenedor:** en la subasta de flores de Aalsmeer la metadata viaja con cada caja, pero en lo digital la metadata vive aparte (catálogo, lineage). Pegarla a los datos la duplica en cada copia y complica calidad y seguridad."
+   },
+   {
+    "id": "s11.6",
+    "t": "li",
+    "text": "**Definición de Strengholt:** una **entidad lógica autónoma que describe datos pensados para consumo**, con nombre, relación con el dominio, dueño y referencias a los activos físicos. Se separan dos puntos de vista: datos y tecnología (fig. 4-1). Debajo están los **data elements**."
+   },
+   {
+    "id": "s11.7",
+    "t": "h",
+    "text": "CQRS"
+   },
+   {
+    "id": "s11.8",
+    "t": "li",
+    "text": "**CQRS** separa escrituras (comandos) y lecturas (consultas) en dos modelos sincronizados por eventos (fig. 4-2). Escribir exige muchos pasos (bloquear, validar, commit, índices); leer es barato. Beneficios: bases distintas, varias bases de lectura, escalar por separado. Costo: complejidad y latencia."
+   },
+   {
+    "id": "s11.9",
+    "t": "li",
+    "text": "Toda lectura desde una réplica, DWH, lake u ODS es una forma de CQRS. **Las arquitecturas de data products siguen la filosofía CQRS**: read stores optimizados para lectura intensiva. Los data products quedan del lado del proveedor y las transformaciones específicas del lado del consumidor (fig. 4-3)."
+   },
+   {
+    "id": "s11.10",
+    "t": "h",
+    "text": "Principios de diseño (selección)"
+   },
+   {
+    "id": "s11.11",
+    "t": "li",
+    "text": "Orientados a recursos y optimizados para lectura · datos **inmutables** · **ubiquitous language** · capturar desde la **golden source** · estándares de interoperabilidad · **sin datos crudos** · no conformarse a cada consumidor · no tercerizar la lógica de negocio · defaults claros (9999-12-31) · consistencia semántica · **atomicidad** · compatibilidad y versionado · dato nuevo = nuevo dueño · seguridad por fila y columna · metamodelo · self-service · relaciones entre dominios · consistencia empresarial · historización · modelo operativo (playbooks)."
+   },
+   {
+    "id": "s11.12",
+    "t": "li",
+    "text": "**Arquitectura (fig. 4-5):** input ports, output ports, capa de metadata, pipeline por capas (Bronze, Silver, Gold), calidad y marketplace."
+   }
+  ]
+ },
+ {
+  "id": "s12",
+  "clave": "de",
+  "unit": "u5",
+  "title": "Qué es la ingeniería de datos",
+  "src": "Reis, cap. 1, págs. 1–27",
+  "orig": "fig. 1-1, 1-4, 1-5, 1-8 y 1-12 · Notas, U5",
+  "blocks": [
+   {
+    "id": "s12.1",
+    "t": "p",
+    "text": "**Definición (Reis):** la ingeniería de datos es el **desarrollo, implementación y mantenimiento de sistemas y procesos que toman datos crudos y producen información de alta calidad y consistente** que soporta casos de uso downstream, como análisis y machine learning. Es la intersección de seguridad, data management, DataOps, arquitectura de datos, orquestación e ingeniería de software."
+   },
+   {
+    "id": "s12.2",
+    "t": "callout",
+    "text": "**P1 del parcial 2025** pidió esta definición en formato choice."
+   },
+   {
+    "id": "s12.3",
+    "t": "li",
+    "text": "Un **data engineer** gestiona el ciclo de vida: obtiene datos de los sistemas fuente, los almacena y los prepara para analistas, data scientists y otros."
+   },
+   {
+    "id": "s12.4",
+    "t": "li",
+    "text": "**Evolución:** 1980–2000 data warehousing (Inmon acuña «data warehouse» en 1989; Kimball e Inmon; MPP) → 2000s nace la ingeniería de datos contemporánea → 2000s–2010s **big data engineering** (Hadoop, Spark, Kafka) → 2020s **ingeniería del ciclo de vida del dato**."
+   },
+   {
+    "id": "s12.5",
+    "t": "li",
+    "text": "**Upstream de la ciencia de datos:** pirámide de Rogati (recolectar → mover/almacenar → explorar/transformar → agregar/etiquetar → aprender/optimizar → IA). Los data scientists pasan 70–80% del tiempo en las tres capas de abajo."
+   },
+   {
+    "id": "s12.6",
+    "t": "li",
+    "text": "**Madurez de datos:** 1) empezar con datos, 2) escalar con datos, 3) liderar con datos."
+   },
+   {
+    "id": "s12.7",
+    "t": "li",
+    "text": "**Tipo A** (abstraction: usa herramientas gestionadas) y **tipo B** (build: construye herramientas). **Internal-facing** vs **external-facing**."
+   },
+   {
+    "id": "s12.8",
+    "t": "li",
+    "text": "**Stakeholders:** upstream (arquitectos de datos, ingenieros de software, DevOps/SRE) y downstream (analistas, data scientists, ML engineers); y el C-suite: CEO, CIO, CTO, **CDO**, CAO."
+   }
+  ]
+ },
+ {
+  "id": "s13",
+  "clave": "ciclo",
+  "unit": "u5",
+  "title": "Ciclo de vida de la ingeniería de datos",
+  "src": "Reis, cap. 2, págs. 1–33",
+  "orig": "fig. 2-1, 2-2, 2-5, 2-6 y 2-8 · Notas, U5",
+  "blocks": [
+   {
+    "id": "s13.1",
+    "t": "p",
+    "text": "**Cinco etapas:** generación → almacenamiento → ingesta → transformación → servicio. El almacenamiento se dibuja como base porque ocurre en todo el ciclo. Es un subconjunto del ciclo de vida completo del dato (fig. 2-2)."
+   },
+   {
+    "id": "s13.2",
+    "t": "p",
+    "text": "**Corrientes subyacentes (undercurrents):** seguridad, data management, DataOps, arquitectura de datos, orquestación e ingeniería de software."
+   },
+   {
+    "id": "s13.3",
+    "t": "callout",
+    "text": "**P2 del parcial 2025:** «generación, almacenamiento, ingesta, transformación y servicio»."
+   },
+   {
+    "id": "s13.4",
+    "t": "table",
+    "rows": [
+     [
+      "Etapa",
+      "Qué es",
+      "Claves"
+     ],
+     [
+      "Generación",
+      "Sistemas fuente (base de una app, IoT, APIs)",
+      "Fuera del control del DE"
+     ],
+     [
+      "Almacenamiento",
+      "Dónde viven los datos",
+      "Datos **hot**, **lukewarm** y **cold** según frecuencia de acceso"
+     ],
+     [
+      "Ingesta",
+      "Traer datos de las fuentes",
+      "El mayor cuello de botella; batch vs streaming; push vs pull"
+     ],
+     [
+      "Transformación",
+      "Pasar a algo útil",
+      "Tipos, normalización, lógica de negocio, featurización"
+     ],
+     [
+      "Servicio",
+      "Obtener valor",
+      "Analytics, ML y reverse ETL"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s13.5",
+    "t": "h",
+    "text": "Batch vs streaming"
+   },
+   {
+    "id": "s13.6",
+    "t": "li",
+    "text": "**Batch:** procesa por intervalos de tiempo o al llegar a un tamaño, en bloques. Es una «puerta de una vía» porque limita la latencia. Ideal para entrenar modelos y reportes."
+   },
+   {
+    "id": "s13.7",
+    "t": "li",
+    "text": "**Streaming:** entrega los datos de forma **continua**, casi en tiempo real. Casi todos los datos son streaming por naturaleza; adoptar tiempo real solo si un caso de negocio lo justifica. Punto medio: micro-batch."
+   },
+   {
+    "id": "s13.8",
+    "t": "callout",
+    "text": "**P3 del parcial 2025:** batch procesa periódicamente en bloques; streaming transmite de manera continua."
+   },
+   {
+    "id": "s13.9",
+    "t": "li",
+    "text": "**Push vs pull:** en push la fuente escribe hacia el destino; en pull el sistema de ingesta lee la fuente (la E de ETL). CDC puede ser push o pull."
+   },
+   {
+    "id": "s13.10",
+    "t": "li",
+    "text": "**Analytics (fig. 2-5):** BI, operacional y embebido. **Reverse ETL (fig. 2-6):** devolver datos procesados a las fuentes (ej. un CRM)."
+   },
+   {
+    "id": "s13.11",
+    "t": "li",
+    "text": "**DataOps (fig. 2-8):** automatización, observabilidad y monitoreo, respuesta a incidentes."
+   },
+   {
+    "id": "s13.12",
+    "t": "li",
+    "text": "**Data management:** gobierno (descubribilidad, metadata, accountability), calidad, master data, modelado, lineage, integración, ciclo de vida, ética y privacidad."
+   }
+  ]
+ },
+ {
+  "id": "s14",
+  "clave": "arq",
+  "unit": "u5",
+  "title": "Arquitectura de datos y sus principios",
+  "src": "Reis, cap. 3, págs. 1–13",
+  "orig": "fig. 3-1 y 3-2 · Notas, U5",
+  "blocks": [
+   {
+    "id": "s14.1",
+    "t": "p",
+    "text": "La **arquitectura empresarial** tiene cuatro subconjuntos: **de negocio, técnica, de aplicaciones y de datos** (fig. 3-1). Definición de los autores: el diseño de sistemas para soportar el cambio en la empresa, con decisiones flexibles y reversibles tras evaluar trade-offs."
+   },
+   {
+    "id": "s14.2",
+    "t": "callout",
+    "text": "**P4 del parcial 2025:** la arquitectura de negocios está al mismo nivel que la de datos dentro de la empresarial; no es parte de la de datos."
+   },
+   {
+    "id": "s14.3",
+    "t": "p",
+    "text": "**Arquitectura de datos:** el diseño de sistemas para soportar las necesidades de datos cambiantes de la empresa, con decisiones flexibles y reversibles tras evaluar trade-offs. Es un subconjunto de la empresarial."
+   },
+   {
+    "id": "s14.4",
+    "t": "li",
+    "text": "**Operacional vs técnica (fig. 3-2):** la operacional dice **qué** hay que hacer (procesos, calidad, latencia); la técnica, **cómo** (ingesta, almacenamiento, transformación)."
+   },
+   {
+    "id": "s14.5",
+    "t": "li",
+    "text": "**Puertas de una vía y de dos vías** (Bezos): decisiones casi irreversibles vs fácilmente reversibles."
+   },
+   {
+    "id": "s14.6",
+    "t": "li",
+    "text": "**Buena arquitectura:** sirve al negocio con bloques comunes y reutilizables, es flexible y evoluciona. «La menos mala», no «la mejor». La mala es acoplada, rígida y centralizada."
+   },
+   {
+    "id": "s14.7",
+    "t": "li",
+    "text": "**Nueve principios:** 1) elegir componentes comunes con criterio, 2) planificar para la falla, 3) arquitectura para escalar, 4) la arquitectura es liderazgo, 5) arquitecturar siempre, 6) sistemas débilmente acoplados, 7) decisiones reversibles, 8) priorizar la seguridad, 9) adoptar FinOps."
+   }
+  ]
+ },
+ {
+  "id": "s15",
+  "clave": "patarq",
+  "unit": "u5",
+  "title": "Warehouse, lake, lakehouse, Lambda y Kappa",
+  "src": "Reis, cap. 3, págs. 13–34 · Medallion, cap. 1, págs. 5–23",
+  "orig": "fig. 3-10 a 3-15 · fig. 1-4 a 1-8",
+  "blocks": [
+   {
+    "id": "s15.1",
+    "t": "table",
+    "rows": [
+     [
+      "Patrón",
+      "Idea"
+     ],
+     [
+      "**Data warehouse**",
+      "Hub central que integra fuentes en formato consistente para OLAP; separa analítica de OLTP; ETL o ELT; data marts por área"
+     ],
+     [
+      "**Data lake**",
+      "Todo en object storage sin esquema previo; el lake 1.0 se volvió un pantano"
+     ],
+     [
+      "**Lakehouse**",
+      "Object storage barato con transacciones ACID (Delta Lake, Iceberg, Hudi + Spark)"
+     ],
+     [
+      "**Modern data stack**",
+      "Componentes cloud plug-and-play"
+     ],
+     [
+      "**Lambda**",
+      "Batch y streaming en paralelo, unidos en la capa de servicio; dos bases de código"
+     ],
+     [
+      "**Kappa**",
+      "Todo pasa por una plataforma de streaming"
+     ],
+     [
+      "**Dataflow / Beam**",
+      "Unifica batch y streaming"
+     ],
+     [
+      "**IoT**",
+      "Dispositivos → gateway → cola de mensajes → almacenamiento y servicio"
+     ],
+     [
+      "**Data mesh**",
+      "Descentralizar por dominios"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s15.2",
+    "t": "li",
+    "text": "**Inmon (top-down):** primero un DWH empresarial en 3FN, después data marts en estrella; se carga dos veces. **Kimball (bottom-up):** primero data marts dimensionales (hechos y dimensiones)."
+   },
+   {
+    "id": "s15.3",
+    "t": "callout",
+    "text": "**P14 del 1er parcial:** «el DWH es una fuente única de la verdad» → verdadero (integra todo en un hub central). Data Mesh, en cambio, no impone una única fuente de verdad."
+   },
+   {
+    "id": "s15.4",
+    "t": "li",
+    "text": "**Dominios y servicios, sistemas distribuidos, acople (single tier, multitier, monolito, microservicios), single vs multitenant, event-driven, brownfield vs greenfield** completan el capítulo."
+   }
+  ]
+ },
+ {
+  "id": "s16",
+  "clave": "mesh",
+  "unit": "u5",
+  "title": "Data Mesh",
+  "src": "Dehghani, cap. 1, págs. 44–60",
+  "orig": "fig. 1-1, 1-2 y 1-3 · Notas, U5",
+  "blocks": [
+   {
+    "id": "s16.1",
+    "t": "p",
+    "text": "**Data mesh es un enfoque sociotécnico descentralizado para compartir, acceder y gestionar datos analíticos en entornos complejos y de gran escala, dentro o entre organizaciones.**"
+   },
+   {
+    "id": "s16.2",
+    "t": "li",
+    "text": "**Resultados:** responder con gracia al cambio, sostener la agilidad al crecer y aumentar la relación valor/inversión."
+   },
+   {
+    "id": "s16.3",
+    "t": "table",
+    "rows": [
+     [
+      "Cambio",
+      "De",
+      "A"
+     ],
+     [
+      "Organizacional",
+      "Propiedad centralizada en especialistas",
+      "Propiedad descentralizada en los dominios"
+     ],
+     [
+      "Arquitectónico",
+      "Warehouses y lakes monolíticos",
+      "Malla distribuida de data products"
+     ],
+     [
+      "Tecnológico",
+      "Datos como subproducto del código",
+      "Datos y código como una unidad"
+     ],
+     [
+      "Operacional",
+      "Gobierno top-down centralizado",
+      "Gobierno federado computacional"
+     ],
+     [
+      "De principios",
+      "Datos como activo a recolectar",
+      "Datos como producto"
+     ],
+     [
+      "De infraestructura",
+      "Dos infraestructuras fragmentadas",
+      "Infraestructura integrada"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s16.4",
+    "t": "callout",
+    "text": "**P6 del parcial 2025:** citar los cambios. **P7:** citar los principios."
+   },
+   {
+    "id": "s16.5",
+    "t": "li",
+    "text": "**1. Domain ownership:** la propiedad de los datos analíticos pasa a los dominios más cercanos a ellos."
+   },
+   {
+    "id": "s16.6",
+    "t": "li",
+    "text": "**2. Data as a product:** se comparten como producto. Atributos: descubrible, direccionable, comprensible, confiable y veraz, accesible de forma nativa, interoperable y componible, valioso por sí mismo y seguro. Unidad: **data quantum**."
+   },
+   {
+    "id": "s16.7",
+    "t": "li",
+    "text": "**3. Self-serve data platform:** servicios que bajan la carga cognitiva y el costo de la propiedad descentralizada."
+   },
+   {
+    "id": "s16.8",
+    "t": "li",
+    "text": "**4. Federated computational governance:** decisiones federadas entre dominios, plataforma y expertos; políticas codificadas y automatizadas."
+   },
+   {
+    "id": "s16.9",
+    "t": "li",
+    "text": "**Interplay (fig. 1-2):** los cuatro son colectivamente necesarios y suficientes. El ownership crea silos → lo compensa data as a product; duplica esfuerzo → la plataforma; trae incompatibilidad → el gobierno federado."
+   },
+   {
+    "id": "s16.10",
+    "t": "li",
+    "text": "**Datos operacionales vs analíticos:** los operacionales (OLTP, «data on the inside») hacen funcionar el negocio; los analíticos (OLAP, «data on the outside») son históricos, integrados y agregados. Data mesh se enfoca en los analíticos."
+   },
+   {
+    "id": "s16.11",
+    "t": "li",
+    "text": "**Origen:** un cambio de paradigma (Kuhn) que adapta microservicios, Team Topologies y Zero Trust al mundo analítico."
+   }
+  ]
+ },
+ {
+  "id": "s17",
+  "clave": "medallion",
+  "unit": "u5",
+  "title": "Arquitectura Medallion",
+  "src": "Strengholt, Building Medallion Architectures, cap. 1 (págs. 2–24) y cap. 3 (págs. 40–73)",
+  "orig": "fig. 1-1, 1-2, 1-8 y 3-1 · tabla 3-1 · Notas, U5",
+  "blocks": [
+   {
+    "id": "s17.1",
+    "t": "p",
+    "text": "**Una arquitectura Medallion es un patrón de diseño de datos para organizar lógicamente los datos, casi siempre en un lakehouse, en tres capas, para mejorar de forma incremental la estructura y la calidad a medida que fluyen: Bronze ⇒ Silver ⇒ Gold.** La acuñó Databricks; no es una evolución de arquitecturas anteriores."
+   },
+   {
+    "id": "s17.2",
+    "t": "table",
+    "rows": [
+     [
+      "Capa",
+      "Qué contiene",
+      "Modelo de datos",
+      "Transformaciones"
+     ],
+     [
+      "**Bronze**",
+      "Datos crudos de las fuentes en su estructura original; registro histórico inmutable",
+      "Esquema del sistema fuente",
+      "Mínimas: filtros, agregar metadata"
+     ],
+     [
+      "**Silver**",
+      "Datos limpios, estandarizados, deduplicados y validados; todavía granulares",
+      "Espejo de Bronze, por temas, 3FN o Data Vault",
+      "Historización (SCD2), datos de referencia, feature engineering"
+     ],
+     [
+      "**Gold**",
+      "Datos curados y agregados para el negocio",
+      "Kimball (estrella) u OBT",
+      "Armonización, agregación, lógica de negocio"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s17.3",
+    "t": "callout",
+    "text": "**P8 del parcial 2025:** «qué información debe ir en cada capa en menos de 30 palabras»."
+   },
+   {
+    "id": "s17.4",
+    "t": "li",
+    "text": "Las capas son **lógicas**: una puede tener varias subcapas físicas. Pueden existir una **landing zone** antes de Bronze y capas **curated, semánticas o Platinum** después de Gold."
+   },
+   {
+    "id": "s17.5",
+    "t": "li",
+    "text": "**Diseño de tres capas (fig. 1-1):** proveedores → plataforma de distribución → consumidores, bajo una capa de metadata y gobierno. Medallion vive en la de distribución (fig. 1-2)."
+   },
+   {
+    "id": "s17.6",
+    "t": "li",
+    "text": "**Lakehouse (fig. 1-8):** almacenamiento de objetos barato con transacciones ACID; Spark para cómputo y Delta Lake para almacenamiento. Proveedores: Databricks, Microsoft Fabric, Synapse, Cloudera, Dremio, Starburst."
+   },
+   {
+    "id": "s17.7",
+    "t": "li",
+    "text": "**Crítica del autor:** no hay consenso sobre qué va en cada capa; hay que definir estándares y no olvidar el modelado de datos."
+   }
+  ]
+ },
+ {
+  "id": "s18",
+  "clave": "patrones",
+  "unit": "u5",
+  "title": "Patrones de diseño de ingeniería de datos (Konieczny)",
+  "src": "Konieczny, caps. 1–10",
+  "orig": "Carpeta U5, marcados «OBLIGATORIO-TPI» · P5 del parcial 2025",
+  "blocks": [
+   {
+    "id": "s18.1",
+    "t": "p",
+    "text": "Un patrón es una **plantilla predefinida y personalizable para resolver un problema** (la receta del flan): tiene contexto, plantilla, reutilización, consecuencias y da un vocabulario común. Cada patrón del libro sigue el formato problema → solución → consecuencias → ejemplos."
+   },
+   {
+    "id": "s18.2",
+    "t": "callout",
+    "text": "La **P5 del parcial 2025** dijo «del libro de Kleppmann», pero el libro de patrones de la U5 es el de Konieczny."
+   },
+   {
+    "id": "s18.3",
+    "t": "table",
+    "rows": [
+     [
+      "Capítulo",
+      "Patrones"
+     ],
+     [
+      "2 Ingesta",
+      "Full Loader, Incremental Loader, Change Data Capture, Passthrough y Transformation Replicator, Compactor, Readiness Marker, External Trigger"
+     ],
+     [
+      "3 Errores",
+      "Dead-Letter, Windowed Deduplicator, Late Data Detector, Static y Dynamic Late Data Integrator, Filter Interceptor, Checkpointer"
+     ],
+     [
+      "4 Idempotencia",
+      "Fast Metadata Cleaner, Data Overwrite, Merger, Stateful Merger, Keyed Idempotency, Transactional Writer, Proxy"
+     ],
+     [
+      "5 Valor",
+      "Static y Dynamic Joiner, Wrapper, Metadata Decorator, Distributed y Local Aggregator, Sessionizers, Orderers"
+     ],
+     [
+      "6 Flujo",
+      "Local e Isolated Sequencer, Aligned y Unaligned Fan-In, Parallel Split, Exclusive Choice, Single y Concurrent Runner"
+     ],
+     [
+      "7 Seguridad",
+      "Vertical Partitioner, In-Place Overwriter, Fine-Grained Accessor, Encryptor, Anonymizer, Pseudo-Anonymizer, Secrets Pointer, Secretless Connector"
+     ],
+     [
+      "8 Almacenamiento",
+      "Horizontal y Vertical Partitioner, Bucket, Sorter, Metadata Enhancer, Dataset Materializer, Manifest, Normalizer, Denormalizer"
+     ],
+     [
+      "9 Calidad",
+      "Audit-Write-Audit-Publish, Constraints Enforcer, Schema Compatibility Enforcer, Schema Migrator, Offline y Online Observer"
+     ],
+     [
+      "10 Observabilidad",
+      "Flow Interruption, Skew, Lag y SLA Misses Detector, Dataset y Fine-Grained Tracker"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s18.4",
+    "t": "li",
+    "text": "**Dead-Letter (respuesta modelo):** cuando un job no puede procesar un registro, lo captura (try-catch o if-else) y lo envía a otro destino con la metadata del error; el resto sigue. Ejemplo: eventos de Kafka con JSON mal formado van a «visitas_error». Consecuencia: más complejidad y hay que monitorear el destino."
+   },
+   {
+    "id": "s18.5",
+    "t": "li",
+    "text": "**Change Data Capture:** ingiere continuamente las filas modificadas leyendo el log de commits de la base; baja latencia. **Incremental Loader:** trae solo lo nuevo por una columna delta o por particiones de tiempo."
+   }
+  ]
+ },
+ {
+  "id": "s19",
+  "clave": "agentes",
+  "unit": "u6",
+  "title": "Agentes de IA: definición y cuándo usarlos (Albada, cap. 1)",
+  "src": "Albada, cap. 1, págs. 3–16",
+  "orig": "tabla 1-2 · P9 del parcial 2025",
+  "blocks": [
+   {
+    "id": "s19.1",
+    "t": "p",
+    "text": "**Los agentes autónomos son sistemas inteligentes diseñados para analizar datos de forma independiente, interpretar su entorno y tomar decisiones basadas en el contexto.** La agencia es un espectro: la prueba de un agente real es que toma decisiones en vez de seguir scripts fijos."
+   },
+   {
+    "id": "s19.2",
+    "t": "callout",
+    "text": "**P9 del parcial 2025** copiaba esta definición: verdadero."
+   },
+   {
+    "id": "s19.3",
+    "t": "li",
+    "text": "**Sistema agéntico:** herramientas, memoria, modelo fundacional, orquestación e infraestructura. Protocolos: MCP (herramientas) y A2A (entre agentes)."
+   },
+   {
+    "id": "s19.4",
+    "t": "li",
+    "text": "**Revolución del preentrenamiento:** antes había que juntar datos, entrenar y desplegar; hoy un modelo fundacional se usa con una llamada a una API."
+   },
+   {
+    "id": "s19.5",
+    "t": "li",
+    "text": "**Tipos (The Information):** de tareas de negocio, conversacionales, de investigación, de analítica, de desarrollo, de dominio específico y que usan el navegador; además, de voz y de video."
+   },
+   {
+    "id": "s19.6",
+    "t": "li",
+    "text": "**De síncrono a asíncrono:** el humano pasa de ejecutor a gestor de tareas."
+   },
+   {
+    "id": "s19.7",
+    "t": "table",
+    "rows": [
+     [
+      "Característica",
+      "Código tradicional",
+      "Workflow",
+      "Agente autónomo"
+     ],
+     [
+      "Input",
+      "Totalmente predecible",
+      "Mayormente predecible, ramas finitas",
+      "No estructurado o novedoso"
+     ],
+     [
+      "Explicabilidad",
+      "Total, auditable",
+      "Rama por rama",
+      "Caja negra"
+     ],
+     [
+      "Latencia",
+      "Ultra baja",
+      "Moderada",
+      "Mayor"
+     ],
+     [
+      "Adaptabilidad",
+      "Nula",
+      "Limitada",
+      "Alta"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s19.8",
+    "t": "li",
+    "text": "**Regla:** transformación fija → código; pocas ramas conocidas → workflow; preguntas sobre documentos → chatbot o RAG (no decide acciones); alta variabilidad y planificación de varios pasos → agente."
+   },
+   {
+    "id": "s19.9",
+    "t": "li",
+    "text": "**Principios:** escalabilidad, modularidad, aprendizaje continuo, resiliencia y preparación para el futuro. **Frameworks:** LangGraph, AutoGen, CrewAI, OpenAI Agents SDK."
+   }
+  ]
+ },
+ {
+  "id": "s20",
+  "clave": "disagentes",
+  "unit": "u6",
+  "title": "Diseño de sistemas de agentes (Albada, cap. 2)",
+  "src": "Albada, cap. 2, págs. 17–37",
+  "orig": "fig. 2-1",
+  "blocks": [
+   {
+    "id": "s20.1",
+    "t": "p",
+    "text": "Primer agente del libro: soporte de e-commerce que elige entre cancel_order, issue_refund y update_address_for_order. Clave: **acotar el alcance**. «Un agente no testeado es un agente no confiable»."
+   },
+   {
+    "id": "s20.2",
+    "t": "li",
+    "text": "**Componentes (fig. 2-1):** la **orquestación** coordina **modelo**, **herramientas**, **memoria** y **base de conocimiento**."
+   },
+   {
+    "id": "s20.3",
+    "t": "li",
+    "text": "**Modelo:** grande para tareas abiertas (más caro y lento), chico para tareas repetitivas; modalidad; abierto vs cerrado."
+   },
+   {
+    "id": "s20.4",
+    "t": "li",
+    "text": "**Herramientas:** locales, basadas en API y basadas en MCP; modulares."
+   },
+   {
+    "id": "s20.5",
+    "t": "li",
+    "text": "**Memoria:** corto plazo (sesión, ventana deslizante) y largo plazo (bases, knowledge graphs, fine-tuning)."
+   },
+   {
+    "id": "s20.6",
+    "t": "li",
+    "text": "**Trade-offs:** rendimiento (velocidad vs precisión), escalabilidad (GPUs), confiabilidad (tolerancia a fallas) y costos (desarrollo vs operación)."
+   },
+   {
+    "id": "s20.7",
+    "t": "li",
+    "text": "**Single-agent** (simple) vs **multiagente** (especialización, paralelismo, escalabilidad, redundancia; contras: coordinación, complejidad, más tokens)."
+   },
+   {
+    "id": "s20.8",
+    "t": "li",
+    "text": "**Buenas prácticas:** diseño iterativo, estrategia de evaluación (correctitud, casos borde, NPS/CSAT, tareas completadas) y pruebas reales."
+   }
+  ]
+ },
+ {
+  "id": "s21",
+  "clave": "rag",
+  "unit": "u6",
+  "title": "RAG: pipelines y componentes (Kimothi, cap. 2)",
+  "src": "Kimothi, cap. 2, págs. 1–12",
+  "orig": "fig. 2.1 a 2.7 · P10 del parcial 2025",
+  "blocks": [
+   {
+    "id": "s21.1",
+    "t": "p",
+    "text": "RAG (retrieval-augmented generation) recupera información relevante de una fuente externa y la agrega al prompt para que el LLM responda con contexto. **Cinco pasos:** pregunta → búsqueda → recuperación y aumentación → LLM → respuesta con contexto."
+   },
+   {
+    "id": "s21.2",
+    "t": "table",
+    "rows": [
+     [
+      "",
+      "Indexing pipeline",
+      "Generation pipeline"
+     ],
+     [
+      "Para qué",
+      "Crear y mantener la base de conocimiento",
+      "Interacción en tiempo real"
+     ],
+     [
+      "Cuándo",
+      "Offline, va primero",
+      "Con cada consulta"
+     ],
+     [
+      "Componentes",
+      "Carga → splitting (chunking) → embeddings → base vectorial",
+      "Retriever → gestión del prompt → LLM"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s21.3",
+    "t": "li",
+    "text": "**Embeddings:** los datos de texto se convierten a formato numérico para la búsqueda y recuperación; los embeddings son el formato que mejor funciona."
+   },
+   {
+    "id": "s21.4",
+    "t": "callout",
+    "text": "**P10 del parcial 2025:** embeddings en RAG → verdadero."
+   },
+   {
+    "id": "s21.5",
+    "t": "li",
+    "text": "El **retriever** es el componente más crítico y el que más latencia suma. No todo RAG necesita indexing pipeline: si la búsqueda la hace una API o el usuario aporta el documento."
+   },
+   {
+    "id": "s21.6",
+    "t": "li",
+    "text": "**Componentes extra:** evaluación, monitoreo, caching (caché semántica), guardrails (políticas y ética), seguridad (prompt injection, data poisoning) y orquestación."
+   },
+   {
+    "id": "s21.7",
+    "t": "li",
+    "text": "**Tríada de evaluación (TruEra):** context relevance (contexto ↔ consulta), groundedness (respuesta ↔ contexto) y answer relevance (respuesta ↔ consulta)."
+   },
+   {
+    "id": "s21.8",
+    "t": "li",
+    "text": "**RAGOps:** capas de datos, modelo, prompts, evaluación, orquestación, despliegue, aplicación y monitoreo."
+   }
+  ]
+ },
+ {
+  "id": "s22",
+  "clave": "ragret",
+  "unit": "u6",
+  "title": "RAG: retrieval y evaluación (Huyen, cap. 6)",
+  "src": "Huyen, AI Engineering, cap. 6, págs. 1–23",
+  "orig": "fig. 6-2 y 6-3",
+  "blocks": [
+   {
+    "id": "s22.1",
+    "t": "p",
+    "text": "Arquitectura básica (fig. 6-2): un **retriever** sobre memoria externa y un **modelo generativo**. El éxito depende sobre todo del retriever."
+   },
+   {
+    "id": "s22.2",
+    "t": "table",
+    "rows": [
+     [
+      "",
+      "Por términos (sparse)",
+      "Por embeddings (dense)"
+     ],
+     [
+      "Ejemplos",
+      "TF-IDF, BM25, Elasticsearch",
+      "Búsqueda vectorial (fig. 6-3)"
+     ],
+     [
+      "Velocidad",
+      "Más rápido",
+      "Más costoso"
+     ],
+     [
+      "Ajuste",
+      "Poco para tunear",
+      "Se puede fine-tunear"
+     ],
+     [
+      "Punto débil",
+      "No capta significado",
+      "Pierde palabras clave exactas"
+     ]
+    ],
+    "head": true
+   },
+   {
+    "id": "s22.3",
+    "t": "li",
+    "text": "**Evaluar:** context precision (de lo recuperado, cuánto es relevante) y context recall (de lo relevante, cuánto se recuperó); NDCG, MAP y MRR si importa el orden; benchmark MTEB."
+   },
+   {
+    "id": "s22.4",
+    "t": "li",
+    "text": "**Optimizar:** chunking, reranking, query rewriting y contextual retrieval. **Más allá del texto:** RAG multimodal y con tablas (text-to-SQL)."
+   }
+  ]
+ },
+ {
+  "id": "s23",
+  "clave": "huyen",
+  "unit": "u6",
+  "title": "Agentes según Huyen y el rol del AI PM (Nika)",
+  "src": "Huyen, cap. 6, págs. 23–54 · Nika, cap. 1, págs. 1–19",
+  "orig": "fig. 6-9, 6-12, 6-16 · fig. 1-1 y 1-4",
+  "blocks": [
+   {
+    "id": "s23.1",
+    "t": "p",
+    "text": "**Agente (Huyen):** cualquier cosa que puede percibir su entorno y actuar sobre él. Se define por su **entorno** y sus **herramientas**. ChatGPT y un sistema RAG son agentes."
+   },
+   {
+    "id": "s23.2",
+    "t": "li",
+    "text": "**Herramientas:** aumento de conocimiento, extensión de capacidades y **acciones de escritura** (las más riesgosas)."
+   },
+   {
+    "id": "s23.3",
+    "t": "li",
+    "text": "**Planificación:** el modelo es el planificador; conviene desacoplar generar, validar y ejecutar el plan (fig. 6-9). **ReAct** intercala pensamiento, acción y observación (fig. 6-12); **Reflexion** agrega evaluación y autorreflexión."
+   },
+   {
+    "id": "s23.4",
+    "t": "li",
+    "text": "**Modos de falla:** de planificación, de herramientas y de eficiencia."
+   },
+   {
+    "id": "s23.5",
+    "t": "li",
+    "text": "**Memoria (fig. 6-16):** conocimiento interno, corto plazo (contexto) y largo plazo (memoria externa con retriever). RAG y agentes son métodos basados en prompt."
+   },
+   {
+    "id": "s23.6",
+    "t": "h",
+    "text": "El rol del AI PM (Nika)"
+   },
+   {
+    "id": "s23.7",
+    "t": "li",
+    "text": "**Cuatro tipos de IA:** tradicional (1950s–hoy), generativa (fines 2010s–hoy), AGI (¿2030s?) y ASI (¿~2040s?)."
+   },
+   {
+    "id": "s23.8",
+    "t": "li",
+    "text": "**Rasgos de los productos de IA:** probabilísticos, dependientes de los datos, model drift, interpretabilidad, decisiones automatizadas y escalabilidad."
+   },
+   {
+    "id": "s23.9",
+    "t": "li",
+    "text": "**Skill set:** product management + fundamentos de ingeniería + liderazgo y colaboración + ciclo de vida de la IA. **Subtipos:** AI experiences PM, AI builder PM y AI-enhanced PM; 0-to-1 vs 1-to-n."
+   },
+   {
+    "id": "s23.10",
+    "t": "callout",
+    "text": "Nika está en la bibliografía 2025 pero no en las notas de clase: prioridad baja hasta confirmarlo."
+   }
+  ]
+ }
+]

@@ -1,0 +1,1725 @@
+[
+ {
+  "id": "u4-ml",
+  "unit": "u4",
+  "num": "01",
+  "title": "Machine learning y modelado predictivo",
+  "subtitle": "Qué es un modelo, supervisado vs no supervisado",
+  "kicker": "ML",
+  "center": "Predecir y actuar",
+  "recordar": "Clustering = no supervisado. La matemática no entra.",
+  "left": [
+   {
+    "label": "Modelado predictivo",
+    "leaves": [
+     {
+      "term": "Tres pasos",
+      "text": "Predecir un resultado futuro, entrenar con observaciones, actuar.",
+      "refs": [
+       "s01.1"
+      ]
+     },
+     {
+      "term": "Modelo",
+      "text": "Artefacto de software: se llama, se reentrena y se replica.",
+      "refs": [
+       "s01.2"
+      ]
+     },
+     {
+      "term": "Ventanas",
+      "text": "Unas para entrenar y otra para probar y medir.",
+      "refs": [
+       "s01.3"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Features",
+    "leaves": [
+     {
+      "term": "Qué son",
+      "text": "Las columnas que entrenan al modelo.",
+      "refs": [
+       "s01.4"
+      ]
+     },
+     {
+      "term": "Dónde se buscan",
+      "text": "En Silver o Gold de un Medallion.",
+      "refs": [
+       "s01.8"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Supervisado",
+    "leaves": [
+     {
+      "term": "Datos",
+      "text": "Etiquetados: features + respuesta correcta.",
+      "refs": [
+       "s01.6:1"
+      ]
+     },
+     {
+      "term": "Tareas",
+      "text": "Clasificación y regresión.",
+      "refs": [
+       "s01.6:3"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "No supervisado",
+    "leaves": [
+     {
+      "term": "Datos",
+      "text": "Sin etiquetas: el modelo propone la estructura.",
+      "refs": [
+       "s01.6:1",
+       "s01.6:4"
+      ]
+     },
+     {
+      "term": "Tareas",
+      "text": "Clustering y reducción de dimensionalidad.",
+      "refs": [
+       "s01.6:3",
+       "s01.7"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Para el parcial",
+    "leaves": [
+     {
+      "term": "Sin matemática",
+      "text": "Qué es, para qué sirve y cómo se relaciona.",
+      "refs": [
+       "s01.9"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u4-fe",
+  "unit": "u4",
+  "num": "02",
+  "title": "Feature engineering",
+  "subtitle": "Definiciones, tipos de features, enfoques, pipelines y drift",
+  "kicker": "FEATURES",
+  "center": "Datos → features → modelo",
+  "recordar": "Feature = representación numérica de datos crudos. Tipos MIT: identity, transform, aggregate.",
+  "left": [
+   {
+    "label": "Definiciones",
+    "leaves": [
+     {
+      "term": "Feature",
+      "text": "Representación numérica de datos crudos; propiedad medible.",
+      "refs": [
+       "s02.2"
+      ]
+     },
+     {
+      "term": "FE según Zheng",
+      "text": "Formular las features más apropiadas dados datos, modelo y tarea.",
+      "refs": [
+       "s02.3"
+      ]
+     },
+     {
+      "term": "FE según Ozdemir",
+      "text": "Transformar datos para representar el problema y mitigar sesgos.",
+      "refs": [
+       "s02.3"
+      ]
+     },
+     {
+      "term": "Doble articulación",
+      "text": "Features y modelo se eligen juntos.",
+      "refs": [
+       "s02.5"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Tipos de features (MIT)",
+    "leaves": [
+     {
+      "term": "Identity",
+      "text": "El dato duro: edad, género.",
+      "refs": [
+       "s02.7:1"
+      ]
+     },
+     {
+      "term": "Transform",
+      "text": "Categorías o partes de una fecha.",
+      "refs": [
+       "s02.7:2"
+      ]
+     },
+     {
+      "term": "Aggregate",
+      "text": "Count, sum: compras en 30 días.",
+      "refs": [
+       "s02.7:3"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Datos según Zheng",
+    "leaves": [
+     {
+      "term": "Problemas",
+      "text": "Incorrectos, redundantes o faltantes.",
+      "refs": [
+       "s02.1"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Model vs data-centric",
+    "leaves": [
+     {
+      "term": "Model-centric",
+      "text": "Cambiar algoritmo, hiperparámetros, complejidad.",
+      "refs": [
+       "s03.1"
+      ]
+     },
+     {
+      "term": "Data-centric",
+      "text": "Mejorar la representación y reducir ruido.",
+      "refs": [
+       "s03.1",
+       "s03.2"
+      ]
+     },
+     {
+      "term": "Lab Avengers",
+      "text": "threat_per_hero; heridos al final = fuga de datos.",
+      "refs": [
+       "s03.4"
+      ]
+     },
+     {
+      "term": "Límites",
+      "text": "No crea señal ni reemplaza datos.",
+      "refs": [
+       "s03.5"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Pipelines",
+    "leaves": [
+     {
+      "term": "ML (5 pasos)",
+      "text": "Dominio, datos, FE, modelo, despliegue.",
+      "refs": [
+       "s03.7"
+      ]
+     },
+     {
+      "term": "FE (4 pasos)",
+      "text": "Comprender, estructurar, optimizar, evaluar.",
+      "refs": [
+       "s03.9"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Drift",
+    "leaves": [
+     {
+      "term": "Data drift",
+      "text": "Cambia la distribución.",
+      "refs": [
+       "s03.11:1"
+      ]
+     },
+     {
+      "term": "Concept drift",
+      "text": "Cambia la relación feature-objetivo.",
+      "refs": [
+       "s03.11:1"
+      ]
+     },
+     {
+      "term": "Quién",
+      "text": "MLOps.",
+      "refs": [
+       "s03.12"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u4-niveles",
+  "unit": "u4",
+  "num": "03",
+  "title": "Niveles de datos y tipos de feature engineering",
+  "subtitle": "Qué se puede hacer con cada dato y cómo se transforma",
+  "kicker": "NIVELES",
+  "center": "Nominal → razón",
+  "recordar": "Si el cociente tiene sentido es razón. Mejora, construcción y selección son interpretables; extracción y aprendizaje no.",
+  "left": [
+   {
+    "label": "Estructurados o no",
+    "leaves": [
+     {
+      "term": "Estructurados",
+      "text": "Filas y columnas, ~20%.",
+      "refs": [
+       "s04.2"
+      ]
+     },
+     {
+      "term": "No estructurados",
+      "text": "Texto, audio, video, ~80%.",
+      "refs": [
+       "s04.2"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Cualitativos",
+    "leaves": [
+     {
+      "term": "Nominal",
+      "text": "Sin orden; moda; dummificar.",
+      "refs": [
+       "s04.3:1"
+      ]
+     },
+     {
+      "term": "Ordinal",
+      "text": "Con orden; enteros crecientes.",
+      "refs": [
+       "s04.3:2"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Cuantitativos",
+    "leaves": [
+     {
+      "term": "Intervalo",
+      "text": "Sin cero verdadero; sumar y restar.",
+      "refs": [
+       "s04.3:3"
+      ]
+     },
+     {
+      "term": "Razón",
+      "text": "Cero verdadero; dividir y multiplicar.",
+      "refs": [
+       "s04.3:4",
+       "s04.4"
+      ]
+     },
+     {
+      "term": "Medias",
+      "text": "Aritmética, geométrica y armónica.",
+      "refs": [
+       "s04.5"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Tipos de FE",
+    "leaves": [
+     {
+      "term": "Mejora",
+      "text": "Imputar, estandarizar, normalizar.",
+      "refs": [
+       "s05.1:1"
+      ]
+     },
+     {
+      "term": "Construcción",
+      "text": "Features nuevas con conocimiento del dominio.",
+      "refs": [
+       "s05.1:2"
+      ]
+     },
+     {
+      "term": "Selección",
+      "text": "El mejor subconjunto.",
+      "refs": [
+       "s05.1:3"
+      ]
+     },
+     {
+      "term": "Extracción",
+      "text": "PCA, SVD, BERT: asume la forma de los datos.",
+      "refs": [
+       "s05.1:4"
+      ]
+     },
+     {
+      "term": "Aprendizaje",
+      "text": "GANs, autoencoders: representación latente.",
+      "refs": [
+       "s05.1:5"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Evaluar",
+    "leaves": [
+     {
+      "term": "Métricas de ML",
+      "text": "Contra un baseline.",
+      "refs": [
+       "s05.4"
+      ]
+     },
+     {
+      "term": "Interpretabilidad",
+      "text": "Poder preguntar por qué.",
+      "refs": [
+       "s05.5"
+      ]
+     },
+     {
+      "term": "Fairness",
+      "text": "Sesgos de los datos.",
+      "refs": [
+       "s05.6"
+      ]
+     },
+     {
+      "term": "Velocidad",
+      "text": "Listo para producción.",
+      "refs": [
+       "s05.7"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u4-texto",
+  "unit": "u4",
+  "num": "04",
+  "title": "Texto como features",
+  "subtitle": "Bag-of-words, n-gramas y filtrado (Zheng, cap. 3)",
+  "kicker": "TEXTO",
+  "center": "Texto → vector plano",
+  "recordar": "BoW pierde el orden; n-gramas lo conservan a costa de espacio.",
+  "left": [
+   {
+    "label": "Representar",
+    "leaves": [
+     {
+      "term": "Bag-of-words",
+      "text": "Vector plano de conteos.",
+      "refs": [
+       "s06.1"
+      ]
+     },
+     {
+      "term": "Bag-of-n-grams",
+      "text": "Secuencias de n tokens; más ralo.",
+      "refs": [
+       "s06.2"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Atomizar",
+    "leaves": [
+     {
+      "term": "Tokenización",
+      "text": "Cortar el string en tokens.",
+      "refs": [
+       "s06.5"
+      ]
+     },
+     {
+      "term": "Colocaciones",
+      "text": "Frases con significado propio.",
+      "refs": [
+       "s06.6"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Filtrar",
+    "leaves": [
+     {
+      "term": "Stopwords",
+      "text": "Palabras vacías.",
+      "refs": [
+       "s06.3"
+      ]
+     },
+     {
+      "term": "Frecuentes y raras",
+      "text": "Garbage bin para las raras.",
+      "refs": [
+       "s06.3"
+      ]
+     },
+     {
+      "term": "Stemming",
+      "text": "Reduce a la raíz; new y news.",
+      "refs": [
+       "s06.4"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u4-nlp",
+  "unit": "u4",
+  "num": "05",
+  "title": "NLP",
+  "subtitle": "Tareas, bloques del lenguaje, enfoques y pipeline (Vajjala, caps. 1–4)",
+  "kicker": "NLP",
+  "center": "Lenguaje → máquina",
+  "recordar": "Gráficos de clase: fácil→difícil, bloques del lenguaje, círculos IA/ML/DL, pipeline genérico.",
+  "left": [
+   {
+    "label": "Qué resuelve",
+    "leaves": [
+     {
+      "term": "Tres niveles",
+      "text": "Core tasks, generales e industry specific.",
+      "refs": [
+       "s07.1"
+      ]
+     },
+     {
+      "term": "Fácil a difícil",
+      "text": "De spell checking a agente de dominio abierto.",
+      "refs": [
+       "s07.2"
+      ]
+     },
+     {
+      "term": "Por qué es difícil",
+      "text": "Ambigüedad, sentido común, creatividad.",
+      "refs": [
+       "s07.4"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Bloques del lenguaje",
+    "leaves": [
+     {
+      "term": "Fonemas",
+      "text": "Speech-to-text.",
+      "refs": [
+       "s07.3:1"
+      ]
+     },
+     {
+      "term": "Morfemas y lexemas",
+      "text": "Tokenización, POS.",
+      "refs": [
+       "s07.3:2"
+      ]
+     },
+     {
+      "term": "Sintaxis",
+      "text": "Parsing.",
+      "refs": [
+       "s07.3:3"
+      ]
+     },
+     {
+      "term": "Contexto",
+      "text": "Resumen, sentimiento.",
+      "refs": [
+       "s07.3:4"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Enfoques",
+    "leaves": [
+     {
+      "term": "Reglas",
+      "text": "WordNet, regex.",
+      "refs": [
+       "s07.7"
+      ]
+     },
+     {
+      "term": "ML clásico",
+      "text": "Naive Bayes, SVM.",
+      "refs": [
+       "s07.8"
+      ]
+     },
+     {
+      "term": "RNN y LSTM",
+      "text": "LSTM recuerda contexto largo.",
+      "refs": [
+       "s07.9"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Pipeline",
+    "leaves": [
+     {
+      "term": "Etapas",
+      "text": "Adquisición … monitoreo.",
+      "refs": [
+       "s08.1"
+      ]
+     },
+     {
+      "term": "Preprocesamiento",
+      "text": "Tokenizar, stopwords, stemming.",
+      "refs": [
+       "s08.4"
+      ]
+     },
+     {
+      "term": "Stemming vs lematización",
+      "text": "Recortar vs forma real.",
+      "refs": [
+       "s08.5:1",
+       "s08.5:2"
+      ]
+     },
+     {
+      "term": "POS, parsing, correferencia",
+      "text": "Análisis más profundo.",
+      "refs": [
+       "s08.5:3",
+       "s08.5:5"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Representación",
+    "leaves": [
+     {
+      "term": "TF-IDF",
+      "text": "Frecuente en el doc, raro en el corpus.",
+      "refs": [
+       "s09.1"
+      ]
+     },
+     {
+      "term": "Embeddings",
+      "text": "CBOW y SkipGram.",
+      "refs": [
+       "s09.2"
+      ]
+     },
+     {
+      "term": "Clasificación",
+      "text": "Etiquetas → features → entrenar.",
+      "refs": [
+       "s09.3"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u4-recom",
+  "unit": "u4",
+  "num": "06",
+  "title": "Sistemas de recomendación",
+  "subtitle": "Filtrado colaborativo, active learning, cross validation y RMSE",
+  "kicker": "RECOM",
+  "center": "Encontrar sin pedir",
+  "recordar": "Cross validation: rotar la ventana de validación. RMSE: más bajo = mejor.",
+  "left": [
+   {
+    "label": "Modelos",
+    "leaves": [
+     {
+      "term": "Baseline",
+      "text": "Predicción aleatoria.",
+      "refs": [
+       "s10.2:1"
+      ]
+     },
+     {
+      "term": "Usuario-usuario",
+      "text": "Gustos parecidos.",
+      "refs": [
+       "s10.2:2"
+      ]
+     },
+     {
+      "term": "Ítem-ítem",
+      "text": "Ítems parecidos.",
+      "refs": [
+       "s10.2:3"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Active learning",
+    "leaves": [
+     {
+      "term": "Humano en el bucle",
+      "text": "Un oráculo que corrige.",
+      "refs": [
+       "s10.3"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Evaluar",
+    "leaves": [
+     {
+      "term": "Cross validation",
+      "text": "k folds rotando la validación.",
+      "refs": [
+       "s10.4"
+      ]
+     },
+     {
+      "term": "RMSE",
+      "text": "Raíz del error cuadrático medio.",
+      "refs": [
+       "s10.5"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u4-dp",
+  "unit": "u4",
+  "num": "07",
+  "title": "Data products",
+  "subtitle": "Strengholt, Data Management at Scale, cap. 4",
+  "kicker": "DATA PRODUCT",
+  "center": "Datos listos para consumir",
+  "recordar": "Data as a product = mindset. Data product = arquitectura. Sigue la filosofía CQRS.",
+  "left": [
+   {
+    "label": "Dos conceptos",
+    "leaves": [
+     {
+      "term": "Data as a product",
+      "text": "Forma de pensar.",
+      "refs": [
+       "s11.2:1"
+      ]
+     },
+     {
+      "term": "Data product",
+      "text": "Arquitectura.",
+      "refs": [
+       "s11.2:1"
+      ]
+     },
+     {
+      "term": "Visiones",
+      "text": "Dehghani (quantum) y Accenture.",
+      "refs": [
+       "s11.4"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Definición lógica",
+    "leaves": [
+     {
+      "term": "Entidad lógica",
+      "text": "Describe datos para consumo.",
+      "refs": [
+       "s11.6"
+      ]
+     },
+     {
+      "term": "Por qué no contenedor",
+      "text": "La metadata se duplicaría.",
+      "refs": [
+       "s11.5"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "CQRS",
+    "leaves": [
+     {
+      "term": "Separa",
+      "text": "Comandos y consultas.",
+      "refs": [
+       "s11.8"
+      ]
+     },
+     {
+      "term": "Read replicas",
+      "text": "Data products = read stores.",
+      "refs": [
+       "s11.9"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Principios",
+    "leaves": [
+     {
+      "term": "Selección",
+      "text": "Inmutables, sin raw, atómicos, golden source.",
+      "refs": [
+       "s11.11"
+      ]
+     },
+     {
+      "term": "Arquitectura",
+      "text": "Input y output ports, metadata.",
+      "refs": [
+       "s11.12"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u5-de",
+  "unit": "u5",
+  "num": "01",
+  "title": "Qué es la ingeniería de datos",
+  "subtitle": "Reis, cap. 1",
+  "kicker": "DATA ENG.",
+  "center": "Datos crudos → información de calidad",
+  "recordar": "Desarrollo, implementación y mantenimiento de sistemas y procesos (P1 2025).",
+  "left": [
+   {
+    "label": "Definición",
+    "leaves": [
+     {
+      "term": "Reis",
+      "text": "Sistemas y procesos de datos crudos a información de calidad.",
+      "refs": [
+       "s12.1"
+      ]
+     },
+     {
+      "term": "Data engineer",
+      "text": "Gestiona el ciclo de vida.",
+      "refs": [
+       "s12.3"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Historia",
+    "leaves": [
+     {
+      "term": "Evolución",
+      "text": "DWH → big data → ciclo de vida.",
+      "refs": [
+       "s12.4"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Contexto",
+    "leaves": [
+     {
+      "term": "Pirámide de Rogati",
+      "text": "DE sostiene las capas de abajo.",
+      "refs": [
+       "s12.5"
+      ]
+     },
+     {
+      "term": "Madurez",
+      "text": "Empezar, escalar, liderar.",
+      "refs": [
+       "s12.6"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Roles",
+    "leaves": [
+     {
+      "term": "Tipo A y B",
+      "text": "Abstraction vs build.",
+      "refs": [
+       "s12.7"
+      ]
+     },
+     {
+      "term": "Stakeholders",
+      "text": "Upstream, downstream, C-suite.",
+      "refs": [
+       "s12.8"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u5-ciclo",
+  "unit": "u5",
+  "num": "02",
+  "title": "Ciclo de vida de la ingeniería de datos",
+  "subtitle": "Reis, cap. 2",
+  "kicker": "CICLO",
+  "center": "Generación → servicio",
+  "recordar": "Cinco etapas + seis corrientes. Batch = bloques; streaming = continuo.",
+  "left": [
+   {
+    "label": "Etapas",
+    "leaves": [
+     {
+      "term": "Generación",
+      "text": "Sistemas fuente.",
+      "refs": [
+       "s13.4:1"
+      ]
+     },
+     {
+      "term": "Almacenamiento",
+      "text": "Hot, lukewarm, cold.",
+      "refs": [
+       "s13.4:2"
+      ]
+     },
+     {
+      "term": "Ingesta",
+      "text": "Cuello de botella.",
+      "refs": [
+       "s13.4:3"
+      ]
+     },
+     {
+      "term": "Transformación",
+      "text": "Donde se crea valor.",
+      "refs": [
+       "s13.4:4"
+      ]
+     },
+     {
+      "term": "Servicio",
+      "text": "Analytics, ML, reverse ETL.",
+      "refs": [
+       "s13.4:5",
+       "s13.10"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Ingesta",
+    "leaves": [
+     {
+      "term": "Batch",
+      "text": "Bloques periódicos.",
+      "refs": [
+       "s13.6"
+      ]
+     },
+     {
+      "term": "Streaming",
+      "text": "Continuo.",
+      "refs": [
+       "s13.7"
+      ]
+     },
+     {
+      "term": "Push y pull",
+      "text": "Quién inicia.",
+      "refs": [
+       "s13.9"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Corrientes",
+    "leaves": [
+     {
+      "term": "Las seis",
+      "text": "Seguridad, DM, DataOps, arquitectura, orquestación, software.",
+      "refs": [
+       "s13.2"
+      ]
+     },
+     {
+      "term": "DataOps",
+      "text": "Automatización, observabilidad, incidentes.",
+      "refs": [
+       "s13.11"
+      ]
+     },
+     {
+      "term": "Data management",
+      "text": "Gobierno, calidad, lineage.",
+      "refs": [
+       "s13.12"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Encuadre",
+    "leaves": [
+     {
+      "term": "Subconjunto",
+      "text": "Del ciclo de vida del dato.",
+      "refs": [
+       "s13.1"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u5-arq",
+  "unit": "u5",
+  "num": "03",
+  "title": "Arquitectura de datos y patrones",
+  "subtitle": "Reis, cap. 3 · Medallion, cap. 1",
+  "kicker": "ARQUITECTURA",
+  "center": "Decisiones flexibles y reversibles",
+  "recordar": "Negocio, técnica, aplicaciones y datos: subconjuntos de la empresarial (P4 2025).",
+  "left": [
+   {
+    "label": "Definiciones",
+    "leaves": [
+     {
+      "term": "Empresarial",
+      "text": "Cuatro subconjuntos.",
+      "refs": [
+       "s14.1"
+      ]
+     },
+     {
+      "term": "De datos",
+      "text": "Necesidades de datos cambiantes.",
+      "refs": [
+       "s14.3"
+      ]
+     },
+     {
+      "term": "Operacional vs técnica",
+      "text": "Qué vs cómo.",
+      "refs": [
+       "s14.4"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Principios",
+    "leaves": [
+     {
+      "term": "Nueve",
+      "text": "Falla, escala, acople, reversibles, FinOps…",
+      "refs": [
+       "s14.7"
+      ]
+     },
+     {
+      "term": "Puertas",
+      "text": "Una vía vs dos vías.",
+      "refs": [
+       "s14.5"
+      ]
+     },
+     {
+      "term": "La menos mala",
+      "text": "No la mejor.",
+      "refs": [
+       "s14.6"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Patrones",
+    "leaves": [
+     {
+      "term": "DWH",
+      "text": "Hub central, ETL/ELT, marts.",
+      "refs": [
+       "s15.1:1",
+       "s15.3"
+      ]
+     },
+     {
+      "term": "Lake y lakehouse",
+      "text": "Object storage; ACID.",
+      "refs": [
+       "s15.1:2",
+       "s15.1:3"
+      ]
+     },
+     {
+      "term": "Lambda",
+      "text": "Batch + stream.",
+      "refs": [
+       "s15.1:5"
+      ]
+     },
+     {
+      "term": "Kappa",
+      "text": "Solo stream.",
+      "refs": [
+       "s15.1:6"
+      ]
+     },
+     {
+      "term": "Inmon y Kimball",
+      "text": "Top-down vs bottom-up.",
+      "refs": [
+       "s15.2"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u5-mesh",
+  "unit": "u5",
+  "num": "04",
+  "title": "Data Mesh",
+  "subtitle": "Dehghani, cap. 1",
+  "kicker": "DATA MESH",
+  "center": "Descentralizar los datos analíticos",
+  "recordar": "Seis cambios y cuatro principios (P6 y P7 2025).",
+  "left": [
+   {
+    "label": "Qué es",
+    "leaves": [
+     {
+      "term": "Definición",
+      "text": "Enfoque sociotécnico descentralizado.",
+      "refs": [
+       "s16.1"
+      ]
+     },
+     {
+      "term": "Resultados",
+      "text": "Cambio, agilidad, valor.",
+      "refs": [
+       "s16.2"
+      ]
+     },
+     {
+      "term": "Datos analíticos",
+      "text": "No operacionales.",
+      "refs": [
+       "s16.10"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Seis cambios",
+    "leaves": [
+     {
+      "term": "Organizacional",
+      "text": "Dominios.",
+      "refs": [
+       "s16.3:1"
+      ]
+     },
+     {
+      "term": "Arquitectónico",
+      "text": "Malla distribuida.",
+      "refs": [
+       "s16.3:2"
+      ]
+     },
+     {
+      "term": "Tecnológico",
+      "text": "Datos + código.",
+      "refs": [
+       "s16.3:3"
+      ]
+     },
+     {
+      "term": "Operacional",
+      "text": "Gobierno federado.",
+      "refs": [
+       "s16.3:4"
+      ]
+     },
+     {
+      "term": "Principios",
+      "text": "Datos como producto.",
+      "refs": [
+       "s16.3:5"
+      ]
+     },
+     {
+      "term": "Infraestructura",
+      "text": "Integrada.",
+      "refs": [
+       "s16.3:6"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Cuatro principios",
+    "leaves": [
+     {
+      "term": "Domain ownership",
+      "text": "Propiedad en los dominios.",
+      "refs": [
+       "s16.5"
+      ]
+     },
+     {
+      "term": "Data as a product",
+      "text": "Ocho atributos, data quantum.",
+      "refs": [
+       "s16.6"
+      ]
+     },
+     {
+      "term": "Self-serve platform",
+      "text": "Baja el costo.",
+      "refs": [
+       "s16.7"
+      ]
+     },
+     {
+      "term": "Gobierno federado",
+      "text": "Políticas automatizadas.",
+      "refs": [
+       "s16.8"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Interplay",
+    "leaves": [
+     {
+      "term": "Se compensan",
+      "text": "Silos, costo, incompatibilidad.",
+      "refs": [
+       "s16.9"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u5-medallion",
+  "unit": "u5",
+  "num": "05",
+  "title": "Arquitectura Medallion",
+  "subtitle": "Strengholt, Building Medallion Architectures",
+  "kicker": "MEDALLION",
+  "center": "Bronze ⇒ Silver ⇒ Gold",
+  "recordar": "Crudo → limpio → agregado para el negocio (P8 2025).",
+  "left": [
+   {
+    "label": "Qué es",
+    "leaves": [
+     {
+      "term": "Definición",
+      "text": "Patrón para ordenar datos en un lakehouse.",
+      "refs": [
+       "s17.1"
+      ]
+     },
+     {
+      "term": "Capas lógicas",
+      "text": "Landing y Platinum posibles.",
+      "refs": [
+       "s17.4"
+      ]
+     },
+     {
+      "term": "Tres capas",
+      "text": "Medallion en la distribución.",
+      "refs": [
+       "s17.5"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Capas",
+    "leaves": [
+     {
+      "term": "Bronze",
+      "text": "Crudo, inmutable.",
+      "refs": [
+       "s17.2:1"
+      ]
+     },
+     {
+      "term": "Silver",
+      "text": "Limpio, validado.",
+      "refs": [
+       "s17.2:2"
+      ]
+     },
+     {
+      "term": "Gold",
+      "text": "Agregado, negocio.",
+      "refs": [
+       "s17.2:3"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Contexto",
+    "leaves": [
+     {
+      "term": "Lakehouse",
+      "text": "ACID sobre object storage.",
+      "refs": [
+       "s17.6"
+      ]
+     },
+     {
+      "term": "Crítica",
+      "text": "Falta consenso.",
+      "refs": [
+       "s17.7"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u5-patrones",
+  "unit": "u5",
+  "num": "06",
+  "title": "Patrones de diseño de ingeniería de datos",
+  "subtitle": "Konieczny (TPI)",
+  "kicker": "PATRONES",
+  "center": "Recetas para problemas de datos",
+  "recordar": "Saber describir uno en menos de 50 palabras con un ejemplo (P5 2025).",
+  "left": [
+   {
+    "label": "Qué es un patrón",
+    "leaves": [
+     {
+      "term": "Definición",
+      "text": "Plantilla personalizable.",
+      "refs": [
+       "s18.1"
+      ]
+     },
+     {
+      "term": "Kleppmann",
+      "text": "La consigna nombró otro libro.",
+      "refs": [
+       "s18.2"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Ejemplos",
+    "leaves": [
+     {
+      "term": "Dead-Letter",
+      "text": "Desviar registros que fallan.",
+      "refs": [
+       "s18.4"
+      ]
+     },
+     {
+      "term": "CDC e Incremental",
+      "text": "Ingerir cambios.",
+      "refs": [
+       "s18.5"
+      ]
+     },
+     {
+      "term": "Catálogo",
+      "text": "Diez capítulos.",
+      "refs": [
+       "s18.3"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u6-agentes",
+  "unit": "u6",
+  "num": "01",
+  "title": "Agentes de IA",
+  "subtitle": "Albada, caps. 1 y 2",
+  "kicker": "AGENTES",
+  "center": "Decidir, no solo ejecutar",
+  "recordar": "Analizar datos, interpretar el entorno y decidir según el contexto (P9 2025).",
+  "left": [
+   {
+    "label": "Qué son",
+    "leaves": [
+     {
+      "term": "Definición",
+      "text": "Sistemas que deciden con contexto.",
+      "refs": [
+       "s19.1"
+      ]
+     },
+     {
+      "term": "Sistema agéntico",
+      "text": "Herramientas, memoria, modelo, orquestación.",
+      "refs": [
+       "s19.3"
+      ]
+     },
+     {
+      "term": "Tipos",
+      "text": "Siete tipos + voz y video.",
+      "refs": [
+       "s19.5"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Cuándo usar",
+    "leaves": [
+     {
+      "term": "Código",
+      "text": "Input predecible.",
+      "refs": [
+       "s19.7:1",
+       "s19.8"
+      ]
+     },
+     {
+      "term": "Workflow",
+      "text": "Ramas finitas.",
+      "refs": [
+       "s19.8"
+      ]
+     },
+     {
+      "term": "RAG",
+      "text": "Preguntas sobre documentos.",
+      "refs": [
+       "s19.8"
+      ]
+     },
+     {
+      "term": "Agente",
+      "text": "Variabilidad alta.",
+      "refs": [
+       "s19.7:4"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Diseño",
+    "leaves": [
+     {
+      "term": "Componentes",
+      "text": "Orquestación + 4.",
+      "refs": [
+       "s20.2"
+      ]
+     },
+     {
+      "term": "Memoria",
+      "text": "Corto y largo plazo.",
+      "refs": [
+       "s20.5"
+      ]
+     },
+     {
+      "term": "Herramientas",
+      "text": "Locales, API, MCP.",
+      "refs": [
+       "s20.4"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Decisiones",
+    "leaves": [
+     {
+      "term": "Trade-offs",
+      "text": "Velocidad, escala, confiabilidad, costo.",
+      "refs": [
+       "s20.6"
+      ]
+     },
+     {
+      "term": "Single vs multi",
+      "text": "Simplicidad vs especialización.",
+      "refs": [
+       "s20.7"
+      ]
+     },
+     {
+      "term": "Principios",
+      "text": "Escalabilidad, modularidad…",
+      "refs": [
+       "s19.9"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u6-rag",
+  "unit": "u6",
+  "num": "02",
+  "title": "RAG",
+  "subtitle": "Kimothi, cap. 2 · Huyen, cap. 6",
+  "kicker": "RAG",
+  "center": "Recuperar y generar",
+  "recordar": "Indexing (offline) + generation (tiempo real). Embeddings = texto a números (P10 2025).",
+  "left": [
+   {
+    "label": "Pipelines",
+    "leaves": [
+     {
+      "term": "Cinco pasos",
+      "text": "Pregunta … respuesta.",
+      "refs": [
+       "s21.1"
+      ]
+     },
+     {
+      "term": "Indexing",
+      "text": "Carga, chunking, embeddings, vector DB.",
+      "refs": [
+       "s21.2:3"
+      ]
+     },
+     {
+      "term": "Generation",
+      "text": "Retriever, prompt, LLM.",
+      "refs": [
+       "s21.2:3",
+       "s21.5"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Componentes",
+    "leaves": [
+     {
+      "term": "Embeddings",
+      "text": "Formato numérico.",
+      "refs": [
+       "s21.3"
+      ]
+     },
+     {
+      "term": "Extras",
+      "text": "Caché, guardrails, seguridad.",
+      "refs": [
+       "s21.6"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "Evaluar",
+    "leaves": [
+     {
+      "term": "Tríada",
+      "text": "Contexto, fidelidad, respuesta.",
+      "refs": [
+       "s21.7"
+      ]
+     },
+     {
+      "term": "Precision y recall",
+      "text": "Del retriever.",
+      "refs": [
+       "s22.3"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Retrieval",
+    "leaves": [
+     {
+      "term": "Sparse",
+      "text": "BM25, términos.",
+      "refs": [
+       "s22.2:1"
+      ]
+     },
+     {
+      "term": "Dense",
+      "text": "Embeddings.",
+      "refs": [
+       "s22.2:1"
+      ]
+     },
+     {
+      "term": "Optimizar",
+      "text": "Chunking, reranking.",
+      "refs": [
+       "s22.4"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u6-huyen",
+  "unit": "u6",
+  "num": "03",
+  "title": "Agentes según Huyen y AI PM",
+  "subtitle": "Huyen, cap. 6 · Nika, cap. 1",
+  "kicker": "HUYEN · NIKA",
+  "center": "Entorno + herramientas",
+  "recordar": "ReAct = pensar, actuar, observar. Memoria: interna, corto, largo plazo.",
+  "left": [
+   {
+    "label": "Agentes",
+    "leaves": [
+     {
+      "term": "Definición",
+      "text": "Percibe y actúa sobre su entorno.",
+      "refs": [
+       "s23.1"
+      ]
+     },
+     {
+      "term": "Herramientas",
+      "text": "Conocimiento, capacidades, escritura.",
+      "refs": [
+       "s23.2"
+      ]
+     },
+     {
+      "term": "Planificación",
+      "text": "ReAct y Reflexion.",
+      "refs": [
+       "s23.3"
+      ]
+     },
+     {
+      "term": "Memoria",
+      "text": "Tres niveles.",
+      "refs": [
+       "s23.5"
+      ]
+     }
+    ]
+   }
+  ],
+  "right": [
+   {
+    "label": "AI PM",
+    "leaves": [
+     {
+      "term": "Cuatro tipos de IA",
+      "text": "Tradicional, GenAI, AGI, ASI.",
+      "refs": [
+       "s23.7"
+      ]
+     },
+     {
+      "term": "Rasgos",
+      "text": "Probabilísticos, drift.",
+      "refs": [
+       "s23.8"
+      ]
+     },
+     {
+      "term": "Skills y subtipos",
+      "text": "Builder, experiences, enhanced.",
+      "refs": [
+       "s23.9"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

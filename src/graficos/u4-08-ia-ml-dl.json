@@ -1,0 +1,63 @@
+{
+  "title": "Relación entre IA, ML, DL y NLP",
+  "topic": "U4 · Ciencia de Datos Aplicada",
+  "order": 80,
+  "width": 900,
+  "height": 440,
+  "fuente": "Vajjala, cap. 1, fig. 1-8 (pág. 13 del PDF) · Notas U4 («gráfico círculos IA»)",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 244,
+      "y": 37,
+      "w": 173,
+      "h": 30,
+      "answer": "Inteligencia artificial",
+      "level": "clave",
+      "accept": [
+        "IA",
+        "AI",
+        "Inteligencia artificial (IA)"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 114,
+      "y": 138,
+      "w": 141,
+      "h": 29,
+      "answer": "Machine learning",
+      "level": "clave",
+      "accept": [
+        "ML",
+        "Aprendizaje automático"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 146,
+      "y": 276,
+      "w": 117,
+      "h": 29,
+      "answer": "Deep learning",
+      "level": "clave",
+      "accept": [
+        "DL",
+        "Aprendizaje profundo"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 495,
+      "y": 214,
+      "w": 49,
+      "h": 32,
+      "answer": "NLP",
+      "level": "clave",
+      "accept": [
+        "Procesamiento del lenguaje natural",
+        "PLN"
+      ]
+    }
+  ]
+}

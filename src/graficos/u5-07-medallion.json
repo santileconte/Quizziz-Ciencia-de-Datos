@@ -1,0 +1,115 @@
+{
+  "title": "Arquitectura Medallion: Bronze, Silver y Gold",
+  "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+  "order": 70,
+  "width": 1040,
+  "height": 430,
+  "fuente": "Strengholt, Building Medallion Architectures, cap. 1 (págs. 3–4) y cap. 3, fig. 3-1 y tabla 3-1 (págs. 40–73 del PDF) · P8 del parcial 2025 · Notas U5",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 164,
+      "y": 64,
+      "w": 112,
+      "h": 192,
+      "answer": "Landing zone",
+      "level": "extra",
+      "accept": [
+        "Landing",
+        "Staging",
+        "Zona de aterrizaje"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 335,
+      "y": 70,
+      "w": 120,
+      "h": 33,
+      "answer": "Bronze",
+      "level": "clave",
+      "accept": [
+        "Bronce"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 321,
+      "y": 139,
+      "w": 148,
+      "h": 62,
+      "answer": "Datos crudos, en su estructura original e inmutables",
+      "level": "extra"
+    },
+    {
+      "id": "b4",
+      "x": 535,
+      "y": 70,
+      "w": 120,
+      "h": 33,
+      "answer": "Silver",
+      "level": "clave",
+      "accept": [
+        "Plata"
+      ]
+    },
+    {
+      "id": "b5",
+      "x": 534,
+      "y": 130,
+      "w": 122,
+      "h": 80,
+      "answer": "Datos limpios, estandarizados, deduplicados y validados",
+      "level": "extra"
+    },
+    {
+      "id": "b6",
+      "x": 735,
+      "y": 70,
+      "w": 120,
+      "h": 33,
+      "answer": "Gold",
+      "level": "clave",
+      "accept": [
+        "Oro"
+      ]
+    },
+    {
+      "id": "b7",
+      "x": 707,
+      "y": 139,
+      "w": 176,
+      "h": 62,
+      "answer": "Datos agregados con lógica de negocio, listos para consumir",
+      "level": "extra"
+    },
+    {
+      "id": "b8",
+      "x": 485,
+      "y": 361,
+      "w": 270,
+      "h": 40,
+      "answer": "3FN o Data Vault",
+      "level": "extra",
+      "accept": [
+        "3NF",
+        "Data Vault",
+        "Orientado a temas"
+      ]
+    },
+    {
+      "id": "b9",
+      "x": 765,
+      "y": 361,
+      "w": 250,
+      "h": 40,
+      "answer": "Kimball (estrella) u OBT",
+      "level": "extra",
+      "accept": [
+        "Kimball",
+        "Esquema estrella",
+        "One big table"
+      ]
+    }
+  ]
+}

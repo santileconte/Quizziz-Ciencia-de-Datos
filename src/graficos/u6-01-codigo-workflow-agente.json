@@ -1,0 +1,97 @@
+{
+  "title": "Código tradicional, workflow o agente autónomo",
+  "topic": "U6 · Inteligencia Artificial Generativa",
+  "order": 10,
+  "width": 1040,
+  "height": 330,
+  "fuente": "Albada, cap. 1, tabla 1-2 (pág. 12 del PDF)",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 245,
+      "y": 25,
+      "w": 240,
+      "h": 40,
+      "answer": "Código tradicional",
+      "level": "clave",
+      "accept": [
+        "Código",
+        "Traditional code"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 495,
+      "y": 25,
+      "w": 250,
+      "h": 40,
+      "answer": "Workflow",
+      "level": "clave",
+      "accept": [
+        "Flujo de trabajo"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 755,
+      "y": 25,
+      "w": 260,
+      "h": 40,
+      "answer": "Agente autónomo",
+      "level": "clave",
+      "accept": [
+        "Agente",
+        "Autonomous agent"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 755,
+      "y": 75,
+      "w": 260,
+      "h": 50,
+      "answer": "Muy no estructurado o novedoso",
+      "level": "extra",
+      "accept": [
+        "No estructurado",
+        "Novedoso"
+      ]
+    },
+    {
+      "id": "b5",
+      "x": 245,
+      "y": 135,
+      "w": 240,
+      "h": 44,
+      "answer": "Total, auditable",
+      "level": "extra",
+      "accept": [
+        "Total"
+      ]
+    },
+    {
+      "id": "b6",
+      "x": 755,
+      "y": 189,
+      "w": 260,
+      "h": 38,
+      "answer": "Mayor",
+      "level": "extra",
+      "accept": [
+        "Alta"
+      ]
+    },
+    {
+      "id": "b7",
+      "x": 755,
+      "y": 237,
+      "w": 260,
+      "h": 44,
+      "answer": "Alta: aprende del feedback",
+      "level": "extra",
+      "accept": [
+        "Alta"
+      ]
+    }
+  ]
+}

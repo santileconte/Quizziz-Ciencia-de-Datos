@@ -1,0 +1,63 @@
+{
+  "title": "Validación cruzada (k = 5) y RMSE",
+  "topic": "U4 · Ciencia de Datos Aplicada",
+  "order": 100,
+  "width": 1040,
+  "height": 360,
+  "fuente": "Notas U4 («Cross Validation», «estudiar cross validation y root mean squared error») · ejercicio Surprise (cross_validate, cv=5)",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 141,
+      "y": 38,
+      "w": 80,
+      "h": 28,
+      "answer": "Validación",
+      "level": "clave",
+      "accept": [
+        "Prueba",
+        "Test",
+        "Validacion"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 258,
+      "y": 38,
+      "w": 106,
+      "h": 28,
+      "answer": "Entrenamiento",
+      "level": "clave",
+      "accept": [
+        "Train",
+        "Training"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 799,
+      "y": 286,
+      "w": 202,
+      "h": 29,
+      "answer": "Promedio de los 5 errores",
+      "level": "clave",
+      "accept": [
+        "Promedio",
+        "Media de los errores"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 275,
+      "y": 306,
+      "w": 90,
+      "h": 28,
+      "answer": "RMSE",
+      "level": "extra",
+      "accept": [
+        "Root mean squared error",
+        "Raíz del error cuadrático medio"
+      ]
+    }
+  ]
+}

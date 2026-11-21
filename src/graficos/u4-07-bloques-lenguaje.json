@@ -1,0 +1,97 @@
+{
+  "title": "Bloques del lenguaje y sus aplicaciones",
+  "topic": "U4 · Ciencia de Datos Aplicada",
+  "order": 70,
+  "width": 1000,
+  "height": 450,
+  "fuente": "Vajjala, cap. 1, fig. 1-3 (pág. 7 del PDF) · Notas U4 («gráfico blocks of language»)",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 225,
+      "y": 40,
+      "w": 170,
+      "h": 32,
+      "answer": "Contexto",
+      "level": "clave",
+      "accept": [
+        "Context",
+        "Contexto (significado)"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 572,
+      "y": 53,
+      "w": 341,
+      "h": 28,
+      "answer": "Resumen, topic modeling, análisis de sentimiento",
+      "level": "extra"
+    },
+    {
+      "id": "b3",
+      "x": 225,
+      "y": 128,
+      "w": 170,
+      "h": 32,
+      "answer": "Sintaxis",
+      "level": "clave",
+      "accept": [
+        "Syntax"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 572,
+      "y": 141,
+      "w": 337,
+      "h": 28,
+      "answer": "Parsing, extracción de entidades y de relaciones",
+      "level": "extra"
+    },
+    {
+      "id": "b5",
+      "x": 217,
+      "y": 216,
+      "w": 186,
+      "h": 32,
+      "answer": "Morfemas y lexemas",
+      "level": "clave",
+      "accept": [
+        "Morfemas",
+        "Lexemas",
+        "Morphemes & lexemes"
+      ]
+    },
+    {
+      "id": "b6",
+      "x": 572,
+      "y": 229,
+      "w": 321,
+      "h": 28,
+      "answer": "Tokenización, word embeddings, POS tagging",
+      "level": "extra"
+    },
+    {
+      "id": "b7",
+      "x": 225,
+      "y": 304,
+      "w": 170,
+      "h": 32,
+      "answer": "Fonemas",
+      "level": "clave",
+      "accept": [
+        "Phonemes"
+      ]
+    },
+    {
+      "id": "b8",
+      "x": 572,
+      "y": 317,
+      "w": 405,
+      "h": 28,
+      "answer": "Speech-to-text, identificación del hablante, text-to-speech",
+      "level": "extra"
+    }
+  ]
+}

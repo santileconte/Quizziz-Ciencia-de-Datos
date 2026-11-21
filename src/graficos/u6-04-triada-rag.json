@@ -1,0 +1,87 @@
+{
+  "title": "Tríada de evaluación RAG (TruEra)",
+  "topic": "U6 · Inteligencia Artificial Generativa",
+  "order": 40,
+  "width": 960,
+  "height": 440,
+  "fuente": "Kimothi, cap. 2, fig. 2.7 (págs. 9–10 del PDF)",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 374,
+      "y": 29,
+      "w": 212,
+      "h": 42,
+      "answer": "Consulta (prompt)",
+      "level": "clave",
+      "accept": [
+        "Query",
+        "Pregunta",
+        "Consulta"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 684,
+      "y": 339,
+      "w": 212,
+      "h": 42,
+      "answer": "Contexto recuperado",
+      "level": "clave",
+      "accept": [
+        "Context",
+        "Contexto"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 64,
+      "y": 339,
+      "w": 212,
+      "h": 42,
+      "answer": "Respuesta",
+      "level": "clave",
+      "accept": [
+        "Answer",
+        "Response"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 716,
+      "y": 166,
+      "w": 148,
+      "h": 29,
+      "answer": "Context relevance",
+      "level": "clave",
+      "accept": [
+        "Relevancia del contexto"
+      ]
+    },
+    {
+      "id": "b5",
+      "x": 107,
+      "y": 166,
+      "w": 146,
+      "h": 29,
+      "answer": "Answer relevance",
+      "level": "clave",
+      "accept": [
+        "Relevancia de la respuesta"
+      ]
+    },
+    {
+      "id": "b6",
+      "x": 419,
+      "y": 346,
+      "w": 122,
+      "h": 29,
+      "answer": "Groundedness",
+      "level": "clave",
+      "accept": [
+        "Fidelidad",
+        "Faithfulness"
+      ]
+    }
+  ]
+}

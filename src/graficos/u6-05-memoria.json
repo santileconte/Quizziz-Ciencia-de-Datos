@@ -1,0 +1,61 @@
+{
+  "title": "Jerarquía de información de un agente (Huyen)",
+  "topic": "U6 · Inteligencia Artificial Generativa",
+  "order": 50,
+  "width": 960,
+  "height": 400,
+  "fuente": "Huyen, AI Engineering, cap. 6, fig. 6-16 (págs. 48–51 del PDF)",
+  "blanks": [
+    {
+      "id": "b1",
+      "x": 584,
+      "y": 144,
+      "w": 152,
+      "h": 42,
+      "answer": "Retriever",
+      "level": "extra",
+      "accept": [
+        "Recuperador"
+      ]
+    },
+    {
+      "id": "b2",
+      "x": 767,
+      "y": 50,
+      "w": 186,
+      "h": 29,
+      "answer": "Memoria de largo plazo",
+      "level": "clave",
+      "accept": [
+        "Largo plazo",
+        "Long-term memory"
+      ]
+    },
+    {
+      "id": "b3",
+      "x": 76,
+      "y": 238,
+      "w": 187,
+      "h": 29,
+      "answer": "Memoria de corto plazo",
+      "level": "clave",
+      "accept": [
+        "Corto plazo",
+        "Short-term memory"
+      ]
+    },
+    {
+      "id": "b4",
+      "x": 774,
+      "y": 326,
+      "w": 172,
+      "h": 29,
+      "answer": "Conocimiento interno",
+      "level": "clave",
+      "accept": [
+        "Internal knowledge",
+        "Conocimiento del modelo"
+      ]
+    }
+  ]
+}
