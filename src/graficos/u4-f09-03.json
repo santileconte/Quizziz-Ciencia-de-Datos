@@ -1,0 +1,84 @@
+{
+ "title": "Figure 1-8. How NLP, ML, and DL are related",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 903,
+ "width": 1600,
+ "height": 997,
+ "fuente": "Vajjala, figura 1-8, pág. 13 del PDF · «[OBLIGATORIO] Vajjala - Practical NLP.pdf»",
+ "figura": "f09-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 467,
+   "y": 56,
+   "w": 65,
+   "h": 60,
+   "answer": "AI",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 261,
+   "y": 272,
+   "w": 74,
+   "h": 58,
+   "answer": "ML",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 752,
+   "y": 471,
+   "w": 83,
+   "h": 42,
+   "answer": "NLP",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 263,
+   "y": 629,
+   "w": 72,
+   "h": 63,
+   "answer": "DL",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 1039,
+   "y": 345,
+   "w": 402,
+   "h": 82,
+   "answer": "Artificial intelligence",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1039,
+   "y": 437,
+   "w": 355,
+   "h": 81,
+   "answer": "Machine learning",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1039,
+   "y": 526,
+   "w": 532,
+   "h": 83,
+   "answer": "Natural Language Processing",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1039,
+   "y": 620,
+   "w": 307,
+   "h": 81,
+   "answer": "Deep learning",
+   "level": "clave"
+  }
+ ]
+}

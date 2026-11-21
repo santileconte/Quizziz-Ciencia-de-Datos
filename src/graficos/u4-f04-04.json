@@ -1,0 +1,102 @@
+{
+ "title": "Figure 2.13 A high-level pipeline of how we will approach feature engineering in this book",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 404,
+ "width": 1600,
+ "height": 972,
+ "fuente": "Ozdemir, figura 2.13, pág. 33 del PDF · «[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf»",
+ "figura": "f04-04",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 798,
+   "y": 3,
+   "w": 265,
+   "h": 174,
+   "answer": "Use feature improvement/construction to enhance signals.",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 394,
+   "y": 251,
+   "w": 69,
+   "h": 49,
+   "answer": "Yes",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 70,
+   "y": 428,
+   "w": 46,
+   "h": 33,
+   "answer": "No",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 0,
+   "y": 275,
+   "w": 177,
+   "h": 70,
+   "answer": "Are our data structured?",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 806,
+   "y": 275,
+   "w": 151,
+   "h": 70,
+   "answer": "Structured data",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1367,
+   "y": 275,
+   "w": 142,
+   "h": 70,
+   "answer": "Evaluate ML model",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 225,
+   "y": 458,
+   "w": 310,
+   "h": 115,
+   "answer": "Structure them with feature construction, extraction, or learning",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 801,
+   "y": 453,
+   "w": 285,
+   "h": 218,
+   "answer": "Use feature extraction/learning to map features to a new feature space.",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1270,
+   "y": 466,
+   "w": 323,
+   "h": 176,
+   "answer": "If performance is not where we want it to be, continue to engineer features.",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 744,
+   "y": 800,
+   "w": 391,
+   "h": 168,
+   "answer": "Assign levels to features to know which feature engineering technique to use.",
+   "level": "clave"
+  }
+ ]
+}

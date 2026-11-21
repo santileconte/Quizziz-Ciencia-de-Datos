@@ -1,0 +1,111 @@
+{
+ "title": "Figure 3-1. Turning raw text into a bag-of-words representation",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 801,
+ "width": 1600,
+ "height": 1872,
+ "fuente": "Zheng, figura 3-1, pág. 41 del PDF · «[Caps 1 y 3 OBLIGATORIOS] Zheng - Feature Engineering for ML.pdf»",
+ "figura": "f08-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 213,
+   "y": 13,
+   "w": 338,
+   "h": 83,
+   "answer": "Raw Text",
+   "level": "extra"
+  },
+  {
+   "id": "b2",
+   "x": 1019,
+   "y": 13,
+   "w": 508,
+   "h": 190,
+   "answer": "Bag-of-words vector",
+   "level": "extra"
+  },
+  {
+   "id": "b3",
+   "x": 78,
+   "y": 916,
+   "w": 609,
+   "h": 190,
+   "answer": "it is a puppy and it is extremely cute",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1293,
+   "y": 276,
+   "w": 52,
+   "h": 80,
+   "answer": "it",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 1190,
+   "y": 446,
+   "w": 174,
+   "h": 103,
+   "answer": "they",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1132,
+   "y": 642,
+   "w": 213,
+   "h": 83,
+   "answer": "puppy",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1212,
+   "y": 815,
+   "w": 119,
+   "h": 63,
+   "answer": "and",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1242,
+   "y": 977,
+   "w": 103,
+   "h": 77,
+   "answer": "cat",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1051,
+   "y": 1165,
+   "w": 317,
+   "h": 62,
+   "answer": "aardvark",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 1199,
+   "y": 1326,
+   "w": 143,
+   "h": 74,
+   "answer": "cute",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 1005,
+   "y": 1499,
+   "w": 340,
+   "h": 97,
+   "answer": "extremely",
+   "level": "clave"
+  }
+ ]
+}

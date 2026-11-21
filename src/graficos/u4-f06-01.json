@@ -1,0 +1,129 @@
+{
+ "title": "Figure 2.6 The types of data",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 601,
+ "width": 1600,
+ "height": 1718,
+ "fuente": "Ozdemir, figura 2.6, pág. 23 del PDF · «[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf»",
+ "figura": "f06-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 689,
+   "y": 0,
+   "w": 219,
+   "h": 40,
+   "answer": "Types of data",
+   "level": "extra"
+  },
+  {
+   "id": "b2",
+   "x": 297,
+   "y": 188,
+   "w": 201,
+   "h": 29,
+   "answer": "Nominal scale",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 1110,
+   "y": 188,
+   "w": 189,
+   "h": 29,
+   "answer": "Ordinal scale",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 169,
+   "y": 228,
+   "w": 456,
+   "h": 71,
+   "answer": "Used to categorize data with no inherent order or quantitative value",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 999,
+   "y": 228,
+   "w": 411,
+   "h": 71,
+   "answer": "Used to impose a sense of order with no quantitative value",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 312,
+   "y": 440,
+   "w": 154,
+   "h": 35,
+   "answer": "Blood type",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1102,
+   "y": 437,
+   "w": 191,
+   "h": 34,
+   "answer": "Letter grades",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 301,
+   "y": 930,
+   "w": 191,
+   "h": 30,
+   "answer": "Interval scale",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1125,
+   "y": 931,
+   "w": 159,
+   "h": 29,
+   "answer": "Ratio scale",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 126,
+   "y": 977,
+   "w": 565,
+   "h": 73,
+   "answer": "These are quantitative values for which the difference between values has meaning.",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 954,
+   "y": 977,
+   "w": 501,
+   "h": 136,
+   "answer": "These are quantitative values with interpretable differences and for which a true zero exists, enabling complex mathematics.",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 299,
+   "y": 1192,
+   "w": 182,
+   "h": 35,
+   "answer": "Temperature",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 1159,
+   "y": 1152,
+   "w": 96,
+   "h": 36,
+   "answer": "Height",
+   "level": "clave"
+  }
+ ]
+}

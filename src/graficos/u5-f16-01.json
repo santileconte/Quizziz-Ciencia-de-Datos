@@ -1,0 +1,57 @@
+{
+ "title": "Figure 3-1. Data architecture is a subset of enterprise architecture",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1601,
+ "width": 1600,
+ "height": 261,
+ "fuente": "Reis cap. 3, figura 3-1, pág. 1 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf»",
+ "figura": "f16-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 576,
+   "y": 17,
+   "w": 452,
+   "h": 61,
+   "answer": "Enterprise architecture",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 96,
+   "y": 110,
+   "w": 215,
+   "h": 91,
+   "answer": "Business architecture",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 495,
+   "y": 108,
+   "w": 214,
+   "h": 93,
+   "answer": "Technical architecture",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 890,
+   "y": 108,
+   "w": 216,
+   "h": 93,
+   "answer": "Application architecture",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 1287,
+   "y": 110,
+   "w": 216,
+   "h": 91,
+   "answer": "Data architecture",
+   "level": "clave"
+  }
+ ]
+}

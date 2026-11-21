@@ -26,8 +26,8 @@ export function Home() {
           <p className="lede">
             Estudiá cada gráfico con todo su texto. Después los conceptos clave desaparecen y los tenés que escribir vos.
             El profesor les da mucha importancia a los gráficos: el ciclo de vida de Reis, las capas Medallion y los
-            principios de Data Mesh valieron más de 5 puntos en el parcial 2025. Los gráficos están redibujados a partir de
-            las figuras de los libros de la cátedra; cada uno indica libro, figura y página.
+            principios de Data Mesh valieron más de 5 puntos en el parcial 2025. Cada gráfico es la figura original del
+            libro, con su texto tapado y copiado tal cual (en inglés); cada uno indica libro, figura y página.
           </p>
         </div>
         <HeroArt />

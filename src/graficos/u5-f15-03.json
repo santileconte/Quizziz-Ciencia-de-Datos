@@ -1,0 +1,48 @@
+{
+ "title": "Figure 2-5. Types of analytics",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1503,
+ "width": 1600,
+ "height": 492,
+ "fuente": "Reis cap. 2, figura 2-5, pág. 12 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 2.pdf»",
+ "figura": "f15-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 624,
+   "y": 47,
+   "w": 354,
+   "h": 61,
+   "answer": "Types of analytics",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 85,
+   "y": 386,
+   "w": 240,
+   "h": 62,
+   "answer": "Operational",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 610,
+   "y": 360,
+   "w": 399,
+   "h": 117,
+   "answer": "Business intelligence, ad hoc",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1287,
+   "y": 386,
+   "w": 219,
+   "h": 51,
+   "answer": "Embedded",
+   "level": "clave"
+  }
+ ]
+}

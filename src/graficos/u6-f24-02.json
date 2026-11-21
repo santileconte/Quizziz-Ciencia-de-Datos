@@ -1,0 +1,129 @@
+{
+ "title": "Figure 6-3. A high-level view of how an embedding-based, or semantic, retriever works.",
+ "topic": "U6 · Inteligencia Artificial Generativa",
+ "order": 2402,
+ "width": 1600,
+ "height": 1129,
+ "fuente": "Huyen, figura 6-3, pág. 9 del PDF · «[OBLIGATORIO] AI_Engineering_Chapter_6_RAG_and_Agents.pdf»",
+ "figura": "f24-02",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 751,
+   "y": 33,
+   "w": 119,
+   "h": 50,
+   "answer": "Index",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 56,
+   "y": 136,
+   "w": 325,
+   "h": 55,
+   "answer": "External memory",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 48,
+   "y": 191,
+   "w": 330,
+   "h": 112,
+   "answer": "Documents, tables, chat history, etc.",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 732,
+   "y": 171,
+   "w": 146,
+   "h": 55,
+   "answer": "Splitter",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 708,
+   "y": 429,
+   "w": 220,
+   "h": 101,
+   "answer": "Embedding model",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1319,
+   "y": 427,
+   "w": 188,
+   "h": 42,
+   "answer": "VectorDB",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1288,
+   "y": 477,
+   "w": 254,
+   "h": 111,
+   "answer": "External data embeddings",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 195,
+   "y": 680,
+   "w": 115,
+   "h": 54,
+   "answer": "Query",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 867,
+   "y": 734,
+   "w": 312,
+   "h": 56,
+   "answer": "Query embedding",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 1316,
+   "y": 771,
+   "w": 185,
+   "h": 53,
+   "answer": "Retriever",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 708,
+   "y": 937,
+   "w": 213,
+   "h": 101,
+   "answer": "Generative model",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 1029,
+   "y": 988,
+   "w": 436,
+   "h": 55,
+   "answer": "Context relevant to query",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 195,
+   "y": 1058,
+   "w": 172,
+   "h": 54,
+   "answer": "Response",
+   "level": "clave"
+  }
+ ]
+}

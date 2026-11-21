@@ -1,0 +1,93 @@
+{
+ "title": "Figure 2-1. Generic NLP pipeline",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 1001,
+ "width": 1600,
+ "height": 509,
+ "fuente": "Vajjala, figura 2-1, pág. 33 del PDF · «[OBLIGATORIO] Vajjala - Practical NLP.pdf»",
+ "figura": "f10-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 33,
+   "y": 59,
+   "w": 269,
+   "h": 50,
+   "answer": "Data Acquisition",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 477,
+   "y": 56,
+   "w": 226,
+   "h": 53,
+   "answer": "Text Cleaning",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 890,
+   "y": 59,
+   "w": 248,
+   "h": 50,
+   "answer": "Pre-Processing",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1337,
+   "y": 35,
+   "w": 200,
+   "h": 96,
+   "answer": "Feature Engineering",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 1357,
+   "y": 404,
+   "w": 158,
+   "h": 52,
+   "answer": "Modeling",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 926,
+   "y": 404,
+   "w": 174,
+   "h": 43,
+   "answer": "Evaluation",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 487,
+   "y": 404,
+   "w": 208,
+   "h": 52,
+   "answer": "Deployment",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 34,
+   "y": 380,
+   "w": 268,
+   "h": 99,
+   "answer": "Monitoring and Model Updating",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 755,
+   "y": 207,
+   "w": 234,
+   "h": 90,
+   "answer": "Improving the model",
+   "level": "clave"
+  }
+ ]
+}

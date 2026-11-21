@@ -1,0 +1,93 @@
+{
+ "title": "Figure 2-8. Common pre-processing steps on a blob of text",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 1003,
+ "width": 1600,
+ "height": 1239,
+ "fuente": "Vajjala, figura 2-8, pág. 51 del PDF · «[OBLIGATORIO] Vajjala - Practical NLP.pdf»",
+ "figura": "f10-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 127,
+   "y": 56,
+   "w": 96,
+   "h": 66,
+   "answer": "Text",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 602,
+   "y": 38,
+   "w": 240,
+   "h": 103,
+   "answer": "Sentence Tokenization",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 1332,
+   "y": 68,
+   "w": 198,
+   "h": 44,
+   "answer": "Sentences",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 53,
+   "y": 632,
+   "w": 180,
+   "h": 45,
+   "answer": "Sentence",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 590,
+   "y": 303,
+   "w": 236,
+   "h": 54,
+   "answer": "Lowercasing",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 592,
+   "y": 492,
+   "w": 228,
+   "h": 106,
+   "answer": "Removal of Punctuation",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 607,
+   "y": 740,
+   "w": 198,
+   "h": 55,
+   "answer": "Stemming",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 567,
+   "y": 952,
+   "w": 280,
+   "h": 45,
+   "answer": "Lemmatization",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 660,
+   "y": 1178,
+   "w": 98,
+   "h": 44,
+   "answer": "Basic",
+   "level": "clave"
+  }
+ ]
+}

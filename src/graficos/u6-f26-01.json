@@ -1,0 +1,255 @@
+{
+ "title": "Figure 1-1. The four types of AI (source: Dr. Marily Nika)",
+ "topic": "U6 · Inteligencia Artificial Generativa",
+ "order": 2601,
+ "width": 1600,
+ "height": 1201,
+ "fuente": "Nika, figura 1-1, pág. 3 del PDF · «[OBLIGATORIO] Nika - Chapter 1. The Role of AI Product Managers 2.pdf»",
+ "figura": "f26-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 10,
+   "y": 18,
+   "w": 762,
+   "h": 274,
+   "answer": "THE LANDSCAPE OF AI AND ITS USE CASES",
+   "level": "extra"
+  },
+  {
+   "id": "b2",
+   "x": 824,
+   "y": 25,
+   "w": 218,
+   "h": 131,
+   "answer": "ASI Artificial Superintelligence",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 738,
+   "y": 181,
+   "w": 190,
+   "h": 118,
+   "answer": "AGI Artificial General Intelligence",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 553,
+   "y": 370,
+   "w": 394,
+   "h": 123,
+   "answer": "Traditional AI",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 464,
+   "y": 541,
+   "w": 222,
+   "h": 101,
+   "answer": "(Multimodal) GenAI",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1057,
+   "y": 98,
+   "w": 263,
+   "h": 106,
+   "answer": "Art/Books that understand human emotion",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1213,
+   "y": 244,
+   "w": 235,
+   "h": 78,
+   "answer": "Solving Global Challenges",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 943,
+   "y": 278,
+   "w": 191,
+   "h": 44,
+   "answer": "Agentic AI",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 58,
+   "y": 343,
+   "w": 276,
+   "h": 132,
+   "answer": "Perform Specific Tasks",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 1039,
+   "y": 354,
+   "w": 172,
+   "h": 94,
+   "answer": "Medical Diagnosis/ Treatment",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 1316,
+   "y": 364,
+   "w": 188,
+   "h": 71,
+   "answer": "Healthcare Revolution",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 871,
+   "y": 463,
+   "w": 96,
+   "h": 54,
+   "answer": "NLP",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 1108,
+   "y": 502,
+   "w": 188,
+   "h": 105,
+   "answer": "Addressing Climate Change",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 1349,
+   "y": 497,
+   "w": 225,
+   "h": 77,
+   "answer": "Environment Management",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 769,
+   "y": 544,
+   "w": 275,
+   "h": 37,
+   "answer": "Face Detection",
+   "level": "clave"
+  },
+  {
+   "id": "b16",
+   "x": 831,
+   "y": 618,
+   "w": 215,
+   "h": 81,
+   "answer": "Image Recognition",
+   "level": "clave"
+  },
+  {
+   "id": "b17",
+   "x": 1366,
+   "y": 644,
+   "w": 193,
+   "h": 78,
+   "answer": "Space Exploration",
+   "level": "clave"
+  },
+  {
+   "id": "b18",
+   "x": 440,
+   "y": 646,
+   "w": 303,
+   "h": 93,
+   "answer": "Content Generation: (Image, video, text, audio)",
+   "level": "clave"
+  },
+  {
+   "id": "b19",
+   "x": 1132,
+   "y": 658,
+   "w": 179,
+   "h": 100,
+   "answer": "Accelerate Scientific Research",
+   "level": "clave"
+  },
+  {
+   "id": "b20",
+   "x": 754,
+   "y": 731,
+   "w": 312,
+   "h": 85,
+   "answer": "Speech Recognition, TTS",
+   "level": "clave"
+  },
+  {
+   "id": "b21",
+   "x": 1087,
+   "y": 797,
+   "w": 211,
+   "h": 67,
+   "answer": "Personalized Education",
+   "level": "clave"
+  },
+  {
+   "id": "b22",
+   "x": 538,
+   "y": 859,
+   "w": 134,
+   "h": 82,
+   "answer": "Data Mining",
+   "level": "clave"
+  },
+  {
+   "id": "b23",
+   "x": 716,
+   "y": 853,
+   "w": 220,
+   "h": 85,
+   "answer": "Pattern Recognition",
+   "level": "clave"
+  },
+  {
+   "id": "b24",
+   "x": 1004,
+   "y": 907,
+   "w": 217,
+   "h": 72,
+   "answer": "Autonomous Systems",
+   "level": "clave"
+  },
+  {
+   "id": "b25",
+   "x": 884,
+   "y": 996,
+   "w": 208,
+   "h": 70,
+   "answer": "Physical AI / Robotics",
+   "level": "clave"
+  },
+  {
+   "id": "b26",
+   "x": 262,
+   "y": 1016,
+   "w": 315,
+   "h": 128,
+   "answer": "Can behave in a humanlike way",
+   "level": "clave"
+  },
+  {
+   "id": "b27",
+   "x": 1140,
+   "y": 1030,
+   "w": 270,
+   "h": 168,
+   "answer": "Smarter than Humans (hypothetical)",
+   "level": "clave"
+  }
+ ]
+}

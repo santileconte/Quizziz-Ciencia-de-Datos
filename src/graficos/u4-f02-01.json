@@ -1,0 +1,93 @@
+{
+ "title": "Figure 1-2. The place of feature engineering in the machine learning workflow",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 201,
+ "width": 1600,
+ "height": 721,
+ "fuente": "Zheng, figura 1-2, pág. 4 del PDF · «[Caps 1 y 3 OBLIGATORIOS] Zheng - Feature Engineering for ML.pdf»",
+ "figura": "f02-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 0,
+   "y": 22,
+   "w": 142,
+   "h": 48,
+   "answer": "Source 1",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 0,
+   "y": 140,
+   "w": 147,
+   "h": 45,
+   "answer": "Source 2",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 0,
+   "y": 377,
+   "w": 146,
+   "h": 47,
+   "answer": "Source n",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 485,
+   "y": 173,
+   "w": 81,
+   "h": 100,
+   "answer": "Raw Data",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 790,
+   "y": 197,
+   "w": 145,
+   "h": 47,
+   "answer": "Features",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1084,
+   "y": 148,
+   "w": 163,
+   "h": 60,
+   "answer": "Modeling",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1403,
+   "y": 197,
+   "w": 137,
+   "h": 58,
+   "answer": "Insights",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 237,
+   "y": 571,
+   "w": 179,
+   "h": 113,
+   "answer": "Select and merge",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 590,
+   "y": 571,
+   "w": 174,
+   "h": 103,
+   "answer": "Clean and transform",
+   "level": "clave"
+  }
+ ]
+}

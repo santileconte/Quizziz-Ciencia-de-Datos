@@ -1,0 +1,147 @@
+{
+ "title": "Figure 4-5. Example data product architecture",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 1304,
+ "width": 1600,
+ "height": 1084,
+ "fuente": "Strengholt DMS, figura 4-5, pág. 17 del PDF · «[OBLIGATORIO] Strengholt - Data Management at Scale - Chapter 4. Data Product Management.pdf»",
+ "figura": "f13-04",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 290,
+   "y": 36,
+   "w": 1011,
+   "h": 56,
+   "answer": "Metadata layer: discover, observe, approve, secure, deploy",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 538,
+   "y": 220,
+   "w": 427,
+   "h": 51,
+   "answer": "Data product architecture",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 516,
+   "y": 331,
+   "w": 223,
+   "h": 58,
+   "answer": "Data pipeline",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 741,
+   "y": 331,
+   "w": 218,
+   "h": 58,
+   "answer": "Enrichments",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 516,
+   "y": 421,
+   "w": 223,
+   "h": 53,
+   "answer": "Observability",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 789,
+   "y": 426,
+   "w": 139,
+   "h": 48,
+   "answer": "Security",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 39,
+   "y": 509,
+   "w": 188,
+   "h": 91,
+   "answer": "Operational systems",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 327,
+   "y": 616,
+   "w": 91,
+   "h": 87,
+   "answer": "Input ports",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1053,
+   "y": 618,
+   "w": 122,
+   "h": 91,
+   "answer": "Output ports",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 503,
+   "y": 687,
+   "w": 115,
+   "h": 54,
+   "answer": "Layer 1",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 682,
+   "y": 668,
+   "w": 130,
+   "h": 76,
+   "answer": "Layer 2",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 871,
+   "y": 690,
+   "w": 107,
+   "h": 49,
+   "answer": "Layer 3",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 1096,
+   "y": 559,
+   "w": 205,
+   "h": 41,
+   "answer": "Enforcement",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 634,
+   "y": 827,
+   "w": 218,
+   "h": 42,
+   "answer": "Infrastructure",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 448,
+   "y": 1008,
+   "w": 410,
+   "h": 56,
+   "answer": "Data domain boundary",
+   "level": "clave"
+  }
+ ]
+}

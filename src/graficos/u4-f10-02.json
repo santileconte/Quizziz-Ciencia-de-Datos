@@ -1,0 +1,93 @@
+{
+ "title": "Figure 2-7. Difference between stemming and lemmatization [34]",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 1002,
+ "width": 1600,
+ "height": 588,
+ "fuente": "Vajjala, figura 2-7, pág. 49 del PDF · «[OBLIGATORIO] Vajjala - Practical NLP.pdf»",
+ "figura": "f10-02",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 181,
+   "y": 54,
+   "w": 408,
+   "h": 90,
+   "answer": "Stemming",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 891,
+   "y": 54,
+   "w": 593,
+   "h": 85,
+   "answer": "Lemmatization",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 496,
+   "y": 156,
+   "w": 220,
+   "h": 93,
+   "answer": "adjust",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 441,
+   "y": 258,
+   "w": 298,
+   "h": 86,
+   "answer": "formaliti",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 466,
+   "y": 361,
+   "w": 230,
+   "h": 93,
+   "answer": "formal",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 451,
+   "y": 466,
+   "w": 183,
+   "h": 88,
+   "answer": "airlin",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1181,
+   "y": 146,
+   "w": 243,
+   "h": 98,
+   "answer": "(to) be",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1246,
+   "y": 258,
+   "w": 188,
+   "h": 98,
+   "answer": "good",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1231,
+   "y": 366,
+   "w": 298,
+   "h": 98,
+   "answer": "meeting",
+   "level": "clave"
+  }
+ ]
+}

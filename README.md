@@ -17,10 +17,9 @@ Al hacer push a `main`, `.github/workflows/deploy.yml` publica el sitio en GitHu
 
 ## Secciones
 
-1. **Gráficos.** 24 gráficos para completar (176 huecos), redibujados a partir de las figuras de los libros: pipeline de
-   ML y de feature engineering, tipos de features, model-centric vs data-centric, niveles de datos, pipeline de NLP,
-   cross validation, ciclo de vida de Reis, arquitectura empresarial, Lambda y Kappa, Data Mesh, Medallion, componentes de
-   un agente, pipelines de RAG, tríada de evaluación y más. Cada uno dice en qué libro, figura y página se basa (`fuente`).
+1. **Gráficos.** 60 figuras originales de los libros para completar (632 huecos). No hay nada redibujado: cada hueco
+   tapa un texto de la figura y la respuesta es ese texto copiado tal cual (en inglés, como en el libro). El título es el
+   epígrafe del libro y `fuente` dice libro, figura y página del PDF. La corrección ignora mayúsculas, tildes y puntuación.
    - **Estudio**, **Práctica** (corrección al instante, segunda oportunidad, pistas) y **Simulacro** (sin ayudas).
    - Filtros **Clave**, **Todo** y **Mis errores**. Un concepto queda dominado al acertarlo 2 veces seguidas.
    - **Practicar en serie:** una unidad entera o todo junto.
@@ -50,7 +49,7 @@ Al hacer push a `main`, `.github/workflows/deploy.yml` publica el sitio en GitHu
 | Figuras de las preguntas | `src/cuestionarios/img/` |
 | Claves confirmadas | `src/cuestionarios/verificadas.ts` |
 | Apunte de estudio y mapas | `tools/contenido_apunte.py`, `tools/contenido_mapas.py` → `python3 tools/build_apunte.py` |
-| Gráficos | `tools/graficos.py` → `python3 tools/graficos.py` (necesita Pillow) |
+| Gráficos (figura + huecos) | `src/graficos/<id>.webp` y `<id>.json`; se generan con `tools/huecos/` (necesita PyMuPDF, OpenCV y los PDF) |
 | Figuras originales | `tools/figuras/build_figuras.py` → `src/figuras/` (necesita PyMuPDF y los PDF) |
 | Crucigramas | `src/crucigramas/datos.ts` |
 

@@ -1,0 +1,84 @@
+{
+ "title": "Figure 4-2. An application that uses CQRS separates queries and commands by using two different data models: a command model for the transactions and a query model for the reads",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 1302,
+ "width": 1600,
+ "height": 756,
+ "fuente": "Strengholt DMS, figura 4-2, pág. 6 del PDF · «[OBLIGATORIO] Strengholt - Data Management at Scale - Chapter 4. Data Product Management.pdf»",
+ "figura": "f13-02",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 566,
+   "y": 31,
+   "w": 473,
+   "h": 63,
+   "answer": "Application architecture",
+   "level": "extra"
+  },
+  {
+   "id": "b2",
+   "x": 724,
+   "y": 135,
+   "w": 174,
+   "h": 45,
+   "answer": "Interface",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 279,
+   "y": 301,
+   "w": 177,
+   "h": 40,
+   "answer": "Commands",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1367,
+   "y": 301,
+   "w": 123,
+   "h": 45,
+   "answer": "Queries",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 58,
+   "y": 594,
+   "w": 416,
+   "h": 110,
+   "answer": "Command store (writes, updates, and deletes)",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 500,
+   "y": 528,
+   "w": 198,
+   "h": 47,
+   "answer": "Change feed",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 989,
+   "y": 528,
+   "w": 79,
+   "h": 39,
+   "answer": "Data",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1181,
+   "y": 640,
+   "w": 352,
+   "h": 53,
+   "answer": "Query model (reads)",
+   "level": "clave"
+  }
+ ]
+}

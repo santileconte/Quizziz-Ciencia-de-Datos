@@ -1,0 +1,174 @@
+{
+ "title": "Figure 6-12. A ReAct agent in action. Image from the ReAct paper (Yao et al., 2022). The image is licensed under CC BY 4.0.",
+ "topic": "U6 · Inteligencia Artificial Generativa",
+ "order": 2501,
+ "width": 1600,
+ "height": 1677,
+ "fuente": "Huyen, figura 6-12, pág. 42 del PDF · «[OBLIGATORIO] AI_Engineering_Chapter_6_RAG_and_Agents.pdf»",
+ "figura": "f25-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 594,
+   "y": 22,
+   "w": 330,
+   "h": 46,
+   "answer": "(1) Hotspot QA",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 34,
+   "y": 108,
+   "w": 206,
+   "h": 40,
+   "answer": "Question",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 502,
+   "y": 334,
+   "w": 624,
+   "h": 50,
+   "answer": "(1d) ReAct (Reason + Act)",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 32,
+   "y": 420,
+   "w": 236,
+   "h": 48,
+   "answer": "Thought 1",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 32,
+   "y": 520,
+   "w": 134,
+   "h": 46,
+   "answer": "Act 1",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 32,
+   "y": 570,
+   "w": 138,
+   "h": 46,
+   "answer": "Obs 1",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 32,
+   "y": 770,
+   "w": 236,
+   "h": 48,
+   "answer": "Thought 2",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 32,
+   "y": 920,
+   "w": 134,
+   "h": 46,
+   "answer": "Act 2",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 32,
+   "y": 970,
+   "w": 138,
+   "h": 46,
+   "answer": "Obs 2",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 32,
+   "y": 1170,
+   "w": 236,
+   "h": 48,
+   "answer": "Thought 3",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 32,
+   "y": 1270,
+   "w": 134,
+   "h": 46,
+   "answer": "Act 3",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 32,
+   "y": 1320,
+   "w": 138,
+   "h": 46,
+   "answer": "Obs 3",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 32,
+   "y": 1420,
+   "w": 236,
+   "h": 48,
+   "answer": "Thought 4",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 32,
+   "y": 1570,
+   "w": 134,
+   "h": 46,
+   "answer": "Act 4",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 210,
+   "y": 522,
+   "w": 158,
+   "h": 46,
+   "answer": "Search",
+   "level": "extra"
+  },
+  {
+   "id": "b16",
+   "x": 210,
+   "y": 922,
+   "w": 158,
+   "h": 46,
+   "answer": "Search",
+   "level": "extra"
+  },
+  {
+   "id": "b17",
+   "x": 210,
+   "y": 1272,
+   "w": 158,
+   "h": 46,
+   "answer": "Search",
+   "level": "extra"
+  },
+  {
+   "id": "b18",
+   "x": 210,
+   "y": 1570,
+   "w": 160,
+   "h": 48,
+   "answer": "Finish",
+   "level": "extra"
+  }
+ ]
+}

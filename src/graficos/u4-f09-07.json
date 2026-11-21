@@ -1,0 +1,174 @@
+{
+ "title": "Figure 1-1. NLP tasks and applications",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 907,
+ "width": 1600,
+ "height": 817,
+ "fuente": "Vajjala, figura 1-1, pág. 3 del PDF · «[OBLIGATORIO] Vajjala - Practical NLP.pdf»",
+ "figura": "f09-07",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 75,
+   "y": 55,
+   "w": 194,
+   "h": 179,
+   "answer": "Core Tasks Covered in Chapters 3–7",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 42,
+   "y": 326,
+   "w": 259,
+   "h": 180,
+   "answer": "General Applications Covered in Chapters 4–7",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 66,
+   "y": 599,
+   "w": 216,
+   "h": 180,
+   "answer": "Industry Specific Covered in Chapters 8–10",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 359,
+   "y": 156,
+   "w": 198,
+   "h": 80,
+   "answer": "Text Classification",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 599,
+   "y": 154,
+   "w": 195,
+   "h": 82,
+   "answer": "Information Extraction",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 834,
+   "y": 154,
+   "w": 224,
+   "h": 90,
+   "answer": "Conversational Agent",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1086,
+   "y": 154,
+   "w": 195,
+   "h": 82,
+   "answer": "Information Retrieval",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1299,
+   "y": 156,
+   "w": 281,
+   "h": 88,
+   "answer": "Question Answering Systems",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 361,
+   "y": 424,
+   "w": 196,
+   "h": 88,
+   "answer": "Spam Classification",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 588,
+   "y": 427,
+   "w": 229,
+   "h": 82,
+   "answer": "Calendar Event Extraction",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 876,
+   "y": 427,
+   "w": 148,
+   "h": 82,
+   "answer": "Personal Assistants",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 1138,
+   "y": 427,
+   "w": 115,
+   "h": 90,
+   "answer": "Search Engines",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 1363,
+   "y": 449,
+   "w": 148,
+   "h": 47,
+   "answer": "Jeopardy!",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 366,
+   "y": 700,
+   "w": 187,
+   "h": 89,
+   "answer": "Social Media Analysis",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 610,
+   "y": 700,
+   "w": 196,
+   "h": 82,
+   "answer": "Retail Catalog Extraction",
+   "level": "clave"
+  },
+  {
+   "id": "b16",
+   "x": 830,
+   "y": 700,
+   "w": 231,
+   "h": 89,
+   "answer": "Health Records Analysis",
+   "level": "clave"
+  },
+  {
+   "id": "b17",
+   "x": 1120,
+   "y": 700,
+   "w": 139,
+   "h": 89,
+   "answer": "Financial Analysis",
+   "level": "clave"
+  },
+  {
+   "id": "b18",
+   "x": 1331,
+   "y": 700,
+   "w": 195,
+   "h": 82,
+   "answer": "Legal Entity Extraction",
+   "level": "clave"
+  }
+ ]
+}

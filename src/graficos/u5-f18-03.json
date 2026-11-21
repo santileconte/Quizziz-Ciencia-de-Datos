@@ -1,0 +1,129 @@
+{
+ "title": "Figure 1-3. Operating model of data mesh principles",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1803,
+ "width": 1600,
+ "height": 2382,
+ "fuente": "Dehghani, figura 1-3, pág. 56 del PDF · «[OBLIGATORIO CAP 1] Data Mesh Delivering Data-Driven Value at Scale (Dehghani, Zhamak).pdf»",
+ "figura": "f18-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 1026,
+   "y": 4,
+   "w": 574,
+   "h": 77,
+   "answer": "Federated computational governance",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 179,
+   "y": 239,
+   "w": 343,
+   "h": 149,
+   "answer": "Global policies automated by platform",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 789,
+   "y": 189,
+   "w": 380,
+   "h": 150,
+   "answer": "Federated team of domain representatives",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 129,
+   "y": 477,
+   "w": 213,
+   "h": 144,
+   "answer": "Policies applied to data products",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 183,
+   "y": 862,
+   "w": 123,
+   "h": 154,
+   "answer": "Data product",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 389,
+   "y": 1091,
+   "w": 112,
+   "h": 85,
+   "answer": "Apps",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1120,
+   "y": 1136,
+   "w": 257,
+   "h": 63,
+   "answer": "Business domain",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 617,
+   "y": 1307,
+   "w": 234,
+   "h": 69,
+   "answer": "Data sharing APIs",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 91,
+   "y": 1511,
+   "w": 288,
+   "h": 144,
+   "answer": "Platform services used by data products",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 1351,
+   "y": 1663,
+   "w": 242,
+   "h": 359,
+   "answer": "Cross-functional domain team: business, technology, and data",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 167,
+   "y": 1848,
+   "w": 229,
+   "h": 191,
+   "answer": "Data platform service interfaces",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 586,
+   "y": 2126,
+   "w": 367,
+   "h": 77,
+   "answer": "Self-serve data platform",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 47,
+   "y": 2307,
+   "w": 212,
+   "h": 64,
+   "answer": "Platform team",
+   "level": "clave"
+  }
+ ]
+}

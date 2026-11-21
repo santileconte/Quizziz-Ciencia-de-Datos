@@ -52,7 +52,7 @@ export const diagrams: Diagram[] = Object.entries(images)
 /**
  * Figuras originales que se pueden completar (src/figuras/huecos/<figura>.json).
  * Los huecos tapan el texto que se leyó en la figura y se verificó a mano; no se mezclan con los gráficos
- * redibujados del inicio: tienen sus propias series por tema (#/serie/fig-<tema>).
+ * del inicio: tienen sus propias series por tema (#/serie/fig-<tema>).
  */
 const figConfigs = import.meta.glob('../figuras/huecos/*.json', { eager: true, import: 'default' }) as Record<string, DiagramConfig>
 const figPorId = new Map(figuras.map((f) => [f.id, f]))

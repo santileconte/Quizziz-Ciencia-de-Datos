@@ -1,0 +1,57 @@
+{
+ "title": "Figure 3-2. Operational and technical data architecture",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1602,
+ "width": 1600,
+ "height": 383,
+ "fuente": "Reis cap. 3, figura 3-2, pág. 5 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf»",
+ "figura": "f16-02",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 583,
+   "y": 25,
+   "w": 438,
+   "h": 62,
+   "answer": "Data architecture",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 154,
+   "y": 162,
+   "w": 276,
+   "h": 70,
+   "answer": "Operational",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 1205,
+   "y": 162,
+   "w": 213,
+   "h": 59,
+   "answer": "Technical",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 236,
+   "y": 291,
+   "w": 110,
+   "h": 50,
+   "answer": "What",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 1266,
+   "y": 293,
+   "w": 99,
+   "h": 51,
+   "answer": "How",
+   "level": "clave"
+  }
+ ]
+}

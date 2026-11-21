@@ -1,0 +1,66 @@
+{
+ "title": "Figure 4-3. Flowchart of a text classification pipeline",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 1101,
+ "width": 1600,
+ "height": 1365,
+ "fuente": "Vajjala, figura 4-3, pág. 113 del PDF · «[OBLIGATORIO] Vajjala - Practical NLP.pdf»",
+ "figura": "f11-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 567,
+   "y": 75,
+   "w": 487,
+   "h": 114,
+   "answer": "Training data (texts and their categories)",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 599,
+   "y": 449,
+   "w": 423,
+   "h": 103,
+   "answer": "Pre-processing, feature extraction from texts",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 562,
+   "y": 782,
+   "w": 497,
+   "h": 169,
+   "answer": "Train and evaluate classifiers to learn the features-category mapping",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 597,
+   "y": 1182,
+   "w": 425,
+   "h": 112,
+   "answer": "Use the classifier to predict on new tasks",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 46,
+   "y": 1149,
+   "w": 272,
+   "h": 171,
+   "answer": "New texts with unknown categories",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1437,
+   "y": 456,
+   "w": 151,
+   "h": 98,
+   "answer": "Training process",
+   "level": "clave"
+  }
+ ]
+}

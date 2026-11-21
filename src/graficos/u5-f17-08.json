@@ -1,0 +1,147 @@
+{
+ "title": "Figure 1-8. Typical lakehouse architecture, with a representation of the Bronze, Silver, and Gold layers included",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1708,
+ "width": 1600,
+ "height": 1015,
+ "fuente": "Medallion, figura 1-8, pág. 22 del PDF · «[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf»",
+ "figura": "f17-08",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 719,
+   "y": 16,
+   "w": 444,
+   "h": 48,
+   "answer": "Lakehouse architecture",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 858,
+   "y": 104,
+   "w": 163,
+   "h": 50,
+   "answer": "Compute",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 885,
+   "y": 180,
+   "w": 108,
+   "h": 53,
+   "answer": "Spark",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 763,
+   "y": 311,
+   "w": 353,
+   "h": 53,
+   "answer": "Cloud object storage",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 670,
+   "y": 388,
+   "w": 121,
+   "h": 41,
+   "answer": "Bronze",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 889,
+   "y": 385,
+   "w": 97,
+   "h": 44,
+   "answer": "Silver",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1103,
+   "y": 385,
+   "w": 83,
+   "h": 44,
+   "answer": "Gold",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 58,
+   "y": 368,
+   "w": 157,
+   "h": 46,
+   "answer": "Sources",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 60,
+   "y": 451,
+   "w": 148,
+   "h": 103,
+   "answer": "OLTP systems",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 60,
+   "y": 623,
+   "w": 148,
+   "h": 102,
+   "answer": "OLTP systems",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 60,
+   "y": 794,
+   "w": 148,
+   "h": 104,
+   "answer": "OLTP systems",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 328,
+   "y": 454,
+   "w": 207,
+   "h": 96,
+   "answer": "Operational data store",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 1375,
+   "y": 426,
+   "w": 211,
+   "h": 87,
+   "answer": "Data science workloads",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 1391,
+   "y": 616,
+   "w": 178,
+   "h": 88,
+   "answer": "Reporting workloads",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 1373,
+   "y": 804,
+   "w": 212,
+   "h": 90,
+   "answer": "Sharing with others",
+   "level": "clave"
+  }
+ ]
+}

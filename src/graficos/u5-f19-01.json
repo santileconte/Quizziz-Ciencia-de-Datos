@@ -1,0 +1,156 @@
+{
+ "title": "Figure 3-1. The Medallion architecture and its three layers: Bronze, Silver, and Gold",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1901,
+ "width": 1600,
+ "height": 762,
+ "fuente": "Medallion, figura 3-1, pág. 40 del PDF · «[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf»",
+ "figura": "f19-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 712,
+   "y": 15,
+   "w": 238,
+   "h": 57,
+   "answer": "Bronze layer",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 725,
+   "y": 70,
+   "w": 211,
+   "h": 52,
+   "answer": "(raw copies)",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 1035,
+   "y": 15,
+   "w": 210,
+   "h": 57,
+   "answer": "Silver layer",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1010,
+   "y": 70,
+   "w": 259,
+   "h": 99,
+   "answer": "(filtered, clean, augmented)",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 1353,
+   "y": 15,
+   "w": 193,
+   "h": 57,
+   "answer": "Gold layer",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1327,
+   "y": 70,
+   "w": 243,
+   "h": 99,
+   "answer": "(modeled for consumption)",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 58,
+   "y": 150,
+   "w": 154,
+   "h": 45,
+   "answer": "Sources",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 355,
+   "y": 125,
+   "w": 155,
+   "h": 93,
+   "answer": "Landing zone",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 60,
+   "y": 232,
+   "w": 146,
+   "h": 102,
+   "answer": "OLTP systems",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 68,
+   "y": 402,
+   "w": 126,
+   "h": 104,
+   "answer": "ERP system",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 68,
+   "y": 574,
+   "w": 126,
+   "h": 102,
+   "answer": "CRM system",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 354,
+   "y": 318,
+   "w": 148,
+   "h": 99,
+   "answer": "Blob file store",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 377,
+   "y": 599,
+   "w": 108,
+   "h": 50,
+   "answer": "Kafka",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 712,
+   "y": 346,
+   "w": 235,
+   "h": 229,
+   "answer": "Initial landing zone for raw data collected from various sources",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 1013,
+   "y": 206,
+   "w": 246,
+   "h": 518,
+   "answer": "Transitional stage where data is still source system-aligned and granular but has been processed to ensure quality and consistency",
+   "level": "clave"
+  },
+  {
+   "id": "b16",
+   "x": 1327,
+   "y": 301,
+   "w": 243,
+   "h": 330,
+   "answer": "Focus on performance and scalability, providing fast access to business insights",
+   "level": "clave"
+  }
+ ]
+}

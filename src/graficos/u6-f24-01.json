@@ -1,0 +1,75 @@
+{
+ "title": "Figure 6-2. A basic RAG architecture.",
+ "topic": "U6 · Inteligencia Artificial Generativa",
+ "order": 2401,
+ "width": 1223,
+ "height": 916,
+ "fuente": "Huyen, figura 6-2, pág. 4 del PDF · «[OBLIGATORIO] AI_Engineering_Chapter_6_RAG_and_Agents.pdf»",
+ "figura": "f24-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 758,
+   "y": 63,
+   "w": 331,
+   "h": 56,
+   "answer": "External memory",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 753,
+   "y": 119,
+   "w": 337,
+   "h": 107,
+   "answer": "Documents, tables, chat history, etc.",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 200,
+   "y": 381,
+   "w": 136,
+   "h": 53,
+   "answer": "Prompt",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 828,
+   "y": 418,
+   "w": 181,
+   "h": 43,
+   "answer": "Retriever",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 937,
+   "y": 538,
+   "w": 286,
+   "h": 107,
+   "answer": "Context relevant to query",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 812,
+   "y": 728,
+   "w": 213,
+   "h": 99,
+   "answer": "Generative model",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 195,
+   "y": 851,
+   "w": 173,
+   "h": 53,
+   "answer": "Response",
+   "level": "clave"
+  }
+ ]
+}

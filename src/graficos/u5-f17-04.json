@@ -1,0 +1,75 @@
+{
+ "title": "Figure 3-14. Lambda architecture",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1704,
+ "width": 1600,
+ "height": 368,
+ "fuente": "Reis cap. 3, figura 3-14, pág. 29 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf»",
+ "figura": "f17-04",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 882,
+   "y": 20,
+   "w": 154,
+   "h": 56,
+   "answer": "Serving",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 386,
+   "y": 62,
+   "w": 208,
+   "h": 107,
+   "answer": "Stream processing",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 386,
+   "y": 241,
+   "w": 208,
+   "h": 112,
+   "answer": "Batch processing",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 39,
+   "y": 150,
+   "w": 158,
+   "h": 110,
+   "answer": "Source systems",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 829,
+   "y": 116,
+   "w": 258,
+   "h": 56,
+   "answer": "Stream query",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 844,
+   "y": 265,
+   "w": 227,
+   "h": 59,
+   "answer": "Batch query",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1367,
+   "y": 180,
+   "w": 150,
+   "h": 53,
+   "answer": "Queries",
+   "level": "clave"
+  }
+ ]
+}

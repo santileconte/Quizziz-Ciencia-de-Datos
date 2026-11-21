@@ -1,0 +1,39 @@
+{
+ "title": "Figure 2-8. The three pillars of DataOps",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1505,
+ "width": 1600,
+ "height": 158,
+ "fuente": "Reis cap. 2, figura 2-8, pág. 25 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 2.pdf»",
+ "figura": "f15-05",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 77,
+   "y": 52,
+   "w": 251,
+   "h": 52,
+   "answer": "Automation",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 618,
+   "y": 20,
+   "w": 365,
+   "h": 123,
+   "answer": "Observability and monitoring",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 1301,
+   "y": 20,
+   "w": 195,
+   "h": 123,
+   "answer": "Incident response",
+   "level": "clave"
+  }
+ ]
+}

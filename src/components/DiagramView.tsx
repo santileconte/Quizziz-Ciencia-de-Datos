@@ -285,7 +285,7 @@ export function DiagramView({
                 {diagram.config.figura ? (
                   <span title="Figura original de los materiales; los huecos tapan su propio texto">Figura original: {diagram.config.fuente}</span>
                 ) : (
-                  <span title="Gráfico redibujado para este repaso a partir de estas fuentes">Basado en: {diagram.config.fuente}</span>
+                  <span title="Figura original del libro; el texto de los huecos está copiado tal cual de la figura">Fuente: {diagram.config.fuente}</span>
                 )}
               </>
             )}

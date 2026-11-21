@@ -1,0 +1,129 @@
+{
+ "title": "Figure 1.2 The ML pipeline. From left to right: we must understand the problem domain, obtain and understand data, engineer our features (which obviously is the main focus on this book), select and train our models, and then deploy models with the understanding that we may need to double back to any of the past steps if evaluations of the models show any kind of data or concept drift that would manifest as model decay—a drop in performance over time for our ML model.",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 401,
+ "width": 1600,
+ "height": 423,
+ "fuente": "Ozdemir, figura 1.2, pág. 6 del PDF · «[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf»",
+ "figura": "f04-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 43,
+   "y": 0,
+   "w": 119,
+   "h": 49,
+   "answer": "Step 1",
+   "level": "extra"
+  },
+  {
+   "id": "b2",
+   "x": 361,
+   "y": 0,
+   "w": 122,
+   "h": 49,
+   "answer": "Step 2",
+   "level": "extra"
+  },
+  {
+   "id": "b3",
+   "x": 724,
+   "y": 0,
+   "w": 122,
+   "h": 49,
+   "answer": "Step 3",
+   "level": "extra"
+  },
+  {
+   "id": "b4",
+   "x": 1063,
+   "y": 0,
+   "w": 125,
+   "h": 49,
+   "answer": "Step 4",
+   "level": "extra"
+  },
+  {
+   "id": "b5",
+   "x": 1402,
+   "y": 0,
+   "w": 125,
+   "h": 49,
+   "answer": "Step 5",
+   "level": "extra"
+  },
+  {
+   "id": "b6",
+   "x": 12,
+   "y": 115,
+   "w": 190,
+   "h": 140,
+   "answer": "Define the problem domain",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 312,
+   "y": 89,
+   "w": 218,
+   "h": 40,
+   "answer": "Obtain data",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 317,
+   "y": 189,
+   "w": 219,
+   "h": 97,
+   "answer": "Exploratory analysis",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 675,
+   "y": 138,
+   "w": 220,
+   "h": 98,
+   "answer": "Feature engineering",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 1039,
+   "y": 89,
+   "w": 168,
+   "h": 89,
+   "answer": "Model selection",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 1046,
+   "y": 238,
+   "w": 154,
+   "h": 48,
+   "answer": "Training",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 1353,
+   "y": 89,
+   "w": 223,
+   "h": 98,
+   "answer": "Model deployment",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 1366,
+   "y": 238,
+   "w": 197,
+   "h": 40,
+   "answer": "Evaluation",
+   "level": "clave"
+  }
+ ]
+}

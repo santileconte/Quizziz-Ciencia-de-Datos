@@ -1,0 +1,39 @@
+{
+ "title": "Figure 1-8. Our simplified data maturity model for a company",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1402,
+ "width": 1600,
+ "height": 387,
+ "fuente": "Reis cap. 1, figura 1-8, pág. 10 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 1.pdf»",
+ "figura": "f14-02",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 61,
+   "y": 251,
+   "w": 215,
+   "h": 113,
+   "answer": "1. Starting with data",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 702,
+   "y": 136,
+   "w": 193,
+   "h": 108,
+   "answer": "2. Scaling with data",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 1321,
+   "y": 16,
+   "w": 218,
+   "h": 113,
+   "answer": "3. Leading with data",
+   "level": "clave"
+  }
+ ]
+}

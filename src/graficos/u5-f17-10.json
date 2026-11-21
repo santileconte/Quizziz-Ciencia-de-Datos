@@ -1,0 +1,102 @@
+{
+ "title": "Figure 1-6. Typical data lake architecture with raw copies of data",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1710,
+ "width": 1600,
+ "height": 976,
+ "fuente": "Medallion, figura 1-6, pág. 13 del PDF · «[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf»",
+ "figura": "f17-10",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 781,
+   "y": 18,
+   "w": 333,
+   "h": 65,
+   "answer": "Hadoop cluster",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 769,
+   "y": 117,
+   "w": 356,
+   "h": 55,
+   "answer": "HDFS/HIVE tables",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 769,
+   "y": 208,
+   "w": 362,
+   "h": 59,
+   "answer": "MapReduce/Spark",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 68,
+   "y": 252,
+   "w": 178,
+   "h": 52,
+   "answer": "Sources",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 70,
+   "y": 347,
+   "w": 169,
+   "h": 118,
+   "answer": "OLTP systems",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 70,
+   "y": 546,
+   "w": 169,
+   "h": 117,
+   "answer": "OLTP systems",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 70,
+   "y": 744,
+   "w": 169,
+   "h": 119,
+   "answer": "OLTP systems",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 378,
+   "y": 351,
+   "w": 241,
+   "h": 109,
+   "answer": "Operational data store",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1323,
+   "y": 479,
+   "w": 244,
+   "h": 99,
+   "answer": "Data science workloads",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 1335,
+   "y": 747,
+   "w": 218,
+   "h": 101,
+   "answer": "Data warehouse",
+   "level": "clave"
+  }
+ ]
+}

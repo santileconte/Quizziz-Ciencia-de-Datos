@@ -1,0 +1,30 @@
+{
+ "title": "Figure 2-2. The data engineering lifecycle is a subset of the full data lifecycle",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1502,
+ "width": 1600,
+ "height": 1076,
+ "fuente": "Reis cap. 2, figura 2-2, pág. 3 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 2.pdf»",
+ "figura": "f15-02",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 466,
+   "y": 396,
+   "w": 673,
+   "h": 128,
+   "answer": "Data lifecycle",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 631,
+   "y": 696,
+   "w": 858,
+   "h": 268,
+   "answer": "Data engineering lifecycle",
+   "level": "clave"
+  }
+ ]
+}

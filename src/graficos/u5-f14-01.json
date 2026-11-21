@@ -1,0 +1,120 @@
+{
+ "title": "Figure 1-5. The Data Science Hierarchy of Needs",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1401,
+ "width": 1600,
+ "height": 983,
+ "fuente": "Reis cap. 1, figura 1-5, pág. 8 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 1.pdf»",
+ "figura": "f14-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 0,
+   "y": 18,
+   "w": 892,
+   "h": 141,
+   "answer": "THE DATA SCIENCE HIERARCHY OF NEEDS",
+   "level": "extra"
+  },
+  {
+   "id": "b2",
+   "x": 950,
+   "y": 128,
+   "w": 175,
+   "h": 116,
+   "answer": "AI, DEEP LEARNING",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 827,
+   "y": 307,
+   "w": 413,
+   "h": 119,
+   "answer": "A/B TESTING, EXPERIMENTATION, SIMPLE ML ALGORITHMS",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 814,
+   "y": 458,
+   "w": 442,
+   "h": 126,
+   "answer": "ANALYTICS, METRICS, SEGMENTS, AGGREGATES, FEATURES, TRAINING DATA",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 696,
+   "y": 621,
+   "w": 688,
+   "h": 51,
+   "answer": "CLEANING, ANOMALY DETECTION, PREP",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 700,
+   "y": 703,
+   "w": 664,
+   "h": 132,
+   "answer": "RELIABLE DATA FLOW, INFRASTRUCTURE, PIPELINES, ETL, STRUCTURED AND UNSTRUCTURED DATA STORAGE",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 654,
+   "y": 874,
+   "w": 754,
+   "h": 89,
+   "answer": "INSTRUMENTATION, LOGGING, SENSORS, EXTERNAL DATA, USER GENERATED CONTENT",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 0,
+   "y": 337,
+   "w": 440,
+   "h": 64,
+   "answer": "LEARN/OPTIMIZE",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 0,
+   "y": 490,
+   "w": 504,
+   "h": 64,
+   "answer": "AGGREGATE/LABEL",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 0,
+   "y": 617,
+   "w": 584,
+   "h": 63,
+   "answer": "EXPLORE/TRANSFORM",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 0,
+   "y": 744,
+   "w": 357,
+   "h": 61,
+   "answer": "MOVE/STORE",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 0,
+   "y": 893,
+   "w": 227,
+   "h": 59,
+   "answer": "COLLECT",
+   "level": "clave"
+  }
+ ]
+}

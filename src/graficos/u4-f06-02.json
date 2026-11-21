@@ -1,0 +1,111 @@
+{
+ "title": "Figure 2.2 Creating dummy binary features from nominal features. We could also have chosen n × 1 features to dummify, as it is implied that if the rest of the values are 0, then the nth feature would be a 1.",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 602,
+ "width": 1600,
+ "height": 776,
+ "fuente": "Ozdemir, figura 2.2, pág. 17 del PDF · «[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf»",
+ "figura": "f06-02",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 17,
+   "y": 14,
+   "w": 274,
+   "h": 47,
+   "answer": "Neighborhood",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 17,
+   "y": 130,
+   "w": 288,
+   "h": 39,
+   "answer": "Financial district",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 15,
+   "y": 242,
+   "w": 248,
+   "h": 36,
+   "answer": "Outer Sunset",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 17,
+   "y": 358,
+   "w": 282,
+   "h": 38,
+   "answer": "Inner Richmond",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 17,
+   "y": 475,
+   "w": 288,
+   "h": 39,
+   "answer": "Financial district",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 15,
+   "y": 589,
+   "w": 110,
+   "h": 39,
+   "answer": "Soma",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 783,
+   "y": 14,
+   "w": 177,
+   "h": 88,
+   "answer": "Financial district",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 991,
+   "y": 14,
+   "w": 138,
+   "h": 88,
+   "answer": "Outer Sunset",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1194,
+   "y": 14,
+   "w": 197,
+   "h": 88,
+   "answer": "Inner Richmond",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 1406,
+   "y": 14,
+   "w": 113,
+   "h": 39,
+   "answer": "Soma",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 357,
+   "y": 349,
+   "w": 400,
+   "h": 421,
+   "answer": "Create n features, where n is the number of distinct categories. This way the machine learning pipeline has a numerical value to learn from.",
+   "level": "clave"
+  }
+ ]
+}

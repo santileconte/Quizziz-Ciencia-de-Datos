@@ -1,0 +1,84 @@
+{
+ "title": "Figure 6-9. Decoupling planning and execution so that only validated plans are executed.",
+ "topic": "U6 · Inteligencia Artificial Generativa",
+ "order": 2503,
+ "width": 1600,
+ "height": 650,
+ "fuente": "Huyen, figura 6-9, pág. 31 del PDF · «[OBLIGATORIO] AI_Engineering_Chapter_6_RAG_and_Agents.pdf»",
+ "figura": "f25-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 966,
+   "y": 29,
+   "w": 112,
+   "h": 61,
+   "answer": "Tools",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 892,
+   "y": 253,
+   "w": 259,
+   "h": 54,
+   "answer": "Tool outputs",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 1236,
+   "y": 257,
+   "w": 151,
+   "h": 41,
+   "answer": "Executor",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 67,
+   "y": 463,
+   "w": 118,
+   "h": 63,
+   "answer": "Query",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 355,
+   "y": 469,
+   "w": 136,
+   "h": 43,
+   "answer": "Planner",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 638,
+   "y": 449,
+   "w": 165,
+   "h": 94,
+   "answer": "Generated plan",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 942,
+   "y": 475,
+   "w": 161,
+   "h": 42,
+   "answer": "Evaluator",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1414,
+   "y": 472,
+   "w": 130,
+   "h": 54,
+   "answer": "Finish",
+   "level": "clave"
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "title": "Figure 3-18. Simplified example of a data mesh architecture. Source: From Data Mesh, by Zhamak Dehghani. Copyright © 2022 Zhamak Dehghani. Published by O’Reilly Media, Inc. Used with permission.",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1804,
+ "width": 1600,
+ "height": 1338,
+ "fuente": "Reis cap. 3, figura 3-18, pág. 33 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf»",
+ "figura": "f18-04",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 1025,
+   "y": 0,
+   "w": 575,
+   "h": 48,
+   "answer": "Federated computational governance",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 125,
+   "y": 131,
+   "w": 398,
+   "h": 102,
+   "answer": "Global policies automated by platform",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 788,
+   "y": 100,
+   "w": 356,
+   "h": 94,
+   "answer": "Federated team of domain representatives",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 127,
+   "y": 265,
+   "w": 216,
+   "h": 86,
+   "answer": "Policies applied to data products",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 179,
+   "y": 476,
+   "w": 165,
+   "h": 123,
+   "answer": "Data product",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 386,
+   "y": 601,
+   "w": 118,
+   "h": 68,
+   "answer": "Apps",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1119,
+   "y": 635,
+   "w": 260,
+   "h": 41,
+   "answer": "Business domain",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 617,
+   "y": 731,
+   "w": 234,
+   "h": 45,
+   "answer": "Data sharing APIs",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 89,
+   "y": 846,
+   "w": 290,
+   "h": 86,
+   "answer": "Platform services used by data products",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 1350,
+   "y": 930,
+   "w": 250,
+   "h": 208,
+   "answer": "Cross-functional domain team: business, technology, and data",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 167,
+   "y": 1035,
+   "w": 230,
+   "h": 86,
+   "answer": "Data platform service interfaces",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 575,
+   "y": 1189,
+   "w": 380,
+   "h": 51,
+   "answer": "Self-serve data platform",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 44,
+   "y": 1291,
+   "w": 216,
+   "h": 45,
+   "answer": "Platform team",
+   "level": "clave"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "title": "Figure 1-12. Key technical stakeholders of data engineering",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1403,
+ "width": 1600,
+ "height": 692,
+ "fuente": "Reis cap. 1, figura 1-12, pág. 19 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 1.pdf»",
+ "figura": "f14-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 133,
+   "y": 49,
+   "w": 181,
+   "h": 110,
+   "answer": "Software engineers",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 130,
+   "y": 242,
+   "w": 184,
+   "h": 99,
+   "answer": "Data architects",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 111,
+   "y": 434,
+   "w": 221,
+   "h": 99,
+   "answer": "DevOps and SREs",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 71,
+   "y": 565,
+   "w": 304,
+   "h": 117,
+   "answer": "Upstream data producers",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 709,
+   "y": 244,
+   "w": 184,
+   "h": 107,
+   "answer": "Data engineers",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1258,
+   "y": 76,
+   "w": 242,
+   "h": 56,
+   "answer": "Data analysts",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1247,
+   "y": 268,
+   "w": 264,
+   "h": 46,
+   "answer": "Data scientists",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1224,
+   "y": 434,
+   "w": 314,
+   "h": 110,
+   "answer": "Machine learning engineers",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1194,
+   "y": 565,
+   "w": 368,
+   "h": 109,
+   "answer": "Downstream data consumers",
+   "level": "clave"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "title": "Figure 1-4. The Inmon approach; a top-down design where a centralized data warehouse is built first, and then data marts are created from this central warehouse",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1706,
+ "width": 1600,
+ "height": 1017,
+ "fuente": "Medallion, figura 1-4, pág. 9 del PDF · «[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf»",
+ "figura": "f17-06",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 334,
+   "y": 19,
+   "w": 957,
+   "h": 118,
+   "answer": "Typically implemented in the same database (RDBMS)",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 45,
+   "y": 132,
+   "w": 169,
+   "h": 111,
+   "answer": "Staging area",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 42,
+   "y": 274,
+   "w": 177,
+   "h": 49,
+   "answer": "File store",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 433,
+   "y": 307,
+   "w": 350,
+   "h": 54,
+   "answer": "Data warehouse",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 432,
+   "y": 409,
+   "w": 332,
+   "h": 59,
+   "answer": "Integration layer",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1004,
+   "y": 164,
+   "w": 217,
+   "h": 51,
+   "answer": "Data mart",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1004,
+   "y": 453,
+   "w": 217,
+   "h": 51,
+   "answer": "Data mart",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1004,
+   "y": 741,
+   "w": 217,
+   "h": 51,
+   "answer": "Data mart",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1392,
+   "y": 494,
+   "w": 195,
+   "h": 101,
+   "answer": "Reporting tools",
+   "level": "clave"
+  }
+ ]
+}

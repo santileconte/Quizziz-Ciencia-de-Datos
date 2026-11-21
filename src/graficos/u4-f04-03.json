@@ -1,0 +1,147 @@
+{
+ "title": "Figure 1.5 Our final zoom-in on the ML feature engineering pipeline. The feature engineering pipeline consists of four stages that include understanding our data, structuring and optimizing the data, and then evaluating that data using ML models. Note that the data union to combine the originally structured data and the newly structured data are optional and are at the discretion of the data scientist and the task at hand.",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 403,
+ "width": 1600,
+ "height": 1043,
+ "fuente": "Ozdemir, figura 1.5, pág. 10 del PDF · «[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf»",
+ "figura": "f04-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 71,
+   "y": 1,
+   "w": 397,
+   "h": 98,
+   "answer": "Feature engineering pipeline",
+   "level": "extra"
+  },
+  {
+   "id": "b2",
+   "x": 572,
+   "y": 22,
+   "w": 411,
+   "h": 61,
+   "answer": "2. Feature structuring",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 236,
+   "y": 226,
+   "w": 211,
+   "h": 173,
+   "answer": "Unstructured data (e.g., images and text)",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 505,
+   "y": 209,
+   "w": 203,
+   "h": 129,
+   "answer": "Feature extraction and learning",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 823,
+   "y": 230,
+   "w": 168,
+   "h": 123,
+   "answer": "Newly structured data",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1003,
+   "y": 417,
+   "w": 178,
+   "h": 37,
+   "answer": "Data union",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1226,
+   "y": 418,
+   "w": 141,
+   "h": 89,
+   "answer": "Final dataset",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1419,
+   "y": 417,
+   "w": 148,
+   "h": 42,
+   "answer": "Modeling",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 255,
+   "y": 576,
+   "w": 171,
+   "h": 130,
+   "answer": "Structured data (tabular)",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 505,
+   "y": 553,
+   "w": 242,
+   "h": 211,
+   "answer": "Feature improvement, construction, extraction, and selection",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 825,
+   "y": 579,
+   "w": 166,
+   "h": 123,
+   "answer": "Optimally structured data",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 10,
+   "y": 735,
+   "w": 142,
+   "h": 90,
+   "answer": "Data sources",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 82,
+   "y": 940,
+   "w": 320,
+   "h": 103,
+   "answer": "1. Feature understanding",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 641,
+   "y": 935,
+   "w": 290,
+   "h": 108,
+   "answer": "3. Feature optimization",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 1235,
+   "y": 941,
+   "w": 249,
+   "h": 96,
+   "answer": "4. Feature evaluation",
+   "level": "clave"
+  }
+ ]
+}

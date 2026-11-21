@@ -1,0 +1,39 @@
+{
+ "title": "Figure 2.5 The various types of means are the following: arithmetic mean, which can be used at both the interval and ratio level; geometric mean, which is extremely powerful for data that live on varying units; and harmonic mean, which is used to calculate the F1 measure.",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 603,
+ "width": 1600,
+ "height": 379,
+ "fuente": "Ozdemir, figura 2.5, pág. 21 del PDF · «[OBLIGATORIO] Ozdemir - Feature Engineering Bookcamp.pdf»",
+ "figura": "f06-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 19,
+   "y": 0,
+   "w": 291,
+   "h": 35,
+   "answer": "Arithmetic mean",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 510,
+   "y": 0,
+   "w": 286,
+   "h": 35,
+   "answer": "Geometric mean",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 1128,
+   "y": 0,
+   "w": 281,
+   "h": 35,
+   "answer": "Harmonic mean",
+   "level": "clave"
+  }
+ ]
+}

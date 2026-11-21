@@ -1,0 +1,93 @@
+{
+ "title": "Figure 3-12. ETL or ELT plus data marts",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1703,
+ "width": 1600,
+ "height": 408,
+ "fuente": "Reis cap. 3, figura 3-12, pág. 26 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf»",
+ "figura": "f17-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 54,
+   "y": 67,
+   "w": 121,
+   "h": 92,
+   "answer": "Data source",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 52,
+   "y": 273,
+   "w": 129,
+   "h": 92,
+   "answer": "Data source",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 473,
+   "y": 30,
+   "w": 176,
+   "h": 44,
+   "answer": "ETL or ELT",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 344,
+   "y": 192,
+   "w": 144,
+   "h": 59,
+   "answer": "Staging",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 619,
+   "y": 171,
+   "w": 189,
+   "h": 92,
+   "answer": "Data warehouse",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 911,
+   "y": 111,
+   "w": 184,
+   "h": 43,
+   "answer": "Data marts",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 911,
+   "y": 255,
+   "w": 184,
+   "h": 43,
+   "answer": "Data marts",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1232,
+   "y": 108,
+   "w": 359,
+   "h": 57,
+   "answer": "Analysis, data science",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1335,
+   "y": 255,
+   "w": 144,
+   "h": 51,
+   "answer": "Reports",
+   "level": "clave"
+  }
+ ]
+}

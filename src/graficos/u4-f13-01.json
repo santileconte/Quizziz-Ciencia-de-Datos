@@ -1,0 +1,228 @@
+{
+ "title": "Figure 4-1. Separate viewpoints for managing the data and the technology",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 1301,
+ "width": 1600,
+ "height": 728,
+ "fuente": "Strengholt DMS, figura 4-1, pág. 3 del PDF · «[OBLIGATORIO] Strengholt - Data Management at Scale - Chapter 4. Data Product Management.pdf»",
+ "figura": "f13-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 16,
+   "y": 1,
+   "w": 258,
+   "h": 51,
+   "answer": "Data viewpoint",
+   "level": "extra"
+  },
+  {
+   "id": "b2",
+   "x": 13,
+   "y": 679,
+   "w": 376,
+   "h": 49,
+   "answer": "Technology viewpoint",
+   "level": "extra"
+  },
+  {
+   "id": "b3",
+   "x": 429,
+   "y": 55,
+   "w": 109,
+   "h": 77,
+   "answer": "Data product",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1232,
+   "y": 55,
+   "w": 109,
+   "h": 77,
+   "answer": "Data product",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 279,
+   "y": 236,
+   "w": 115,
+   "h": 72,
+   "answer": "Data element",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 426,
+   "y": 236,
+   "w": 115,
+   "h": 69,
+   "answer": "Data element",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 576,
+   "y": 236,
+   "w": 111,
+   "h": 69,
+   "answer": "Data element",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1010,
+   "y": 236,
+   "w": 115,
+   "h": 72,
+   "answer": "Data element",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1159,
+   "y": 236,
+   "w": 113,
+   "h": 72,
+   "answer": "Data element",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 1306,
+   "y": 236,
+   "w": 115,
+   "h": 72,
+   "answer": "Data element",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 1452,
+   "y": 236,
+   "w": 115,
+   "h": 69,
+   "answer": "Data element",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 37,
+   "y": 479,
+   "w": 122,
+   "h": 71,
+   "answer": "Data attribute",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 186,
+   "y": 479,
+   "w": 120,
+   "h": 71,
+   "answer": "Data attribute",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 333,
+   "y": 479,
+   "w": 123,
+   "h": 71,
+   "answer": "Data attribute",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 517,
+   "y": 479,
+   "w": 122,
+   "h": 71,
+   "answer": "Data attribute",
+   "level": "clave"
+  },
+  {
+   "id": "b16",
+   "x": 666,
+   "y": 479,
+   "w": 123,
+   "h": 71,
+   "answer": "Data attribute",
+   "level": "clave"
+  },
+  {
+   "id": "b17",
+   "x": 813,
+   "y": 479,
+   "w": 123,
+   "h": 71,
+   "answer": "Data attribute",
+   "level": "clave"
+  },
+  {
+   "id": "b18",
+   "x": 1008,
+   "y": 479,
+   "w": 122,
+   "h": 71,
+   "answer": "Data attribute",
+   "level": "clave"
+  },
+  {
+   "id": "b19",
+   "x": 1154,
+   "y": 479,
+   "w": 123,
+   "h": 71,
+   "answer": "Data attribute",
+   "level": "clave"
+  },
+  {
+   "id": "b20",
+   "x": 1303,
+   "y": 479,
+   "w": 120,
+   "h": 71,
+   "answer": "Data attribute",
+   "level": "clave"
+  },
+  {
+   "id": "b21",
+   "x": 1450,
+   "y": 475,
+   "w": 120,
+   "h": 75,
+   "answer": "Data attribute",
+   "level": "clave"
+  },
+  {
+   "id": "b22",
+   "x": 90,
+   "y": 588,
+   "w": 307,
+   "h": 48,
+   "answer": "Physical dataset 01",
+   "level": "clave"
+  },
+  {
+   "id": "b23",
+   "x": 578,
+   "y": 588,
+   "w": 293,
+   "h": 48,
+   "answer": "Physical dataset 02",
+   "level": "clave"
+  },
+  {
+   "id": "b24",
+   "x": 1137,
+   "y": 588,
+   "w": 305,
+   "h": 48,
+   "answer": "Physical dataset 03",
+   "level": "clave"
+  }
+ ]
+}

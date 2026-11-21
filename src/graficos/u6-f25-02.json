@@ -1,0 +1,102 @@
+{
+ "title": "Figure 6-16. The hierarchy of information for an agent.",
+ "topic": "U6 · Inteligencia Artificial Generativa",
+ "order": 2502,
+ "width": 1217,
+ "height": 973,
+ "fuente": "Huyen, figura 6-16, pág. 50 del PDF · «[OBLIGATORIO] AI_Engineering_Chapter_6_RAG_and_Agents.pdf»",
+ "figura": "f25-02",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 309,
+   "y": 28,
+   "w": 249,
+   "h": 93,
+   "answer": "Info less frequently used",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 752,
+   "y": 95,
+   "w": 155,
+   "h": 106,
+   "answer": "External memory",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 993,
+   "y": 81,
+   "w": 224,
+   "h": 102,
+   "answer": "Long-term memory",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 739,
+   "y": 332,
+   "w": 182,
+   "h": 45,
+   "answer": "Retriever",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 0,
+   "y": 471,
+   "w": 197,
+   "h": 106,
+   "answer": "Short-term memory",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 243,
+   "y": 500,
+   "w": 144,
+   "h": 45,
+   "answer": "Context",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 768,
+   "y": 497,
+   "w": 123,
+   "h": 48,
+   "answer": "Model",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 707,
+   "y": 686,
+   "w": 238,
+   "h": 56,
+   "answer": "Training data",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1014,
+   "y": 753,
+   "w": 203,
+   "h": 104,
+   "answer": "Internal knowledge",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 309,
+   "y": 833,
+   "w": 265,
+   "h": 96,
+   "answer": "Info essential for multiple tasks",
+   "level": "clave"
+  }
+ ]
+}

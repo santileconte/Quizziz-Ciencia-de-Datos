@@ -1,0 +1,48 @@
+{
+ "title": "Figure 1-1. The three-layered architecture design",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1903,
+ "width": 1600,
+ "height": 471,
+ "fuente": "Medallion, figura 1-1, pág. 2 del PDF · «[OBLIGATORIO] Strengholt - Building Medallion Architectures.pdf»",
+ "figura": "f19-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 501,
+   "y": 48,
+   "w": 602,
+   "h": 58,
+   "answer": "Metadata and governance layer",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 66,
+   "y": 309,
+   "w": 186,
+   "h": 108,
+   "answer": "1. Data providers",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 613,
+   "y": 333,
+   "w": 377,
+   "h": 58,
+   "answer": "2. Distribution layer",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1337,
+   "y": 309,
+   "w": 214,
+   "h": 99,
+   "answer": "3. Data consumers",
+   "level": "clave"
+  }
+ ]
+}

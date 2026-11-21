@@ -1,0 +1,192 @@
+{
+ "title": "Figure 2.4 Components of a production-ready RAG system",
+ "topic": "U6 · Inteligencia Artificial Generativa",
+ "order": 2303,
+ "width": 1600,
+ "height": 1073,
+ "fuente": "Kimothi, figura 2.4, pág. 6 del PDF · «[OBLIGATORIO] Kimothi - A Simple Guide to Retrieval Augmented Generation.pdf»",
+ "figura": "f23-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 106,
+   "y": 43,
+   "w": 179,
+   "h": 107,
+   "answer": "Data-splitting component: Chunking",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 397,
+   "y": 43,
+   "w": 158,
+   "h": 101,
+   "answer": "Storage component: Vector DBs",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 675,
+   "y": 61,
+   "w": 173,
+   "h": 73,
+   "answer": "Data-loading component",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 960,
+   "y": 43,
+   "w": 169,
+   "h": 107,
+   "answer": "Conversion component: Embeddings",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 1223,
+   "y": 2,
+   "w": 323,
+   "h": 156,
+   "answer": "“Offline” data indexing components for knowledge base creation",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 949,
+   "y": 311,
+   "w": 178,
+   "h": 71,
+   "answer": "Prompt management",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 968,
+   "y": 412,
+   "w": 140,
+   "h": 33,
+   "answer": "Retrievers",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 955,
+   "y": 479,
+   "w": 160,
+   "h": 37,
+   "answer": "LLMs setup",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1223,
+   "y": 339,
+   "w": 321,
+   "h": 163,
+   "answer": "“Real-time” interaction components for contextual responses",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 35,
+   "y": 400,
+   "w": 181,
+   "h": 37,
+   "answer": "Input/Output",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 448,
+   "y": 400,
+   "w": 172,
+   "h": 33,
+   "answer": "Orchestrator",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 47,
+   "y": 492,
+   "w": 177,
+   "h": 83,
+   "answer": "Application component",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 687,
+   "y": 689,
+   "w": 114,
+   "h": 36,
+   "answer": "Caching",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 970,
+   "y": 685,
+   "w": 144,
+   "h": 30,
+   "answer": "Evaluation",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 673,
+   "y": 770,
+   "w": 144,
+   "h": 30,
+   "answer": "Guardrails",
+   "level": "clave"
+  },
+  {
+   "id": "b16",
+   "x": 970,
+   "y": 764,
+   "w": 142,
+   "h": 36,
+   "answer": "Monitoring",
+   "level": "clave"
+  },
+  {
+   "id": "b17",
+   "x": 657,
+   "y": 847,
+   "w": 172,
+   "h": 37,
+   "answer": "LLM security",
+   "level": "clave"
+  },
+  {
+   "id": "b18",
+   "x": 990,
+   "y": 847,
+   "w": 103,
+   "h": 37,
+   "answer": "Privacy",
+   "level": "clave"
+  },
+  {
+   "id": "b19",
+   "x": 1223,
+   "y": 685,
+   "w": 296,
+   "h": 162,
+   "answer": "“Supporting” components for usability, efficiency, experience, etc.",
+   "level": "clave"
+  },
+  {
+   "id": "b20",
+   "x": 616,
+   "y": 1008,
+   "w": 291,
+   "h": 30,
+   "answer": "Service Infrastructure",
+   "level": "clave"
+  }
+ ]
+}

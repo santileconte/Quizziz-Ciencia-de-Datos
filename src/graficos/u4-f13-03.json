@@ -1,0 +1,147 @@
+{
+ "title": "Figure 4-3. Decentralized collaboration of data providers and data consumers",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 1303,
+ "width": 1600,
+ "height": 845,
+ "fuente": "Strengholt DMS, figura 4-3, pág. 7 del PDF · «[OBLIGATORIO] Strengholt - Data Management at Scale - Chapter 4. Data Product Management.pdf»",
+ "figura": "f13-03",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 18,
+   "y": 110,
+   "w": 51,
+   "h": 478,
+   "answer": "Source-oriented domains",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 1530,
+   "y": 81,
+   "w": 51,
+   "h": 536,
+   "answer": "Consumer-oriented domains",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 127,
+   "y": 92,
+   "w": 160,
+   "h": 96,
+   "answer": "Data providers",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 127,
+   "y": 303,
+   "w": 160,
+   "h": 98,
+   "answer": "Data providers",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 127,
+   "y": 513,
+   "w": 160,
+   "h": 99,
+   "answer": "Data providers",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 391,
+   "y": 92,
+   "w": 136,
+   "h": 96,
+   "answer": "Data product",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 391,
+   "y": 303,
+   "w": 136,
+   "h": 98,
+   "answer": "Data product",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 391,
+   "y": 513,
+   "w": 136,
+   "h": 99,
+   "answer": "Data product",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 725,
+   "y": 89,
+   "w": 312,
+   "h": 91,
+   "answer": "Consumer-specific transformations",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 725,
+   "y": 303,
+   "w": 312,
+   "h": 90,
+   "answer": "Consumer-specific transformations",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 725,
+   "y": 513,
+   "w": 312,
+   "h": 91,
+   "answer": "Consumer-specific transformations",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 1165,
+   "y": 116,
+   "w": 269,
+   "h": 40,
+   "answer": "Data consumers",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 1165,
+   "y": 326,
+   "w": 269,
+   "h": 43,
+   "answer": "Data consumers",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 1165,
+   "y": 537,
+   "w": 269,
+   "h": 43,
+   "answer": "Data consumers",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 224,
+   "y": 753,
+   "w": 1157,
+   "h": 53,
+   "answer": "Supporting governance and domain-agnostic platform infrastructure",
+   "level": "clave"
+  }
+ ]
+}

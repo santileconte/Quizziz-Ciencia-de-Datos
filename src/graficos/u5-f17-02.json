@@ -1,0 +1,75 @@
+{
+ "title": "Figure 3-11. ELT—extract, load, and transform",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1702,
+ "width": 1600,
+ "height": 452,
+ "fuente": "Reis cap. 3, figura 3-11, pág. 25 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf»",
+ "figura": "f17-02",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 59,
+   "y": 79,
+   "w": 135,
+   "h": 98,
+   "answer": "Data source",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 59,
+   "y": 298,
+   "w": 141,
+   "h": 106,
+   "answer": "Data source",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 670,
+   "y": 44,
+   "w": 75,
+   "h": 46,
+   "answer": "ELT",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 433,
+   "y": 219,
+   "w": 151,
+   "h": 57,
+   "answer": "Staging",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 791,
+   "y": 193,
+   "w": 208,
+   "h": 99,
+   "answer": "Data warehouse",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1174,
+   "y": 122,
+   "w": 400,
+   "h": 58,
+   "answer": "Analysis, data science",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1292,
+   "y": 283,
+   "w": 165,
+   "h": 56,
+   "answer": "Reports",
+   "level": "clave"
+  }
+ ]
+}

@@ -117,7 +117,7 @@ export function FigurasIndice({ compacto = false }: { compacto?: boolean }) {
           <p className="lede">
             {figureDiagrams.length > 0
               ? `${figureDiagrams.length} figuras se pueden completar: sus textos se taparon con huecos (${figureDiagrams.reduce((n, d) => n + d.config.blanks.length, 0)} en total) y se practican igual que los gráficos del inicio.`
-              : 'Para practicar completando, usá los gráficos del inicio: están redibujados a partir de estas figuras.'}
+              : 'Para practicar completando, usá los gráficos del inicio: son estas mismas figuras con el texto tapado.'}
           </p>
         </div>
       </section>

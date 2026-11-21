@@ -1,0 +1,48 @@
+{
+ "title": "Figure 3-15. Kappa architecture",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1705,
+ "width": 1600,
+ "height": 250,
+ "fuente": "Reis cap. 3, figura 3-15, pág. 30 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf»",
+ "figura": "f17-05",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 114,
+   "y": 73,
+   "w": 141,
+   "h": 101,
+   "answer": "Stream source",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 528,
+   "y": 73,
+   "w": 210,
+   "h": 112,
+   "answer": "Stream processing",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 951,
+   "y": 94,
+   "w": 153,
+   "h": 109,
+   "answer": "Serving layer",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1362,
+   "y": 100,
+   "w": 152,
+   "h": 53,
+   "answer": "Queries",
+   "level": "clave"
+  }
+ ]
+}

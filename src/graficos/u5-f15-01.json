@@ -1,0 +1,156 @@
+{
+ "title": "Figure 2-1. Components and undercurrents of the data engineering lifecycle",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1501,
+ "width": 1600,
+ "height": 809,
+ "fuente": "Reis cap. 2, figura 2-1, pág. 2 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 2.pdf»",
+ "figura": "f15-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 511,
+   "y": 1,
+   "w": 582,
+   "h": 67,
+   "answer": "Data engineering lifecycle",
+   "level": "extra"
+  },
+  {
+   "id": "b2",
+   "x": 1354,
+   "y": 76,
+   "w": 144,
+   "h": 51,
+   "answer": "Analytics",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 479,
+   "y": 220,
+   "w": 147,
+   "h": 51,
+   "answer": "Ingestion",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 682,
+   "y": 217,
+   "w": 243,
+   "h": 71,
+   "answer": "Transformation",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 986,
+   "y": 220,
+   "w": 123,
+   "h": 48,
+   "answer": "Serving",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1360,
+   "y": 250,
+   "w": 133,
+   "h": 93,
+   "answer": "Machine learning",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 90,
+   "y": 276,
+   "w": 173,
+   "h": 40,
+   "answer": "Generation",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 738,
+   "y": 370,
+   "w": 123,
+   "h": 48,
+   "answer": "Storage",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 1333,
+   "y": 474,
+   "w": 189,
+   "h": 40,
+   "answer": "Reverse ETL",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 668,
+   "y": 621,
+   "w": 265,
+   "h": 45,
+   "answer": "Undercurrents:",
+   "level": "extra"
+  },
+  {
+   "id": "b11",
+   "x": 98,
+   "y": 725,
+   "w": 135,
+   "h": 48,
+   "answer": "Security",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 314,
+   "y": 704,
+   "w": 208,
+   "h": 88,
+   "answer": "Data management",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 605,
+   "y": 725,
+   "w": 136,
+   "h": 45,
+   "answer": "DataOps",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 832,
+   "y": 704,
+   "w": 189,
+   "h": 80,
+   "answer": "Data architecture",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 1074,
+   "y": 723,
+   "w": 213,
+   "h": 42,
+   "answer": "Orchestration",
+   "level": "clave"
+  },
+  {
+   "id": "b16",
+   "x": 1343,
+   "y": 701,
+   "w": 187,
+   "h": 91,
+   "answer": "Software engineering",
+   "level": "clave"
+  }
+ ]
+}

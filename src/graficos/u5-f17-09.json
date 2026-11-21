@@ -1,0 +1,48 @@
+{
+ "title": "Figure 3-13. Basic components of the modern data stack",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1709,
+ "width": 1600,
+ "height": 235,
+ "fuente": "Reis cap. 3, figura 3-13, pág. 28 del PDF · «[OBLIGATORIO] Reis - Fundamentals of Data Engineering. Chapter 3.pdf»",
+ "figura": "f17-09",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 61,
+   "y": 92,
+   "w": 248,
+   "h": 48,
+   "answer": "Data sources",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 458,
+   "y": 36,
+   "w": 339,
+   "h": 168,
+   "answer": "Cloud-based data connector and integration",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 917,
+   "y": 84,
+   "w": 216,
+   "h": 104,
+   "answer": "Cloud data warehouse",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1295,
+   "y": 63,
+   "w": 243,
+   "h": 104,
+   "answer": "BI and visualization",
+   "level": "clave"
+  }
+ ]
+}

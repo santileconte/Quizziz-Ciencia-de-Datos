@@ -1,0 +1,129 @@
+{
+ "title": "Figure 1-2. NLP tasks organized according to their relative difficulty",
+ "topic": "U4 · Ciencia de Datos Aplicada",
+ "order": 901,
+ "width": 1600,
+ "height": 1281,
+ "fuente": "Vajjala, figura 1-2, pág. 6 del PDF · «[OBLIGATORIO] Vajjala - Practical NLP.pdf»",
+ "figura": "f09-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 1392,
+   "y": 26,
+   "w": 105,
+   "h": 58,
+   "answer": "Easy",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 1392,
+   "y": 620,
+   "w": 181,
+   "h": 48,
+   "answer": "Medium",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 1392,
+   "y": 1214,
+   "w": 108,
+   "h": 49,
+   "answer": "Hard",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 171,
+   "y": 81,
+   "w": 233,
+   "h": 50,
+   "answer": "Spell Checking",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 14,
+   "y": 201,
+   "w": 589,
+   "h": 51,
+   "answer": "Keyword-Based Information Retrieval",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 457,
+   "y": 322,
+   "w": 244,
+   "h": 51,
+   "answer": "Topic Modeling",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 217,
+   "y": 442,
+   "w": 284,
+   "h": 43,
+   "answer": "Text Classification",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 441,
+   "y": 563,
+   "w": 357,
+   "h": 42,
+   "answer": "Information Extraction",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 314,
+   "y": 684,
+   "w": 586,
+   "h": 50,
+   "answer": "Closed Domain Conversational Agent",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 184,
+   "y": 806,
+   "w": 317,
+   "h": 40,
+   "answer": "Text Summarization",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 281,
+   "y": 926,
+   "w": 322,
+   "h": 48,
+   "answer": "Question Answering",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 480,
+   "y": 1045,
+   "w": 318,
+   "h": 42,
+   "answer": "Machine Translation",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 335,
+   "y": 1165,
+   "w": 565,
+   "h": 50,
+   "answer": "Open Domain Conversational Agent",
+   "level": "clave"
+  }
+ ]
+}

@@ -1,0 +1,174 @@
+{
+ "title": "Figure 1-1. Data mesh dimensions of change",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1801,
+ "width": 1600,
+ "height": 2442,
+ "fuente": "Dehghani, figura 1-1, pág. 47 del PDF · «[OBLIGATORIO CAP 1] Data Mesh Delivering Data-Driven Value at Scale (Dehghani, Zhamak).pdf»",
+ "figura": "f18-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 648,
+   "y": 215,
+   "w": 318,
+   "h": 58,
+   "answer": "Organizationally",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 662,
+   "y": 634,
+   "w": 289,
+   "h": 58,
+   "answer": "Architecturally",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 698,
+   "y": 1033,
+   "w": 218,
+   "h": 57,
+   "answer": "Technically",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 674,
+   "y": 1480,
+   "w": 266,
+   "h": 59,
+   "answer": "Operationally",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 706,
+   "y": 1871,
+   "w": 204,
+   "h": 57,
+   "answer": "Principally",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 651,
+   "y": 2244,
+   "w": 313,
+   "h": 59,
+   "answer": "Infrastructurally",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 138,
+   "y": 363,
+   "w": 376,
+   "h": 53,
+   "answer": "Centralized ownership",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 1052,
+   "y": 363,
+   "w": 548,
+   "h": 53,
+   "answer": "Decentralized domain ownership",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 220,
+   "y": 774,
+   "w": 184,
+   "h": 44,
+   "answer": "Monolithic",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 1233,
+   "y": 774,
+   "w": 189,
+   "h": 44,
+   "answer": "Distributed",
+   "level": "clave"
+  },
+  {
+   "id": "b11",
+   "x": 90,
+   "y": 1165,
+   "w": 392,
+   "h": 53,
+   "answer": "Data byproduct of code",
+   "level": "clave"
+  },
+  {
+   "id": "b12",
+   "x": 1109,
+   "y": 1161,
+   "w": 435,
+   "h": 51,
+   "answer": "Data and code as one unit",
+   "level": "clave"
+  },
+  {
+   "id": "b13",
+   "x": 31,
+   "y": 1635,
+   "w": 378,
+   "h": 52,
+   "answer": "Top-down governance",
+   "level": "clave"
+  },
+  {
+   "id": "b14",
+   "x": 1115,
+   "y": 1635,
+   "w": 424,
+   "h": 99,
+   "answer": "Federated computational governance",
+   "level": "clave"
+  },
+  {
+   "id": "b15",
+   "x": 50,
+   "y": 2064,
+   "w": 427,
+   "h": 44,
+   "answer": "Data as an asset to collect",
+   "level": "clave"
+  },
+  {
+   "id": "b16",
+   "x": 1161,
+   "y": 2036,
+   "w": 432,
+   "h": 120,
+   "answer": "Data as a product to share and connect",
+   "level": "clave"
+  },
+  {
+   "id": "b17",
+   "x": 72,
+   "y": 2345,
+   "w": 422,
+   "h": 93,
+   "answer": "Fragmented platform (analytical & operational)",
+   "level": "clave"
+  },
+  {
+   "id": "b18",
+   "x": 1192,
+   "y": 2345,
+   "w": 337,
+   "h": 53,
+   "answer": "Integrated platform",
+   "level": "clave"
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "title": "Figure 1-2. Four principles of data mesh and their interplay",
+ "topic": "U5 · Arquitecturas e Ingeniería de Datos",
+ "order": 1802,
+ "width": 1600,
+ "height": 2382,
+ "fuente": "Dehghani, figura 1-2, pág. 54 del PDF · «[OBLIGATORIO CAP 1] Data Mesh Delivering Data-Driven Value at Scale (Dehghani, Zhamak).pdf»",
+ "figura": "f18-02",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 84,
+   "y": 411,
+   "w": 295,
+   "h": 144,
+   "answer": "Domain-oriented ownership",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 1218,
+   "y": 432,
+   "w": 297,
+   "h": 78,
+   "answer": "Data as a product",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 123,
+   "y": 1746,
+   "w": 254,
+   "h": 213,
+   "answer": "Federated computational governance",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1168,
+   "y": 1775,
+   "w": 419,
+   "h": 74,
+   "answer": "Self-serve data platform",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 640,
+   "y": 281,
+   "w": 328,
+   "h": 71,
+   "answer": "1) Prevent data siloing",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1002,
+   "y": 1136,
+   "w": 216,
+   "h": 125,
+   "answer": "(2) Empower domain teams",
+   "level": "clave"
+  },
+  {
+   "id": "b7",
+   "x": 1386,
+   "y": 994,
+   "w": 164,
+   "h": 206,
+   "answer": "(3) Reduce the cost of ownership",
+   "level": "clave"
+  },
+  {
+   "id": "b8",
+   "x": 0,
+   "y": 912,
+   "w": 224,
+   "h": 261,
+   "answer": "(4) Increase engagement, reduce domain isolation",
+   "level": "clave"
+  },
+  {
+   "id": "b9",
+   "x": 367,
+   "y": 1109,
+   "w": 371,
+   "h": 206,
+   "answer": "(5) Get higher-order value by interconnecting data products",
+   "level": "clave"
+  },
+  {
+   "id": "b10",
+   "x": 486,
+   "y": 1829,
+   "w": 654,
+   "h": 133,
+   "answer": "(6) Mesh-level consistent and reliable policy enforcement",
+   "level": "clave"
+  }
+ ]
+}

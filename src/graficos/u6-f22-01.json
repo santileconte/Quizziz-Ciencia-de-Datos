@@ -1,0 +1,66 @@
+{
+ "title": "Figure 2-1. Core components of an agent system.",
+ "topic": "U6 · Inteligencia Artificial Generativa",
+ "order": 2201,
+ "width": 1600,
+ "height": 694,
+ "fuente": "Albada, figura 2-1, pág. 21 del PDF · «[OBLIGATORIO CAP 1 y 2] Michael Albada - Building Applications with AI Agents.pdf»",
+ "figura": "f22-01",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 85,
+   "y": 444,
+   "w": 109,
+   "h": 54,
+   "answer": "User",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 554,
+   "y": 314,
+   "w": 315,
+   "h": 56,
+   "answer": "Orchestration",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 1279,
+   "y": 47,
+   "w": 147,
+   "h": 56,
+   "answer": "Model",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1290,
+   "y": 226,
+   "w": 123,
+   "h": 56,
+   "answer": "Tools",
+   "level": "clave"
+  },
+  {
+   "id": "b5",
+   "x": 1258,
+   "y": 407,
+   "w": 192,
+   "h": 67,
+   "answer": "Memory",
+   "level": "clave"
+  },
+  {
+   "id": "b6",
+   "x": 1167,
+   "y": 586,
+   "w": 371,
+   "h": 69,
+   "answer": "Knowledge base",
+   "level": "clave"
+  }
+ ]
+}

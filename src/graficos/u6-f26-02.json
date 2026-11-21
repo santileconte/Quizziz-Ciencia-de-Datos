@@ -1,0 +1,48 @@
+{
+ "title": "Figure 1-4. The different buckets of the AI PM skill set",
+ "topic": "U6 · Inteligencia Artificial Generativa",
+ "order": 2602,
+ "width": 1600,
+ "height": 225,
+ "fuente": "Nika, figura 1-4, pág. 13 del PDF · «[OBLIGATORIO] Nika - Chapter 1. The Role of AI Product Managers 2.pdf»",
+ "figura": "f26-02",
+ "origen": "manual",
+ "blanks": [
+  {
+   "id": "b1",
+   "x": 34,
+   "y": 31,
+   "w": 359,
+   "h": 166,
+   "answer": "Core product management craft and practices",
+   "level": "clave"
+  },
+  {
+   "id": "b2",
+   "x": 498,
+   "y": 34,
+   "w": 241,
+   "h": 153,
+   "answer": "Engineering foundations for PMs",
+   "level": "clave"
+  },
+  {
+   "id": "b3",
+   "x": 828,
+   "y": 31,
+   "w": 364,
+   "h": 156,
+   "answer": "Essential leadership and collaboration skills",
+   "level": "clave"
+  },
+  {
+   "id": "b4",
+   "x": 1260,
+   "y": 31,
+   "w": 293,
+   "h": 156,
+   "answer": "AI lifecycle and operational awareness",
+   "level": "clave"
+  }
+ ]
+}
