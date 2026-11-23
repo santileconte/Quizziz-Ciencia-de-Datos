@@ -24,15 +24,16 @@ Al hacer push a `main`, `.github/workflows/deploy.yml` publica el sitio en GitHu
    - Filtros **Clave**, **Todo** y **Mis errores**. Un concepto queda dominado al acertarlo 2 veces seguidas.
    - **Practicar en serie:** una unidad entera o todo junto.
 2. **Cuestionarios.** Por fuente, unidad, tema y formato, en modo práctica o simulacro.
-   - **De la cátedra, literales:** el segundo parcial 2025 y las preguntas del 1er parcial que ahora entran. Se copiaron
-     como están, incluidos sus errores.
+   - **De la cátedra, literales:** el segundo parcial 2025, copiado de la foto del examen (con el meme del punto extra), y
+     las preguntas del 1er parcial que ahora entran. Se copiaron como están, incluidos sus errores.
    - **Nuevas de este repaso:** 70 preguntas escritas a partir de los libros, con etiqueta y color propios. Cada una cita
      libro, capítulo y página.
    - Las preguntas con **clave sin verificar** se pueden responder, pero no suman puntaje ni progreso. Hoy son todas las
-     de la cátedra, porque el documento no trae respuestas.
+     de la cátedra, porque no hay clave oficial.
 3. **Crucigramas.** Uno por mapa mental (16).
 4. **Mapas mentales.** 16 mapas. Al tocar un concepto se abre su explicación en el apunte de estudio, con el libro y la
-   página de donde sale.
+   página de donde sale. El apunte de estudio (24 secciones) sigue al apunte en PDF: enseña los temas sin mencionar
+   preguntas de examen y marca con ★ los prioritarios. Se genera con `python3 tools/build_apunte.py`.
 5. **Temario.** Los temas por unidad, con prioridad, bibliografía, notas de clase, libro y páginas, evidencia en las
    consignas reales y pendientes de verificación. Los temas sin material en las carpetas van aparte.
 6. **Figuras originales** (`#/figuras`). 63 figuras recortadas de los libros, separadas por tema (`#/figuras/15`, por

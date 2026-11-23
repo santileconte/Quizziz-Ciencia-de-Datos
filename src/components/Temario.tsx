@@ -13,10 +13,10 @@ const esPrimero = (q: Question) => q.modalidad === 'primero'
 /** Registros del documento de la materia (pestañas de Google Docs) y cómo se usó cada uno. */
 const REGISTROS: { archivo: string; tipo: string; detalle: string; n: () => number | string }[] = [
   {
-    archivo: 'Pestaña «Parcial» · segundo parcial 2025',
+    archivo: 'Foto del segundo parcial 2025 (Drive)',
     tipo: 'Parcial real',
     detalle:
-      '10 consignas y un punto extra, con su puntaje. Transcripción literal: solo se quitaron las barras invertidas de la exportación y las letras de las opciones. El documento no trae respuestas, y la imagen del meme del punto extra no está.',
+      '10 consignas y un punto extra, con su puntaje, copiadas de la foto del examen: solo se quitaron las letras de las opciones y las casillas V ( ) F ( ). El examen no trae clave oficial. El meme del punto extra está recortado de la foto.',
     n: () => cuenta(questions, esParcial),
   },
   {
@@ -64,7 +64,7 @@ const DECISIONES: { titulo: string; texto: string; ids?: string }[] = [
   {
     titulo: 'Texto literal, incluso con errores',
     texto:
-      'Las consignas reales se copian como están, con sus errores de redacción. Cuando algo choca con el libro (por ejemplo, la pregunta 5 nombra a Kleppmann y el libro de patrones de U5 es de Konieczny), la diferencia va en la nota de la pregunta, no en el enunciado.',
+      'Las consignas reales se copian como están, con sus errores de redacción. Cuando algo choca con el libro (por ejemplo, la pregunta 4 se puede leer de dos formas según la fig. 3-1 de Reis), la diferencia va en la nota de la pregunta, no en el enunciado.',
     ids: 'pc25-05',
   },
   {

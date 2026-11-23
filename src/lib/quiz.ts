@@ -13,7 +13,7 @@ export const modalidades: { key: Modalidad; label: string; tag: string; hint: st
     key: 'parcial',
     label: 'Segundo parcial 2025',
     tag: 'Parcial real',
-    hint: 'Las 10 consignas y el extra del segundo parcial del 25/11/2025, tal como figuran en la transcripción de la pestaña «Parcial» del documento de la materia.',
+    hint: 'Las 10 consignas y el extra del segundo parcial del 25/11/2025, copiadas de la foto del examen.',
     original: true,
   },
   {

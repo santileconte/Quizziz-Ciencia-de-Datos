@@ -156,7 +156,7 @@ export const temario: Tema[] = [
     notas: 'U5: «*grafico que tiene la medalloin arquitectura»; U1: esquema Medallion', libro: 'Medallion cap. 1, págs. 2–4 y 21–24 · cap. 3, págs. 40–73 (fig. 1-2, 3-1, tabla 3-1)',
     temas: ['Arquitectura Medallion'], mapa: 'u5-medallion', graficos: ['u5-f19-01', 'u5-f19-02', 'u5-f19-03'] },
   { n: '20', bloque: 'u5', titulo: 'Patrones de diseño de ingeniería de datos', prio: 'B', biblio: 'No figura en la bibliografía 2025: la carpeta los marca «OBLIGATORIO-TPI»',
-    nota: 'La P5 del parcial 2025 pidió «1 patrón de data engineering del libro de Kleppmann»; el único libro de patrones de la U5 es el de Konieczny.',
+    nota: 'La P5 del parcial 2025 pidió «1 patrón de data engineering del libro de Konieczny» en menos de 50 palabras, con un ejemplo (1.5 puntos).',
     fijar: 'Qué es un patrón (receta del flan) y poder describir uno en menos de 50 palabras con un ejemplo.',
     notas: 'No figura', libro: 'Konieczny caps. 1–10 (cap. 1: págs. 1–6; Dead-Letter en cap. 3)',
     temas: ['Patrones de diseño de ingeniería de datos'], mapa: 'u5-patrones' },

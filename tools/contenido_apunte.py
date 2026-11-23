@@ -25,12 +25,12 @@ S('ml', 'u4', 'Machine learning y modelado predictivo', 'Notas de clase, U4', 'Z
                ['Cómo aprende', 'Una función de pérdida compara la predicción con la etiqueta y ajusta parámetros', 'Busca estructura, similitudes o grupos por sí solo'],
                ['Tareas', 'Clasificación (¿es spam?) y regresión (precio de una casa)', '**Clustering** y reducción de dimensionalidad'],
                ['En clase', '«Sabemos los resultados y entendemos el modelo»', '«No sabemos los resultados y el modelo los propone»']], 'sup'),
-    ('callout', '**Clustering es no supervisado.** La P12 del 1er parcial (que entra ahora) afirma que es supervisado: es **falso**.', 'clustering'),
+    ('callout', '**Clustering es no supervisado ★:** agrupa observaciones por similitud **sin etiquetas**. Ejemplo típico: K-means. Se evalúa con métricas no supervisadas como el índice de Davies-Bouldin (Ozdemir).', 'clustering'),
     ('li', '**El ML engineer** casi nunca crea el modelo: busca la forma de que los datos encajen en modelos existentes. Trabaja sobre las capas **Silver o Gold** de una arquitectura Medallion y elige las features entre las columnas de esas tablas.', 'mle'),
-    ('callout', '**No entra la matemática.** En clase: «Deja por fuera todo lo que es matemática». Se pregunta qué es, para qué sirve y cómo se relaciona.', 'mate'),
+    ('callout', '**No entra la matemática.** En clase: «Deja por fuera todo lo que es matemática». Lo importante es entender qué es cada cosa, para qué sirve y cómo se relaciona con lo demás.', 'mate'),
 ])
 
-S('fe', 'u4', 'Feature y feature engineering', 'Zheng, cap. 1, págs. 2–4 · Ozdemir, cap. 1, págs. 1–4', 'Videos MIT 6.5–6.6 · Notas, U4', [
+S('fe', 'u4', 'Feature y feature engineering ★', 'Zheng, cap. 1, págs. 2–4 · Ozdemir, cap. 1, págs. 1–4', 'Videos MIT 6.5–6.6 · Notas, U4', [
     ('p', 'Zheng parte de **datos** (observaciones de fenómenos reales, con ruido y faltantes), **tareas** (las preguntas que se quieren responder) y **modelos** (fórmulas que relacionan aspectos de los datos). Los datos pueden ser **incorrectos**, **redundantes** o **faltantes**.', 'datos'),
     ('p', 'Una **feature** es una **representación numérica de datos crudos** (Zheng). Es el puente entre los datos, que muchas veces no son numéricos, y las fórmulas del modelo. También se la describe como una **propiedad medible** de una entidad (edad, monto, frecuencia de compra).', 'def'),
     ('p', '**Feature engineering (Zheng):** el proceso de formular las features más apropiadas **dados los datos, el modelo y la tarea**. **(Ozdemir):** el arte de manipular y transformar datos hacia un formato que represente de forma óptima el problema que el algoritmo intenta modelar y que mitigue las complejidades y sesgos de los datos. **En clase:** manipular + transformar + representar.', 'defe'),
@@ -41,7 +41,7 @@ S('fe', 'u4', 'Feature y feature engineering', 'Zheng, cap. 1, págs. 2–4 · O
                ['**Identity**', 'El dato duro de la entidad', 'Género, edad'],
                ['**Transform**', 'Se transforma la columna en categorías u otra forma más útil', 'Día de la semana a partir de la fecha'],
                ['**Aggregate**', 'Funciones de agregación (count, sum)', 'Compras en los últimos 30 días']], 'tipos'),
-    ('callout', '**Cómo se pregunta.** P10 del 1er parcial: «cite los tipos de features, seleccione 1 y proponga 1 ejemplo en menos de 50 palabras». P24: solo citarlos. P23: definir feature. P9: «propiedad cuantitativa y medible» → verdadero.', 'examen'),
+    ('callout', '**Ejemplo:** *Aggregate feature:* para predecir si un cliente abandona, agrego «cantidad de compras en los últimos 30 días» contando sus transacciones. El dato crudo (cada compra) no sirve por sí solo; el conteo resume el comportamiento reciente y da una señal directa de abandono.', 'examen'),
     ('li', 'Clasificación complementaria por naturaleza del dato (Unidad 2): numéricas (continuas o discretas), categóricas (nominales u ordinales), binarias, temporales, de texto y derivadas o de interacción.', 'otra'),
 ])
 
@@ -126,6 +126,21 @@ S('nlp', 'u4', 'NLP: tareas, bloques del lenguaje y enfoques', 'Vajjala, cap. 1,
     ('li', '**ML clásico:** Naive Bayes, **SVM** (límite de decisión con el mayor margen, fig. 1-11), HMM, CRF.', 'mlc'),
     ('li', '**Deep learning:** **RNN** (procesa la secuencia pasando su estado, fig. 1-13; olvida dependencias largas) y **LSTM** (una RNN con celdas y compuertas que recuerda contexto largo, fig. 1-14); CNN, **Transformers** (self-attention, BERT) y autoencoders.', 'dl'),
     ('callout', 'Línea de tiempo de clase: era pre-transformers → llega la atención y los LLMs (2017) → era GenAI (2022–hoy). DL no es bala de plata: pide muchos datos, es caro y poco interpretable.', 'linea'),
+    ('h', 'Historia del NLP: de los modelos neuronales al Transformer'),
+    ('p', 'Fuentes: notas de clase sobre el video obligatorio *A Brief History of NLP* (Ozdemir) y Vajjala. El video no tiene transcripción accesible, así que el contenido sale de las notas; las fechas se cotejaron con los libros y los artículos originales (última columna).'),
+    ('table', [['Año', 'Hito', 'Qué cambió', 'Fecha verificada en'],
+               ['2001–2003', 'Modelos neuronales de lenguaje', 'Una red neuronal predice la palabra siguiente a partir de las anteriores y aprende un vector por palabra.', 'Bengio et al., *A Neural Probabilistic Language Model*, JMLR, 2003'],
+               ['2013', 'Word2Vec', 'Palabras como vectores densos: las de significado o uso parecido quedan cerca (rey y reina, perro y gato). Dos arquitecturas: CBOW y Skip-gram.', 'Vajjala, cap. 3, pág. 87 del PDF (Mikolov et al., 2013)'],
+               ['2013–2014', 'Auge de RNN y CNN en NLP', 'La RNN guarda un estado oculto que se actualiza palabra por palabra.', 'Solo notas de clase'],
+               ['2014', 'Seq2Seq', 'Un codificador lee la entrada y un decodificador genera la salida, aunque tengan distinto largo (traducción).', 'Sutskever et al., NIPS 2014'],
+               ['2014–2015', 'Atención', 'El decodificador consulta todos los estados del codificador, no solo el último.', 'Bahdanau et al., arXiv 2014 (ICLR 2015)'],
+               ['2017', 'Transformer', '*Attention Is All You Need*: la atención es el componente central y desaparece la recurrencia.', 'Vajjala, ref. [28]; Koenigstein, cap. 1'],
+               ['2018 en adelante', 'Modelos preentrenados', 'Se preentrena con muchísimo texto y después se ajusta (fine-tuning) a cada tarea: ELMo, BERT.', 'Vajjala, cap. 3, pág. 99 y ref. [29] (BERT, 2018)']]),
+    ('p', '**Ejemplo de traducción: por qué hizo falta la atención.** Hay que traducir al inglés *«El banco que está en la esquina de la plaza abre a las nueve»*.'),
+    ('li', '1) **Seq2Seq sin atención.** El codificador lee toda la oración y la **comprime en un único vector de largo fijo**. El decodificador genera *«The bank…»* mirando solo ese vector. En una oración corta funciona; en una larga, cuando llega a *«opens at nine»* ya se perdió información del principio. Es el cuello de botella que señalan las notas y el artículo de Bahdanau et al.'),
+    ('li', '2) **Con atención (2014–2015).** Para generar cada palabra, el decodificador consulta **todos los estados ocultos** del codificador y le da más peso a los relevantes: al escribir *«opens»* mira sobre todo *«abre»*; al escribir *«nine»*, *«nueve»*.'),
+    ('li', '3) **Autoatención del Transformer (2017).** La atención ya no conecta solo decodificador y codificador: **cada token de una misma secuencia se relaciona con los demás**. Así *«banco»* se interpreta como institución por *«abre a las nueve»*; en *«El banco está cerca del río»* (ejemplo de las notas) se interpretaría como asiento. Ventajas que remarcan las notas: procesamiento en paralelo, relaciones entre palabras alejadas y mejor escalabilidad.'),
+    ('p', '**No confundir:** la *atención* de Seq2Seq conecta dos secuencias (la salida consulta la entrada); la *autoatención* relaciona los tokens de la misma secuencia. Una RNN procesa en orden y arrastra un estado; el Transformer no tiene recurrencia y por eso necesita embeddings posicionales.'),
 ])
 
 S('pipnlp', 'u4', 'Pipeline de NLP y preprocesamiento', 'Vajjala, cap. 2, págs. 32–75', 'fig. 2-1, 2-7 y 2-8 · Notas, U4', [
@@ -140,6 +155,24 @@ S('pipnlp', 'u4', 'Pipeline de NLP y preprocesamiento', 'Vajjala, cap. 2, págs.
                ['Parsing', 'Descompone la oración en su estructura sintáctica'],
                ['Coreference resolution', 'Relaciona expresiones que refieren a lo mismo']], 'tecnicas'),
     ('li', '**Evaluación:** intrínseca (métricas del modelo) y extrínseca (impacto en el negocio).', 'eval'),
+    ('h', 'Pipeline clásico vs pipeline de deep learning (Vajjala, cap. 2, págs. 56–57)'),
+    ('li', '**Clásico:** las features se hacen **a mano**, pensadas para la tarea y el dominio. Ejemplo del libro: para clasificar el sentimiento de reseñas, contar las palabras positivas y negativas de cada una. Ventaja: el modelo es **interpretable**, porque se sabe cuánto pesa cada feature.'),
+    ('li', '**Deep learning:** el texto preprocesado entra directo al modelo, que **aprende las features solo**. Suele rendir mejor, pero se pierde interpretabilidad.'),
+    ('h', 'Evaluación: intrínseca vs extrínseca (Vajjala, cap. 2, págs. 63–67)'),
+    ('li', '**Intrínseca:** mide el modelo con métricas de ML contra respuestas correctas (*ground truth*). En un clasificador de spam: precision y recall.'),
+    ('li', '**Extrínseca:** mide el objetivo final del negocio. En el mismo ejemplo: cuánto tiempo pierde el usuario porque un spam llegó a la bandeja o un mail real fue a spam.'),
+    ('table', [['Métrica', 'Qué mide', 'Dónde se usa'],
+               ['Accuracy', 'Proporción de predicciones correctas', 'Clasificación'],
+               ['Precision', 'De los que el modelo marcó como positivos, cuántos lo son', 'Cuando un falso positivo es caro (diagnóstico médico)'],
+               ['Recall', 'De los positivos reales, cuántos encontró', 'Cuando importa no perder positivos (búsqueda, recuperación de información)'],
+               ['F1', 'Combina precision y recall: 2·P·R / (P + R)', 'Clasificación, extracción de entidades'],
+               ['AUC', 'Calidad del clasificador para cualquier umbral', 'Elegir el umbral'],
+               ['MRR, MAP', 'Calidad de un ranking de resultados', 'Búsqueda, recuperación de información'],
+               ['RMSE, MAPE', 'Error en predicciones numéricas', 'Regresión'],
+               ['BLEU, METEOR', 'Coincidencia de n-gramas con una traducción de referencia', 'Traducción automática'],
+               ['ROUGE', 'Como BLEU pero midiendo recall', 'Resúmenes'],
+               ['Perplejidad', 'Qué tan «confundido» está el modelo al predecir la palabra siguiente', 'Modelos de lenguaje y generación']]),
+    ('p', "**Por qué la generación es difícil de evaluar:** *«J'ai mangé trois filberts»* se puede traducir como *«I ate three filberts»* o *«I ate three hazelnuts»*. Las dos son correctas, pero si la referencia es la primera, una métrica automática marca la segunda como error. Por eso a veces hace falta evaluación humana (pág. 67)."),
 ])
 
 S('repr', 'u4', 'Representación y clasificación de texto', 'Vajjala, cap. 3, págs. 76–108 · cap. 4, págs. 109–146', 'fig. 4-3', [
@@ -147,9 +180,29 @@ S('repr', 'u4', 'Representación y clasificación de texto', 'Vajjala, cap. 3, p
     ('li', '**Embeddings:** vectores densos donde palabras parecidas quedan cerca. **Word2vec** con **CBOW** (contexto → palabra central) y **SkipGram** (palabra central → contexto); Doc2vec para documentos; t-SNE para visualizarlos.', 'emb'),
     ('li', '**Clasificación de texto:** asignar una o varias categorías (spam, sentimiento, tickets). Pipeline (fig. 4-3): datos etiquetados → preprocesamiento y features → entrenar y evaluar → predecir textos nuevos. Algoritmos: Naive Bayes, regresión logística, SVM, CNN, LSTM.', 'clasif'),
     ('li', 'Se evalúa con matriz de confusión, precision y recall. Sin datos etiquetados: reglas, crowdsourcing o **active learning**.', 'evalc'),
+    ('h', 'Ejemplo con el corpus de juguete (Vajjala, cap. 3, págs. 78–86)'),
+    ('p', 'Todas las técnicas son **modelos de espacio vectorial**: cada texto es un vector y la similitud se mide, por ejemplo, con la **similitud coseno**. Corpus: D1 *dog bites man*, D2 *man bites dog*, D3 *dog eats meat*, D4 *man eats food*. Vocabulario: dog=1, bites=2, man=3, meat=4, food=5, eats=6.'),
+    ('table', [['Técnica', 'Cómo representa D1', 'Qué resuelve', 'Qué problema le queda'],
+               ['One-hot', 'Un vector por palabra: dog = [1 0 0 0 0 0], bites = [0 1 0 0 0 0]…', 'Es simple', 'Vectores ralos y enormes; largo variable según el texto; run, ran y apple quedan igual de lejos; no maneja palabras nuevas (OOV)'],
+               ['Bag of words', '[1 1 1 0 0 0] (conteo de cada palabra)', 'Largo fijo; documentos con las mismas palabras quedan cerca', 'Pierde el orden: D1 y D2 dan el mismo vector aunque digan lo contrario'],
+               ['Bag of n-grams (n = 2)', 'Cuenta pares: *dog bites*, *bites man*…', 'Recupera algo de orden y contexto', 'Cuanto más grande el n, más dimensiones y más ralo; sigue sin OOV'],
+               ['TF-IDF', 'dog 0,136; bites 0,17; man 0,136', 'Pesa más las palabras frecuentes en el documento y raras en el corpus', 'Sigue siendo de alta dimensión']]),
+    ('p', '**Los tres problemas de todas las representaciones básicas** (pág. 86): tratan las palabras como unidades sueltas (no capturan relaciones), son vectores ralos de alta dimensión y no manejan palabras fuera del vocabulario.'),
+    ('p', '**Cómo se fueron resolviendo:**'),
+    ('li', '**Embeddings de palabras** (Word2vec, GloVe, fastText): vectores densos donde las palabras de uso parecido quedan cerca. Se pueden **descargar preentrenados** (por ejemplo, los de Google News) o entrenar propios si el dominio lo necesita (pág. 89).'),
+    ('li', '**Palabras fuera del vocabulario:** una opción es ignorarlas. Si menos del 80% del vocabulario del corpus está en el de los embeddings, es difícil que el modelo ande bien (pág. 97). **fastText** arma el vector de una palabra nueva con sus n-gramas de caracteres: *gregarious* → gre, reg, ega… (pág. 98).'),
+    ('li', '**Textos completos:** promediar los vectores de las palabras funciona sorprendentemente bien; Doc2vec aprende un vector por documento.'),
+    ('li', '**Representaciones contextuales (2018):** en Word2vec, *bank* tiene el mismo vector en *«withdraw money from the bank»* y en *«the river bank»*. ELMo y BERT generan un vector que **depende del contexto**, preentrenados con modelado de lenguaje y después ajustados a la tarea (*transfer learning*, págs. 99–100).'),
+    ('p', '**No confundir:** one-hot representa *palabras*; BoW y TF-IDF representan *documentos*. Un embedding es denso y aprendido; un vector BoW es ralo y se cuenta.'),
+    ('h', 'Clasificación de texto: lo que faltaba del capítulo 4'),
+    ('li', '**Sin pipeline ni ML** (págs. 114–115): un clasificador de sentimiento puede empezar con **listas de palabras positivas y negativas** (*lexicon-based*). Sirve como producto mínimo y como línea de base. Si la tarea es genérica, también se puede usar una **API existente** (Google, Microsoft o Amazon ofrecen clasificación de contenido y sentimiento).'),
+    ('li', '**Con un modelo preentrenado** (pág. 134): BERT se ajusta (*fine-tuning*) con el dataset de la tarea, por ejemplo reseñas de IMDB etiquetadas como positivas o negativas.'),
+    ('li', '**Sin datos etiquetados** (pág. 138): ejemplo de reclamos de un e-commerce que hay que separar en *facturación*, *entrega* y *otros*. Opciones: que los agentes etiqueten a mano; **weak supervision** (reglas como «menciona *bill* o montos → facturación», que crean un dataset ruidoso; herramienta Snorkel); o **crowdsourcing**.'),
+    ('li', '**Con pocos datos: active learning** (pág. 139): 1) entrenar con lo que hay; 2) predecir sobre datos nuevos; 3) mandar a etiquetar a mano los casos donde el modelo duda más; 4) sumarlos y reentrenar. Se repite hasta que el modelo rinda bien.'),
+    ('li', '**Domain adaptation o transfer learning** (págs. 139–140): si el clasificador se entrenó con reclamos de electrónica y ahora hay que usarlo con cosméticos, se parte de un modelo de lenguaje preentrenado, se lo ajusta con el texto sin etiquetar del dominio nuevo y después se entrena el clasificador con los pocos ejemplos etiquetados.'),
 ])
 
-S('recom', 'u4', 'Sistemas de recomendación, cross validation y RMSE', 'Notas de clase, U4', 'Videos MIT 4.1–4.2 · ejercicio con Surprise (carpeta U4)', [
+S('recom', 'u4', 'Sistemas de recomendación, evaluación y clustering', 'Notas de clase, U4', 'Videos MIT 4.1–4.2 · ejercicio con Surprise (carpeta U4) · Vajjala, caps. 1–2 · Galli, opcional · scikit-learn (complementaria)', [
     ('p', 'Un sistema de recomendación nos ayuda a encontrar lo que buscamos sin pedirlo de forma precisa: el objetivo es semántico. En algunos negocios es el centro (YouTube).', 'que'),
     ('table', [['Modelo (Surprise)', 'Cómo recomienda'],
                ['Aleatorio (NormalPredictor)', 'Rating al azar según la distribución: baseline'],
@@ -159,14 +212,31 @@ S('recom', 'u4', 'Sistemas de recomendación, cross validation y RMSE', 'Notas d
     ('li', '**Active learning:** un humano en el bucle, un oráculo que va diciendo la verdad. Google aprende de cada clic; el peso es inversamente proporcional a la posición mostrada.', 'active'),
     ('li', '**Cross validation:** se entrena con una parte, se valida con otra y se rota la ventana; con k folds, cada parte es validación una vez y se promedia el error.', 'cv'),
     ('li', '**RMSE:** raíz del error cuadrático medio. Mide cuánto se equivoca la predicción en las mismas unidades; más bajo es mejor y castiga más los errores grandes. MAE es la versión sin cuadrado.', 'rmse'),
+    ('p', '**Fórmula:** RMSE = √[ (1/n) · Σ (ŷᵢ − yᵢ)² ], con la suma para i = 1 … n. ŷᵢ es el rating predicho, yᵢ el real y n la cantidad de predicciones.'),
+    ('h', 'Práctico con Surprise: comparar modelos con RMSE y MAE'),
+    ('p', "El ejercicio de la cátedra (*Ejercicio_sistema_de_recomendación_con_surprise*) usa el dataset MovieLens 100k y compara tres modelos con `cross_validate(..., measures=['RMSE', 'MAE'], cv=5)`:"),
+    ('li', '1) **Random** (`NormalPredictor`): predice un rating al azar según la distribución del entrenamiento, que supone normal. Es la línea de base.'),
+    ('li', '2) **Filtrado colaborativo usuario-usuario** (`KNNBasic` con `user_based: True`).'),
+    ('li', '3) **Filtrado colaborativo ítem-ítem** (`KNNBasic` con `user_based: False`).'),
+    ('p', '**MAE** (*mean absolute error*): el promedio de los errores absolutos de predicción. Como RMSE, **más bajo es mejor**; RMSE castiga más los errores grandes porque los eleva al cuadrado.'),
+    ('p', '**Cómo leer el resultado:** cada modelo devuelve RMSE y MAE promediados sobre los 5 folds. Un modelo colaborativo sirve si baja ambas métricas respecto del Random; entre usuario-usuario e ítem-ítem gana el de menor error. La pregunta 2 del práctico pide justamente comparar los tres y explicar por qué salen así.'),
+    ('h', 'Clustering (aprendizaje no supervisado) ★'),
+    ('p', 'Agrupar observaciones por similitud **sin etiquetas** → aprendizaje **no supervisado**. Ejemplo típico: K-means (videos MIT 1.3–1.7, opcionales). Se evalúa con métricas no supervisadas como el índice de Davies-Bouldin (Ozdemir).'),
+    ('h', 'Ejemplos: clasificación con etiquetas y K-means'),
+    ('p', '**Clasificación (supervisada).** Vajjala (cap. 1, pág. 13 del PDF): en el aprendizaje supervisado se aprende la función que va de la entrada a la salida a partir de pares entrada-salida; las salidas son las **etiquetas** (*ground truth*). Ejemplo del libro: clasificar emails como **spam o no spam** a partir de miles de ejemplos ya etiquetados en las dos categorías. Otro ejemplo (cap. 2, pág. 34 del PDF): separar consultas de clientes en **ventas o soporte**; para entrenar hace falta una colección de consultas donde cada una está etiquetada como *sales* o *support*.'),
+    ('p', '**Agrupamiento (no supervisado).** Vajjala: no hay salida de referencia; el algoritmo busca patrones ocultos, por ejemplo temas latentes en muchos textos (*topic modeling*).'),
+    ('p', '**K-means paso a paso** (Galli, opcional, pág. 141 del PDF):'),
+    ('li', '1) **Inicialización:** se eligen al azar *k* observaciones como centros iniciales de los *k* clusters, y cada punto restante se asigna al cluster más cercano (distancia euclídea, por ejemplo).'),
+    ('li', '2) **Iteración:** se recalcula cada centro como el promedio de las observaciones de su cluster y se reasignan los puntos al centro más cercano.'),
+    ('li', '3) Se repite hasta cumplir un **criterio de parada**: que los centroides casi no se muevan entre una iteración y la siguiente (Galli lo resume como «hasta encontrar los *k* centros óptimos»). **Ojo:** el resultado **depende de los centroides iniciales** y puede quedar en un mínimo local; por eso se corre varias veces con distintas inicializaciones o se usa *k-means++*, que elige centroides iniciales alejados entre sí (fuente complementaria: scikit-learn, Clustering, K-means (https://scikit-learn.org/stable/modules/clustering.html)). El único parámetro es *k*; una forma de elegirlo es el **método del codo** (entrenar varios K-means con distintos *k* y comparar).'),
 ])
 
-S('dp', 'u4', 'Data products (Strengholt, Data Management at Scale, cap. 4)', 'Strengholt DMS, cap. 4, págs. 1–37', 'fig. 4-1, 4-2, 4-3 y 4-5 · Notas, U4', [
+S('dp', 'u4', 'Data products ★ (Strengholt, Data Management at Scale, cap. 4)', 'Strengholt DMS, cap. 4, págs. 1–37', 'fig. 4-1, 4-2, 4-3 y 4-5 · Notas, U4', [
     ('p', 'Hacer responsables a los productores de datos y descentralizar cómo se sirven es una gran forma de escalar.', 'intro'),
     ('table', [['', 'Data as a product', 'Data product'],
                ['Qué es', 'Una **forma de pensar**', 'Un concepto de **arquitectura**'],
                ['Idea', 'Los datos son un producto completo del que el equipo es responsable; el consumidor es un cliente', 'Lo que se construye para exponer datos']], 'vs'),
-    ('callout', '**P8 del 1er parcial:** la diferencia es que una se refiere a cómo pensamos los datos y la otra a la arquitectura.', 'examen'),
+    ('callout', '**En resumen ★:** data as a product se refiere a cómo pensamos los datos; data product, a la arquitectura.', 'examen'),
     ('li', '**Dehghani:** data product = *architectural quantum* que encapsula código, datos y metadata, e infraestructura. **Accenture:** datasets, modelos y dashboards.', 'visiones'),
     ('li', '**Por qué no un contenedor:** en la subasta de flores de Aalsmeer la metadata viaja con cada caja, pero en lo digital la metadata vive aparte (catálogo, lineage). Pegarla a los datos la duplica en cada copia y complica calidad y seguridad.', 'contenedor'),
     ('li', '**Definición de Strengholt:** una **entidad lógica autónoma que describe datos pensados para consumo**, con nombre, relación con el dominio, dueño y referencias a los activos físicos. Se separan dos puntos de vista: datos y tecnología (fig. 4-1). Debajo están los **data elements**.', 'logica'),
@@ -179,9 +249,9 @@ S('dp', 'u4', 'Data products (Strengholt, Data Management at Scale, cap. 4)', 'S
 ])
 
 # ═══════════════════════════ U5 · Arquitecturas e Ingeniería de Datos
-S('de', 'u5', 'Qué es la ingeniería de datos', 'Reis, cap. 1, págs. 1–27', 'fig. 1-1, 1-4, 1-5, 1-8 y 1-12 · Notas, U5', [
+S('de', 'u5', 'Qué es la ingeniería de datos ★', 'Reis, cap. 1, págs. 1–27', 'fig. 1-1, 1-4, 1-5, 1-8 y 1-12 · Notas, U5', [
     ('p', '**Definición (Reis):** la ingeniería de datos es el **desarrollo, implementación y mantenimiento de sistemas y procesos que toman datos crudos y producen información de alta calidad y consistente** que soporta casos de uso downstream, como análisis y machine learning. Es la intersección de seguridad, data management, DataOps, arquitectura de datos, orquestación e ingeniería de software.', 'def'),
-    ('callout', '**P1 del parcial 2025** pidió esta definición en formato choice.', 'examen'),
+    ('callout', '**Ojo con las definiciones parecidas:** Reis habla de «sistemas *y procesos* que toman datos crudos y producen información de alta calidad y consistente» (cap. 1, pág. 2 del PDF). Una definición que diga «sistemas de *inteligencia artificial*» cambia el objeto de la definición y ya no es la de Reis.', 'examen'),
     ('li', 'Un **data engineer** gestiona el ciclo de vida: obtiene datos de los sistemas fuente, los almacena y los prepara para analistas, data scientists y otros.', 'rol'),
     ('li', '**Evolución:** 1980–2000 data warehousing (Inmon acuña «data warehouse» en 1989; Kimball e Inmon; MPP) → 2000s nace la ingeniería de datos contemporánea → 2000s–2010s **big data engineering** (Hadoop, Spark, Kafka) → 2020s **ingeniería del ciclo de vida del dato**.', 'historia'),
     ('li', '**Upstream de la ciencia de datos:** pirámide de Rogati (recolectar → mover/almacenar → explorar/transformar → agregar/etiquetar → aprender/optimizar → IA). Los data scientists pasan 70–80% del tiempo en las tres capas de abajo.', 'piramide'),
@@ -190,10 +260,10 @@ S('de', 'u5', 'Qué es la ingeniería de datos', 'Reis, cap. 1, págs. 1–27', 
     ('li', '**Stakeholders:** upstream (arquitectos de datos, ingenieros de software, DevOps/SRE) y downstream (analistas, data scientists, ML engineers); y el C-suite: CEO, CIO, CTO, **CDO**, CAO.', 'stake'),
 ])
 
-S('ciclo', 'u5', 'Ciclo de vida de la ingeniería de datos', 'Reis, cap. 2, págs. 1–33', 'fig. 2-1, 2-2, 2-5, 2-6 y 2-8 · Notas, U5', [
+S('ciclo', 'u5', 'Ciclo de vida de la ingeniería de datos ★', 'Reis, cap. 2, págs. 1–33', 'fig. 2-1, 2-2, 2-5, 2-6 y 2-8 · Notas, U5', [
     ('p', '**Cinco etapas:** generación → almacenamiento → ingesta → transformación → servicio. El almacenamiento se dibuja como base porque ocurre en todo el ciclo. Es un subconjunto del ciclo de vida completo del dato (fig. 2-2).', 'etapas'),
     ('p', '**Corrientes subyacentes (undercurrents):** seguridad, data management, DataOps, arquitectura de datos, orquestación e ingeniería de software.', 'corrientes'),
-    ('callout', '**P2 del parcial 2025:** «generación, almacenamiento, ingesta, transformación y servicio».', 'examen'),
+    ('callout', '**★ Las cinco etapas, en orden:** generación, almacenamiento, ingesta, transformación y servicio.', 'examen'),
     ('table', [['Etapa', 'Qué es', 'Claves'],
                ['Generación', 'Sistemas fuente (base de una app, IoT, APIs)', 'Fuera del control del DE'],
                ['Almacenamiento', 'Dónde viven los datos', 'Datos **hot**, **lukewarm** y **cold** según frecuencia de acceso'],
@@ -203,16 +273,16 @@ S('ciclo', 'u5', 'Ciclo de vida de la ingeniería de datos', 'Reis, cap. 2, pág
     ('h', 'Batch vs streaming'),
     ('li', '**Batch:** procesa por intervalos de tiempo o al llegar a un tamaño, en bloques. Es una «puerta de una vía» porque limita la latencia. Ideal para entrenar modelos y reportes.', 'batch'),
     ('li', '**Streaming:** entrega los datos de forma **continua**, casi en tiempo real. Casi todos los datos son streaming por naturaleza; adoptar tiempo real solo si un caso de negocio lo justifica. Punto medio: micro-batch.', 'stream'),
-    ('callout', '**P3 del parcial 2025:** batch procesa periódicamente en bloques; streaming transmite de manera continua.', 'examen3'),
+    ('callout', '**★ En resumen:** batch procesa periódicamente en bloques; streaming transmite de manera continua.', 'examen3'),
     ('li', '**Push vs pull:** en push la fuente escribe hacia el destino; en pull el sistema de ingesta lee la fuente (la E de ETL). CDC puede ser push o pull.', 'push'),
     ('li', '**Analytics (fig. 2-5):** BI, operacional y embebido. **Reverse ETL (fig. 2-6):** devolver datos procesados a las fuentes (ej. un CRM).', 'serving'),
     ('li', '**DataOps (fig. 2-8):** automatización, observabilidad y monitoreo, respuesta a incidentes.', 'dataops'),
     ('li', '**Data management:** gobierno (descubribilidad, metadata, accountability), calidad, master data, modelado, lineage, integración, ciclo de vida, ética y privacidad.', 'dm'),
 ])
 
-S('arq', 'u5', 'Arquitectura de datos y sus principios', 'Reis, cap. 3, págs. 1–13', 'fig. 3-1 y 3-2 · Notas, U5', [
+S('arq', 'u5', 'Arquitectura de datos y sus principios ★', 'Reis, cap. 3, págs. 1–13', 'fig. 3-1 y 3-2 · Notas, U5', [
     ('p', 'La **arquitectura empresarial** tiene cuatro subconjuntos: **de negocio, técnica, de aplicaciones y de datos** (fig. 3-1). Definición de los autores: el diseño de sistemas para soportar el cambio en la empresa, con decisiones flexibles y reversibles tras evaluar trade-offs.', 'empresarial'),
-    ('callout', '**P4 del parcial 2025:** la arquitectura de negocios está al mismo nivel que la de datos dentro de la empresarial; no es parte de la de datos.', 'examen'),
+    ('callout', '**★ Ojo:** la arquitectura de negocios está al mismo nivel que la de datos dentro de la empresarial; no es parte de la de datos.', 'examen'),
     ('p', '**Arquitectura de datos:** el diseño de sistemas para soportar las necesidades de datos cambiantes de la empresa, con decisiones flexibles y reversibles tras evaluar trade-offs. Es un subconjunto de la empresarial.', 'datos'),
     ('li', '**Operacional vs técnica (fig. 3-2):** la operacional dice **qué** hay que hacer (procesos, calidad, latencia); la técnica, **cómo** (ingesta, almacenamiento, transformación).', 'optec'),
     ('li', '**Puertas de una vía y de dos vías** (Bezos): decisiones casi irreversibles vs fácilmente reversibles.', 'puertas'),
@@ -232,11 +302,15 @@ S('patarq', 'u5', 'Warehouse, lake, lakehouse, Lambda y Kappa', 'Reis, cap. 3, p
                ['**IoT**', 'Dispositivos → gateway → cola de mensajes → almacenamiento y servicio'],
                ['**Data mesh**', 'Descentralizar por dominios']], 'tabla'),
     ('li', '**Inmon (top-down):** primero un DWH empresarial en 3FN, después data marts en estrella; se carga dos veces. **Kimball (bottom-up):** primero data marts dimensionales (hechos y dimensiones).', 'inmon'),
-    ('callout', '**P14 del 1er parcial:** «el DWH es una fuente única de la verdad» → verdadero (integra todo en un hub central). Data Mesh, en cambio, no impone una única fuente de verdad.', 'ssot'),
+    ('callout', '**DWH como fuente única de verdad ★:** en tus notas de clase, uno de los beneficios del modelo dimensional es ser una **fuente única de verdad**: modelar cada proceso de negocio una sola vez evita duplicaciones y definiciones inconsistentes entre distintos modelos. Data Mesh, en cambio, se aparta de la idea de una única fuente de verdad (Dehghani, pág. 183 del PDF).', 'ssot'),
     ('li', '**Dominios y servicios, sistemas distribuidos, acople (single tier, multitier, monolito, microservicios), single vs multitenant, event-driven, brownfield vs greenfield** completan el capítulo.', 'otros'),
+    ('h', 'Data Fabric y Data Hub'),
+    ('p', 'Reis (cap. 3, pág. 34 del PDF) los nombra entre las otras variantes de arquitectura de datos (*data fabric, data hub, scaled architecture, metadata-first, event-driven, live data stack*), sin desarrollarlas.'),
+    ('p', '**Data Fabric.** Notas de clase: «Data fabric is an integrated layer of connected data». Schiller (cap. 4, opcional, págs. 3–4 del PDF) lo explica a partir del data lake: el lake se volvió un «data swamp» sin metadatos ni gobierno, y hace falta ir hacia el **data mesh o su superconjunto, que Microsoft llama data fabric**. La diferencia es que el data fabric agrega servicios cloud que facilitan implementar los principios de Data Mesh (data as a product, self-serve, ownership de dominio), a cambio de atarse al proveedor (*vendor lock-in*). Schiller aclara que es un área en evolución.'),
+    ('p', '**Data Hub.** Ningún libro de la carpeta lo desarrolla; esta explicación sale de **Gartner** (The Best Ways to Organize Your Data Structures (https://www.gartner.com/smarterwithgartner/the-best-ways-to-organize-your-data-structures)). Un data hub es un punto de **mediación** entre los datos que se gestionan centralmente (los que usa toda la organización) y los que se gestionan localmente: aplica controles de **gobierno** y permite **compartir** datos entre aplicaciones y procesos. No es un repositorio para análisis como el warehouse o el lake; por ejemplo, puede mejorar el envío de datos desde las aplicaciones de negocio hacia un data warehouse o un data lake. Ojo: Reis (pág. 24 del PDF) llama al data warehouse «central data hub» para reporting; ahí *hub* es descriptivo, no esta arquitectura.'),
 ])
 
-S('mesh', 'u5', 'Data Mesh', 'Dehghani, cap. 1, págs. 44–60', 'fig. 1-1, 1-2 y 1-3 · Notas, U5', [
+S('mesh', 'u5', 'Data Mesh ★', 'Dehghani, cap. 1, págs. 44–60', 'fig. 1-1, 1-2 y 1-3 · Notas, U5', [
     ('p', '**Data mesh es un enfoque sociotécnico descentralizado para compartir, acceder y gestionar datos analíticos en entornos complejos y de gran escala, dentro o entre organizaciones.**', 'def'),
     ('li', '**Resultados:** responder con gracia al cambio, sostener la agilidad al crecer y aumentar la relación valor/inversión.', 'outcomes'),
     ('table', [['Cambio', 'De', 'A'],
@@ -246,7 +320,7 @@ S('mesh', 'u5', 'Data Mesh', 'Dehghani, cap. 1, págs. 44–60', 'fig. 1-1, 1-2 
                ['Operacional', 'Gobierno top-down centralizado', 'Gobierno federado computacional'],
                ['De principios', 'Datos como activo a recolectar', 'Datos como producto'],
                ['De infraestructura', 'Dos infraestructuras fragmentadas', 'Infraestructura integrada']], 'cambios'),
-    ('callout', '**P6 del parcial 2025:** citar los cambios. **P7:** citar los principios.', 'examen'),
+    ('callout', '**★ Saber citar los 6 cambios y los 4 principios.**', 'examen'),
     ('li', '**1. Domain ownership:** la propiedad de los datos analíticos pasa a los dominios más cercanos a ellos.', 'p1'),
     ('li', '**2. Data as a product:** se comparten como producto. Atributos: descubrible, direccionable, comprensible, confiable y veraz, accesible de forma nativa, interoperable y componible, valioso por sí mismo y seguro. Unidad: **data quantum**.', 'p2'),
     ('li', '**3. Self-serve data platform:** servicios que bajan la carga cognitiva y el costo de la propiedad descentralizada.', 'p3'),
@@ -254,24 +328,40 @@ S('mesh', 'u5', 'Data Mesh', 'Dehghani, cap. 1, págs. 44–60', 'fig. 1-1, 1-2 
     ('li', '**Interplay (fig. 1-2):** los cuatro son colectivamente necesarios y suficientes. El ownership crea silos → lo compensa data as a product; duplica esfuerzo → la plataforma; trae incompatibilidad → el gobierno federado.', 'interplay'),
     ('li', '**Datos operacionales vs analíticos:** los operacionales (OLTP, «data on the inside») hacen funcionar el negocio; los analíticos (OLAP, «data on the outside») son históricos, integrados y agregados. Data mesh se enfoca en los analíticos.', 'datos'),
     ('li', '**Origen:** un cambio de paradigma (Kuhn) que adapta microservicios, Team Topologies y Zero Trust al mundo analítico.', 'origen'),
+    ('h', 'Lenguaje ubicuo y contexto delimitado (Evans, opcional)'),
+    ('p', 'Ayudan a entender por qué cada dominio de Data Mesh puede tener su propio modelo y vocabulario.'),
+    ('li', '**Ubiquitous language** (cap. 2, pág. 42 del PDF): un lenguaje común basado en el modelo del dominio, que usan desarrolladores y expertos del dominio para hablar entre ellos y que aparece en el código (nombres de clases, operaciones, reglas).'),
+    ('li', '**Bounded context** (cap. 14, pág. 298 del PDF): en un proyecto grande conviven varios modelos; el contexto delimitado marca explícitamente dónde se aplica cada modelo, para que no se mezclen definiciones contradictorias. Es la idea detrás de que cada dominio sea dueño de sus datos con su propio significado.'),
 ])
 
-S('medallion', 'u5', 'Arquitectura Medallion', 'Strengholt, Building Medallion Architectures, cap. 1 (págs. 2–24) y cap. 3 (págs. 40–73)', 'fig. 1-1, 1-2, 1-8 y 3-1 · tabla 3-1 · Notas, U5', [
+S('medallion', 'u5', 'Arquitectura Medallion ★', 'Strengholt, Building Medallion Architectures, cap. 1 (págs. 2–24) y cap. 3 (págs. 40–73)', 'fig. 1-1, 1-2, 1-8 y 3-1 · tabla 3-1 · Notas, U5', [
     ('p', '**Una arquitectura Medallion es un patrón de diseño de datos para organizar lógicamente los datos, casi siempre en un lakehouse, en tres capas, para mejorar de forma incremental la estructura y la calidad a medida que fluyen: Bronze ⇒ Silver ⇒ Gold.** La acuñó Databricks; no es una evolución de arquitecturas anteriores.', 'def'),
     ('table', [['Capa', 'Qué contiene', 'Modelo de datos', 'Transformaciones'],
                ['**Bronze**', 'Datos crudos de las fuentes en su estructura original; registro histórico inmutable', 'Esquema del sistema fuente', 'Mínimas: filtros, agregar metadata'],
                ['**Silver**', 'Datos limpios, estandarizados, deduplicados y validados; todavía granulares', 'Espejo de Bronze, por temas, 3FN o Data Vault', 'Historización (SCD2), datos de referencia, feature engineering'],
                ['**Gold**', 'Datos curados y agregados para el negocio', 'Kimball (estrella) u OBT', 'Armonización, agregación, lógica de negocio']], 'capas'),
-    ('callout', '**P8 del parcial 2025:** «qué información debe ir en cada capa en menos de 30 palabras».', 'examen'),
+    ('callout', '**Resumen breve de cada capa ★:** **Bronze:** datos crudos tal cual llegan de las fuentes, sin transformar; historial inmutable y punto de partida confiable. **Silver:** datos limpios, estandarizados y deduplicados, con controles de calidad; granulares y fáciles de consultar para analistas y data scientists. **Gold:** datos preparados para un consumo de negocio específico; pueden incluir agregados o tablas listas para consultar en reportes y KPIs (Strengholt: «optimizes refined data for specific business insights and decisions»).', 'examen'),
     ('li', 'Las capas son **lógicas**: una puede tener varias subcapas físicas. Pueden existir una **landing zone** antes de Bronze y capas **curated, semánticas o Platinum** después de Gold.', 'logicas'),
     ('li', '**Diseño de tres capas (fig. 1-1):** proveedores → plataforma de distribución → consumidores, bajo una capa de metadata y gobierno. Medallion vive en la de distribución (fig. 1-2).', 'tres'),
     ('li', '**Lakehouse (fig. 1-8):** almacenamiento de objetos barato con transacciones ACID; Spark para cómputo y Delta Lake para almacenamiento. Proveedores: Databricks, Microsoft Fabric, Synapse, Cloudera, Dremio, Starburst.', 'lakehouse'),
     ('li', '**Crítica del autor:** no hay consenso sobre qué va en cada capa; hay que definir estándares y no olvidar el modelado de datos.', 'critica'),
+    ('h', 'Bases (cap 2, en breve)'),
+    ('p', 'Landing zones, datos crudos (el preprocesamiento de sistemas complejos no cuenta como transformación), batch (barato, ideal para historia) vs tiempo real (Spark Structured Streaming, Change Data Feed, CDC), y gestión de tablas Delta (Z-ordering, V-ordering, particionado, liquid clustering, compactación).'),
+    ('h', 'Detalles por capa (cap 3)'),
+    ('li', '**Bronze:** cargas completas o incrementales; historización; evolución de esquema (mergeSchema, schema enforcement); validaciones técnicas.'),
+    ('li', '**Silver:** limpieza (ruido, faltantes, duplicados, formatos); renombrar y conformar columnas; desnormalizar; SCD; claves sustitutas; armonizar con otras fuentes; sirve para consultas operacionales y ML. Los problemas de calidad se corrigen idealmente en la fuente.'),
+    ('li', '**Gold:** esquema estrella (cargar dimensiones y después hechos) u **One Big Table** (todo en una tabla: más simple y a veces más rápido, pero menos flexible); capa de servicio (copiar a Azure SQL, Power BI en modo Import).'),
+    ('li', '**Conclusión:** definir estándares organizacionales sobre qué se espera de cada capa; equilibrar rendimiento (OBT) y flexibilidad (Data Vault).'),
+    ('h', 'Caso Patient 360 (Redefining Data Engineering with AI, opcional)'),
+    ('p', 'El libro usa un caso único: el pipeline **Patient 360** de ZenHealth, que unifica datos de pacientes de varios sistemas clínicos (datos sintéticos de Synthea, 18 tablas) en una vista única para los médicos (págs. 6–7 del PDF).'),
+    ('li', '**Medallion aplicada:** el pipeline se construye en capas **bronze, silver y gold, en ese orden** (pág. 66). Al elegir Medallion en el diseño de alto nivel, el modelo de datos necesita **tres conjuntos de esquemas** en vez de uno (pág. 71).'),
+    ('li', '**IA con revisión humana:** agentes de IA ayudan a planificar y construir el pipeline, pero después de cada función hay una **review gate** con validación automática y *human-in-the-loop*: si el humano no aprueba el artefacto, vuelve a revisión (págs. 73 y 81–82).'),
+    ('p', 'Sirve como ejemplo de integración para el TPI: Medallion + agentes + control humano.'),
 ])
 
-S('patrones', 'u5', 'Patrones de diseño de ingeniería de datos (Konieczny)', 'Konieczny, caps. 1–10', 'Carpeta U5, marcados «OBLIGATORIO-TPI» · P5 del parcial 2025', [
+S('patrones', 'u5', 'Patrones de diseño de ingeniería de datos (Konieczny) ★', 'Konieczny, caps. 1–10', 'Carpeta U5, marcados «OBLIGATORIO-TPI»', [
     ('p', 'Un patrón es una **plantilla predefinida y personalizable para resolver un problema** (la receta del flan): tiene contexto, plantilla, reutilización, consecuencias y da un vocabulario común. Cada patrón del libro sigue el formato problema → solución → consecuencias → ejemplos.', 'def'),
-    ('callout', 'La **P5 del parcial 2025** dijo «del libro de Kleppmann», pero el libro de patrones de la U5 es el de Konieczny.', 'kleppmann'),
+    ('callout', '★ Prioritario: saber describir en pocas palabras un patrón del libro de **Konieczny** y dar un ejemplo. Dead-Letter, con los registros inválidos enviados a una tabla de errores, es un buen caso.', 'kleppmann'),
     ('table', [['Capítulo', 'Patrones'],
                ['2 Ingesta', 'Full Loader, Incremental Loader, Change Data Capture, Passthrough y Transformation Replicator, Compactor, Readiness Marker, External Trigger'],
                ['3 Errores', 'Dead-Letter, Windowed Deduplicator, Late Data Detector, Static y Dynamic Late Data Integrator, Filter Interceptor, Checkpointer'],
@@ -282,14 +372,14 @@ S('patrones', 'u5', 'Patrones de diseño de ingeniería de datos (Konieczny)', '
                ['8 Almacenamiento', 'Horizontal y Vertical Partitioner, Bucket, Sorter, Metadata Enhancer, Dataset Materializer, Manifest, Normalizer, Denormalizer'],
                ['9 Calidad', 'Audit-Write-Audit-Publish, Constraints Enforcer, Schema Compatibility Enforcer, Schema Migrator, Offline y Online Observer'],
                ['10 Observabilidad', 'Flow Interruption, Skew, Lag y SLA Misses Detector, Dataset y Fine-Grained Tracker']], 'catalogo'),
-    ('li', '**Dead-Letter (respuesta modelo):** cuando un job no puede procesar un registro, lo captura (try-catch o if-else) y lo envía a otro destino con la metadata del error; el resto sigue. Ejemplo: eventos de Kafka con JSON mal formado van a «visitas_error». Consecuencia: más complejidad y hay que monitorear el destino.', 'deadletter'),
+    ('li', '**Dead-Letter ★:** cuando un job no puede procesar un registro, lo captura (try-catch o if-else) y lo envía a otro destino con la metadata del error; el resto sigue. Ejemplo: eventos de Kafka con JSON mal formado van a «visitas_error». Consecuencia: más complejidad y hay que monitorear el destino.', 'deadletter'),
     ('li', '**Change Data Capture:** ingiere continuamente las filas modificadas leyendo el log de commits de la base; baja latencia. **Incremental Loader:** trae solo lo nuevo por una columna delta o por particiones de tiempo.', 'cdc'),
+    ('p', '**Para el TPI:** el catálogo sirve para ubicar patrones, pero justificar uno exige lo que Konieczny pide de cada patrón: en qué situación lo aplicarías (contexto y problema) y qué consecuencias trae (costos y trade-offs).'),
 ])
 
 # ═══════════════════════════ U6 · Inteligencia Artificial Generativa
-S('agentes', 'u6', 'Agentes de IA: definición y cuándo usarlos (Albada, cap. 1)', 'Albada, cap. 1, págs. 3–16', 'tabla 1-2 · P9 del parcial 2025', [
-    ('p', '**Los agentes autónomos son sistemas inteligentes diseñados para analizar datos de forma independiente, interpretar su entorno y tomar decisiones basadas en el contexto.** La agencia es un espectro: la prueba de un agente real es que toma decisiones en vez de seguir scripts fijos.', 'def'),
-    ('callout', '**P9 del parcial 2025** copiaba esta definición: verdadero.', 'examen'),
+S('agentes', 'u6', 'Agentes de IA: definición y cuándo usarlos (Albada, cap. 1) ★', 'Albada, cap. 1, págs. 3–16', 'tabla 1-2', [
+    ('p', '**Los agentes autónomos son sistemas inteligentes diseñados para analizar datos de forma independiente, interpretar su entorno y tomar decisiones basadas en el contexto.** ★ La agencia es un espectro: la prueba de un agente real es que toma decisiones en vez de seguir scripts fijos.', 'def'),
     ('li', '**Sistema agéntico:** herramientas, memoria, modelo fundacional, orquestación e infraestructura. Protocolos: MCP (herramientas) y A2A (entre agentes).', 'sistema'),
     ('li', '**Revolución del preentrenamiento:** antes había que juntar datos, entrenar y desplegar; hoy un modelo fundacional se usa con una llamada a una API.', 'pretrain'),
     ('li', '**Tipos (The Information):** de tareas de negocio, conversacionales, de investigación, de analítica, de desarrollo, de dominio específico y que usan el navegador; además, de voz y de video.', 'tipos'),
@@ -314,14 +404,14 @@ S('disagentes', 'u6', 'Diseño de sistemas de agentes (Albada, cap. 2)', 'Albada
     ('li', '**Buenas prácticas:** diseño iterativo, estrategia de evaluación (correctitud, casos borde, NPS/CSAT, tareas completadas) y pruebas reales.', 'practicas'),
 ])
 
-S('rag', 'u6', 'RAG: pipelines y componentes (Kimothi, cap. 2)', 'Kimothi, cap. 2, págs. 1–12', 'fig. 2.1 a 2.7 · P10 del parcial 2025', [
+S('rag', 'u6', 'RAG: pipelines y componentes (Kimothi, cap. 2) ★', 'Kimothi, cap. 2, págs. 1–12', 'fig. 2.1 a 2.7', [
     ('p', 'RAG (*retrieval-augmented generation*) recupera información relevante de una fuente externa y la agrega al prompt para que el LLM responda con contexto. **Cinco pasos:** pregunta → búsqueda → recuperación y aumentación → LLM → respuesta con contexto.', 'def'),
     ('table', [['', 'Indexing pipeline', 'Generation pipeline'],
                ['Para qué', 'Crear y mantener la base de conocimiento', 'Interacción en tiempo real'],
                ['Cuándo', 'Offline, va primero', 'Con cada consulta'],
                ['Componentes', 'Carga → splitting (chunking) → embeddings → base vectorial', 'Retriever → gestión del prompt → LLM']], 'pipelines'),
-    ('li', '**Embeddings:** los datos de texto se convierten a formato numérico para la búsqueda y recuperación; los embeddings son el formato que mejor funciona.', 'emb'),
-    ('callout', '**P10 del parcial 2025:** embeddings en RAG → verdadero.', 'examen'),
+    ('li', '**Embeddings ★:** los datos de texto se convierten a formato numérico para la búsqueda y recuperación; los embeddings son el formato que mejor funciona.', 'emb'),
+    ('callout', '**Ojo:** los embeddings corresponden a la recuperación semántica; también hay RAG con búsqueda por términos (BM25) o recuperación híbrida (Huyen, cap. 6).', 'examen'),
     ('li', 'El **retriever** es el componente más crítico y el que más latencia suma. No todo RAG necesita indexing pipeline: si la búsqueda la hace una API o el usuario aporta el documento.', 'retriever'),
     ('li', '**Componentes extra:** evaluación, monitoreo, caching (caché semántica), guardrails (políticas y ética), seguridad (prompt injection, data poisoning) y orquestación.', 'extras'),
     ('li', '**Tríada de evaluación (TruEra):** context relevance (contexto ↔ consulta), groundedness (respuesta ↔ contexto) y answer relevance (respuesta ↔ consulta).', 'triada'),
@@ -337,6 +427,31 @@ S('ragret', 'u6', 'RAG: retrieval y evaluación (Huyen, cap. 6)', 'Huyen, AI Eng
                ['Punto débil', 'No capta significado', 'Pierde palabras clave exactas']], 'tabla'),
     ('li', '**Evaluar:** context precision (de lo recuperado, cuánto es relevante) y context recall (de lo relevante, cuánto se recuperó); NDCG, MAP y MRR si importa el orden; benchmark MTEB.', 'eval'),
     ('li', '**Optimizar:** chunking, reranking, query rewriting y contextual retrieval. **Más allá del texto:** RAG multimodal y con tablas (text-to-SQL).', 'opt'),
+    ('h', 'Más de Huyen: búsqueda híbrida y Text-to-SQL'),
+    ('li', '**Híbrido:** combinar ambos (ej. BM25 para candidatos + reranking con embeddings). **Cuál conviene depende de la consulta y del corpus.** Si las consultas traen palabras exactas que importan (códigos de error como EADDRNOTAVAIL, nombres de producto), conviene términos o híbrido, porque al pasar a embeddings esas palabras clave pueden quedar ocultas. Si se pregunta por el significado con otras palabras, conviene embeddings. Si el corpus mezcla ambas cosas, híbrido. Ejemplo de Huyen: con «transformer» primero se traen todos los documentos que tienen esa palabra (el dispositivo eléctrico, la arquitectura neuronal o la película) y después la búsqueda vectorial se queda con los que realmente responden la consulta (cap. 6, págs. 266–267 del libro, 12–15 del PDF).'),
+    ('li', "**RAG más allá del texto:** multimodal (imágenes) y con datos tabulares. **Text-to-SQL** (págs. 274–275 del libro, 22–23 del PDF, Figura 6-7). Pregunta: «How many units of Fruity Fedora were sold in the last 7 days?» sobre una tabla `Sales`. Flujo: 1) **Text-to-SQL**: con la pregunta y los esquemas de las tablas, el modelo arma la consulta (`SELECT SUM(units) AS total_units_sold FROM Sales WHERE product_name = 'Fruity Fedora' AND timestamp >= DATE_SUB(CURDATE(), INTERVAL 7 DAY);`); 2) **ejecución** de la consulta SQL; 3) **generación** de la respuesta con el resultado y la pregunta original. Si los esquemas no entran en el contexto, un paso previo predice qué tablas usar. Text-to-SQL es un caso de *semantic parsing*."),
+    ('li', 'RAG es un caso particular de agente: el retriever es una herramienta que el modelo usa.'),
+    ('h', 'El flujo completo de RAG con un ejemplo'),
+    ('p', "**Sobre Pai (*Designing Large Language Model Applications*, cap. 12):** solo pude ver la introducción y el índice en O'Reilly; el resto está detrás del login. El índice confirma los pasos del pipeline (*Rewrite, Retrieve, Rerank, Refine, Insert, Generate*) y las secciones *Deciding When to Retrieve*, *RAG for Memory Management*, *RAG for Selecting In-Context Training Examples*, *RAG for Model Training*, *RAG Versus Long Context* y *RAG Versus Fine-Tuning*. Los pasos siguen ese orden, pero la explicación sale de Huyen (cap. 6) y Kimothi (cap. 2). **Pendiente:** contrastarlo con el texto de Pai, sobre todo el paso *Refine*."),
+    ('p', '**Ejemplo (Huyen, cap. 6, pág. 270 del libro):** el chatbot de una tienda conversa así: *«When was the last time John Doe bought something from us?»* → *«John last bought a Fruity Fedora hat from us two weeks ago…»* → *«How about Emily Doe?»*'),
+    ('li', '1) **Reformular la consulta (rewrite).** *«How about Emily Doe?»* sola no sirve para buscar. Otro modelo la reescribe con un prompt del tipo *«reescribí el último mensaje para reflejar lo que el usuario realmente pregunta»* y queda *«When was the last time Emily Doe bought something from us?»*. Si falta información (por ejemplo, *«How about his wife?»* sin saber quién es), el modelo debe decirlo en vez de inventar un nombre.'),
+    ('li', '2) **Recuperar (retrieve).** Con la consulta reescrita, el retriever busca en la base de conocimiento. Como hay un nombre propio exacto, conviene **híbrido**: términos para *«Emily Doe»* y embeddings para el sentido de *«última compra»*. Devuelve, por ejemplo, 20 fragmentos candidatos.'),
+    ('li', '3) **Reordenar (rerank).** Un mecanismo más preciso y más caro reordena los candidatos. Acá conviene además ordenar **por fecha**, porque la pregunta es por lo último (Huyen, pág. 269).'),
+    ('li', '4) **Refinar (refine).** Quedarse solo con lo que el modelo necesita: los pocos fragmentos que hablan de compras de Emily. Huyen explica por qué: cuanto más largo el contexto, más fácil que el modelo atienda la parte equivocada, y cada token extra cuesta y agrega latencia (pág. 255).'),
+    ('li', '5) **Insertar en el prompt (insert).** Se arma el prompt con la pregunta reescrita y los fragmentos elegidos. El orden importa algo: los modelos entienden mejor lo que está al principio y al final del contexto (pág. 269).'),
+    ('li', '6) **Generar (generate).** El LLM responde con ese contexto, por ejemplo con la fecha y el producto de la última compra de Emily. Es el *generation pipeline* de Kimothi (fig. 2.3).'),
+    ('p', '**No confundir:** si las compras están en una tabla y no en documentos, el camino es **Text-to-SQL**, explicado más arriba.'),
+    ('h', '¿Recuperar, poner todo en el contexto o hacer fine-tuning?'),
+    ('table', [['Situación', 'Qué conviene', 'Por qué (fuente)'],
+               ['El material entra completo en el prompt, como un reglamento de 40 páginas', '**Ponerlo directamente en el contexto**', 'Anthropic sugiere que, si la base tiene menos de 200.000 tokens (unas 500 páginas), se puede incluir entera sin RAG (citado por Huyen, pág. 256)'],
+               ['Base grande o que cambia todos los días, como miles de artículos de soporte o los mails de cada usuario', '**Recuperar (RAG)**', 'Los datos crecen más rápido que la ventana de contexto; RAG trae solo lo relevante para cada consulta y permite incluir datos de un usuario solo en sus consultas (Huyen, págs. 254–255)'],
+               ['Algo que el modelo debe saber o hacer en todas las tareas, como responder siempre con el formato y el vocabulario de la empresa', '**Fine-tuning**', 'Lo esencial para todas las tareas va al conocimiento interno, por entrenamiento o fine-tuning; ese conocimiento no cambia hasta que se actualiza el modelo (Huyen, págs. 300–301)'],
+               ['Hay que orientar al modelo con instrucciones o ejemplos para una tarea puntual', '**Prompting**', 'Ver la sección de LLMs']]),
+    ('p', '**Con qué se confunde:** el fine-tuning no es la forma de tener datos actualizados, porque lo aprendido queda fijo hasta reentrenar. Para datos que cambian, RAG.'),
+    ('h', 'Otros usos de la recuperación (secciones del cap. 12 de Pai)'),
+    ('li', '**Memoria (relevancia alta).** El índice de Pai lo nombra (*RAG for Memory Management*). En la cátedra está en Huyen: la memoria de largo plazo es una fuente externa que se consulta con un retriever, igual que en RAG (fig. 6-16, págs. 300–301). Es la memoria de los agentes.'),
+    ('li', '**Seleccionar ejemplos para el prompt (relevancia media).** *RAG for Selecting In-Context Training Examples*: por el título, recuperar los ejemplos más parecidos a la consulta para ponerlos en el prompt (*few-shot*). El contenido no pude verificarlo.'),
+    ('li', '**Entrenamiento (relevancia baja).** *RAG for Model Training*. Lo único que cubre la cátedra es que el artículo original de RAG (Lewis et al.) entrenaba juntos el retriever y el generador, y que ajustar todo el sistema de punta a punta puede mejorarlo mucho (Huyen, pág. 256).'),
 ])
 
 S('huyen', 'u6', 'Agentes según Huyen y el rol del AI PM (Nika)', 'Huyen, cap. 6, págs. 23–54 · Nika, cap. 1, págs. 1–19', 'fig. 6-9, 6-12, 6-16 · fig. 1-1 y 1-4', [
@@ -350,4 +465,46 @@ S('huyen', 'u6', 'Agentes según Huyen y el rol del AI PM (Nika)', 'Huyen, cap. 
     ('li', '**Rasgos de los productos de IA:** probabilísticos, dependientes de los datos, model drift, interpretabilidad, decisiones automatizadas y escalabilidad.', 'rasgos'),
     ('li', '**Skill set:** product management + fundamentos de ingeniería + liderazgo y colaboración + ciclo de vida de la IA. **Subtipos:** AI experiences PM, AI builder PM y AI-enhanced PM; 0-to-1 vs 1-to-n.', 'skills'),
     ('callout', 'Nika está en la bibliografía 2025 pero no en las notas de clase: prioridad baja hasta confirmarlo.', 'aviso'),
+])
+
+S('llm', 'u6', 'LLMs: cómo funcionan, cómo se adaptan y cómo se operan', 'Koenigstein, cap. 1, págs. 2–12 (opcional) · Vajjala, cap. 3, págs. 80–99', 'Huyen, cap. 6 · Kimothi, cap. 2 · Notas, U6 · Google Cloud y Red Hat (fuentes complementarias)', [
+    ('h', 'Cómo un LLM procesa tokens y genera una respuesta (Koenigstein, cap. 1, opcional)'),
+    ('p', 'Los LLM actuales se basan en la arquitectura **Transformer** (2017). Koenigstein (págs. 2–7 del PDF) la explica en este orden:', 'transformer'),
+    ('li', '1) **Tokenización.** El texto se parte en *tokens*. Puede ser por caracteres (secuencias muy largas), por palabras (vocabulario enorme y no entiende palabras nuevas) o por **subpalabras**, que es lo que usan la mayoría de los LLM modernos: *cooking* → [cook, ing].'),
+    ('li', '2) **Token embeddings.** Cada token tiene un ID en el vocabulario y se convierte en un vector numérico que el modelo aprende.'),
+    ('li', '3) **Embeddings posicionales.** El Transformer no procesa la secuencia en orden (no tiene recurrencia), así que se suma un vector que codifica la posición de cada token. Sin eso, la oración sería una bolsa de palabras desordenada.'),
+    ('li', '4) **Atención (self-attention).** Con tres matrices, Q (*query*), K (*key*) y V (*value*), el modelo calcula cuánto debe «mirar» cada token a cada uno de los demás y arma una suma ponderada. Así entiende cada token en su contexto. La **atención multi-cabeza** hace varias de estas en paralelo, cada una atenta a relaciones distintas.'),
+    ('li', '5) **Encoder y decoder.** El encoder usa atención **bidireccional** (todo el texto como contexto). El decoder usa atención **enmascarada o causal**: no puede ver tokens futuros.'),
+    ('li', '6) **Generación.** Por esa máscara, el modelo **genera cada token a partir de los anteriores, de izquierda a derecha**, uno por vez. GPT, LLaMA, Mistral y Falcon son modelos solo-decoder.'),
+    ('p', "**Sobre el libro del canguro (Alammar y Grootendorst, *Hands-On Large Language Models*, cap. 1):** solo pude ver el comienzo del capítulo y su índice en O'Reilly; el resto está detrás del login. El índice confirma que el capítulo recorre la representación como *bag-of-words*, los *embeddings* densos, la atención, los modelos de representación *encoder-only* y los generativos *decoder-only*, y termina con *Generating Your First Text*. Lo que sigue está armado con Vajjala y Koenigstein, que cubren esos mismos temas. **Pendiente:** contrastarlo con el texto completo del capítulo."),
+    ('h', 'Tres formas de representar el lenguaje'),
+    ('table', [['', 'Bag-of-words', 'Embeddings de palabras (Word2vec)', 'Representaciones contextuales (BERT, GPT)'],
+               ['Qué es', 'Un vector con el conteo de cada palabra del vocabulario', 'Un vector denso fijo por palabra', 'Un vector por token que cambia según la oración'],
+               ['Cómo se obtiene', 'Contando', 'Entrenando una red para predecir palabras por su contexto', 'Con un Transformer que usa autoatención sobre toda la secuencia'],
+               ['¿Captura significado?', 'No: *run* y *ran* son tan distintas como *run* y *apple*', 'Sí: palabras de uso parecido quedan cerca', 'Sí, y además distingue sentidos'],
+               ['*bank* en «river bank» y «bank account»', 'Misma columna', 'Mismo vector', 'Vectores distintos'],
+               ['Cuándo usarlo', 'Línea de base rápida y barata', 'Features semánticas con poco cómputo', 'Tareas que dependen del contexto']], 'repr'),
+    ('p', 'Fuentes: Vajjala, cap. 3, págs. 80–99; Koenigstein, cap. 1, págs. 2–6.'),
+    ('h', 'Modelo de representación (BERT) vs modelo generativo (GPT)'),
+    ('li', '**Representación, encoder-only (BERT):** usa **atención bidireccional**, así que cada token ve toda la oración. No está pensado para escribir texto, sino para **entenderlo y convertirlo en vectores** que después usa un clasificador. Se preentrena y se ajusta a cada tarea: clasificación, extracción de entidades, question answering (Vajjala, cap. 1, pág. 23). *Ejemplo:* clasificar 50.000 reseñas como positivas o negativas, o detectar en cada reclamo si es de facturación o de entrega. También sirve para crear los embeddings de una búsqueda semántica.', 'bert'),
+    ('li', '**Generativo, decoder-only (GPT, LLaMA, Mistral, Falcon):** usa **atención causal o enmascarada** y genera un token por vez a partir de los anteriores (Koenigstein, pág. 6). *Ejemplo:* redactar la respuesta a un cliente, resumir un informe o contestar una pregunta con fragmentos recuperados (RAG).', 'gpt'),
+    ('li', '**Regla práctica:** si la salida es una etiqueta o un vector, alcanza con un modelo de representación, que es más chico y barato. Si la salida es texto nuevo, hace falta uno generativo.'),
+    ('h', 'Ejemplo sencillo de generación de texto'),
+    ('p', 'Ejemplo ilustrativo armado con el mecanismo que describe Koenigstein (págs. 2–6), no con el código de Alammar. Prompt: *«El banco está cerca del»*.'),
+    ('li', '1) El tokenizador parte el texto en tokens y cada token pasa a su embedding más el embedding posicional.'),
+    ('li', '2) Con autoatención causal, el modelo calcula la probabilidad de cada token posible como el **siguiente**. Por ejemplo: *río* 0,41; *centro* 0,22; *parque* 0,10…'),
+    ('li', '3) Elige un token (el más probable o uno muestreado), lo agrega al final y vuelve a empezar: *«El banco está cerca del río»* → *«…del río ,»* → *«…del río, sobre»* → …'),
+    ('li', '4) Termina cuando genera un token de fin o llega al largo máximo.'),
+    ('p', "**Perplejidad (Koenigstein, pág. 12):** mide cuánto le «sorprende» un texto al modelo. Falcon-7B le da 5,08 a una frase de Wikipedia sobre Apple y 121,19 a *«A Falcon is a generative transformer model and it can't fly»*, porque aprendió que un *falcon* es un ave. Más baja = el texto le resulta más esperable."),
+    ('h', '¿Prompting, RAG o fine-tuning?'),
+    ('li', '**Prompting:** para orientar con instrucciones o ejemplos.', 'prompting'),
+    ('li', '**RAG:** para consultar fuentes externas.'),
+    ('li', '**Fine-tuning:** para adaptar el modelo mediante entrenamiento adicional. Kimothi (cap. 2, pág. 9 del PDF): entrenar un LLM existente con datos o tareas específicas para mejorar su rendimiento en aplicaciones especializadas.'),
+    ('p', '**Regla de Huyen según la frecuencia de uso de la información** (cap. 6, pág. 301 del libro, 49 del PDF): lo esencial para todas las tareas va al conocimiento interno del modelo, por entrenamiento o *finetuning*; lo que se necesita rara vez va a la memoria de largo plazo (fuentes externas, como en RAG); lo inmediato de la tarea va en el contexto (memoria de corto plazo, el prompt). Para elegir entre código, workflow, RAG o agente, ver la tabla de Albada más arriba.'),
+    ('h', 'MLOps, LLMOps y RAGOps'),
+    ('li', '**MLOps** (notas de clase): «El término MLOps se acuñó en 2015, que aplicaba prácticas de DevOps a los modelos de machine learning para crear una especie de línea de ensamblaje para cada etapa de su ciclo de vida.» El MLOps Engineer «automatiza el ciclo de vida de los modelos de IA: entrenamiento, validación, despliegue, monitoreo y reentrenamiento». También es quien monitorea el data drift y el concept drift (ver Unidad 4).', 'mlops'),
+    ('li', '**LLMOps** (fuente complementaria: Google Cloud, What is LLMOps (https://cloud.google.com/discover/what-is-llmops)): las prácticas y procesos para gestionar y operar LLMs. Es un subconjunto especializado de MLOps, enfocado en los problemas propios de los LLMs: preparar datos, desplegarlos y mantenerlos en la nube o en infraestructura propia, y monitorearlos.'),
+    ('li', '**RAGOps** (Kimothi, cap. 2): el stack que opera un sistema RAG por capas (datos, modelo, prompts, evaluación, orquestación, despliegue, aplicación y monitoreo); está en la sección de RAG.'),
+    ('h', 'Hiperescalares'),
+    ('p', 'Fuente complementaria: Red Hat, What is a hyperscaler? (https://www.redhat.com/en/topics/cloud/what-is-a-hyperscaler). Los **hiperescalares** son los proveedores de nube que ofrecen cómputo y gestión de datos a organizaciones que necesitan infraestructura enorme para procesar y almacenar datos a gran escala. No hay un estándar único para la categoría, pero entran Amazon Web Services, Google Cloud, Microsoft Azure, IBM Cloud y Alibaba Cloud. Usar más de uno se llama **multicloud**. En las notas de clase aparecen en *Cloud vs. Self Hosting*: con servicios cloud se delega la administración de los recursos físicos al proveedor (AWS, GCP, Azure) y se paga solo por el cómputo y el almacenamiento que se usa.', 'hiper'),
 ])

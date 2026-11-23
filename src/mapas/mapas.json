@@ -1380,8 +1380,8 @@
       ]
      },
      {
-      "term": "Kleppmann",
-      "text": "La consigna nombró otro libro.",
+      "term": "Cómo explicarlo",
+      "text": "En pocas palabras y con un ejemplo: Dead-Letter.",
       "refs": [
        "s18.2"
       ]
@@ -1442,14 +1442,14 @@
       "term": "Sistema agéntico",
       "text": "Herramientas, memoria, modelo, orquestación.",
       "refs": [
-       "s19.3"
+       "s19.2"
       ]
      },
      {
       "term": "Tipos",
       "text": "Siete tipos + voz y video.",
       "refs": [
-       "s19.5"
+       "s19.4"
       ]
      }
     ]
@@ -1461,29 +1461,29 @@
       "term": "Código",
       "text": "Input predecible.",
       "refs": [
-       "s19.7:1",
-       "s19.8"
+       "s19.6:1",
+       "s19.7"
       ]
      },
      {
       "term": "Workflow",
       "text": "Ramas finitas.",
       "refs": [
-       "s19.8"
+       "s19.7"
       ]
      },
      {
       "term": "RAG",
       "text": "Preguntas sobre documentos.",
       "refs": [
-       "s19.8"
+       "s19.7"
       ]
      },
      {
       "term": "Agente",
       "text": "Variabilidad alta.",
       "refs": [
-       "s19.7:4"
+       "s19.6:4"
       ]
      }
     ]
@@ -1537,7 +1537,7 @@
       "term": "Principios",
       "text": "Escalabilidad, modularidad…",
       "refs": [
-       "s19.9"
+       "s19.8"
       ]
      }
     ]
@@ -1643,6 +1643,40 @@
       "text": "Chunking, reranking.",
       "refs": [
        "s22.4"
+      ]
+     }
+    ]
+   },
+   {
+    "label": "LLMs",
+    "leaves": [
+     {
+      "term": "Transformer",
+      "text": "Tokens, embeddings y atención; genera de a un token.",
+      "refs": [
+       "s24.2"
+      ]
+     },
+     {
+      "term": "BERT vs GPT",
+      "text": "Entender y vectorizar vs generar texto.",
+      "refs": [
+       "s24.14",
+       "s24.15"
+      ]
+     },
+     {
+      "term": "Prompting, RAG o fine-tuning",
+      "text": "Orientar, consultar fuentes o reentrenar.",
+      "refs": [
+       "s24.25"
+      ]
+     },
+     {
+      "term": "MLOps y LLMOps",
+      "text": "Operar el ciclo de vida de los modelos.",
+      "refs": [
+       "s24.30"
       ]
      }
     ]

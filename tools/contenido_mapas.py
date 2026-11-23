@@ -186,7 +186,7 @@ M('u5-medallion', 'u5', 'Arquitectura Medallion', 'Strengholt, Building Medallio
 M('u5-patrones', 'u5', 'Patrones de diseño de ingeniería de datos', 'Konieczny (TPI)', 'PATRONES', 'Recetas para problemas de datos',
   'Saber describir uno en menos de 50 palabras con un ejemplo (P5 2025).',
   [('Qué es un patrón', [('Definición', 'Plantilla personalizable.', 'patrones.def'),
-                         ('Kleppmann', 'La consigna nombró otro libro.', 'patrones.kleppmann')])],
+                         ('Cómo explicarlo', 'En pocas palabras y con un ejemplo: Dead-Letter.', 'patrones.kleppmann')])],
   [('Ejemplos', [('Dead-Letter', 'Desviar registros que fallan.', 'patrones.deadletter'),
                  ('CDC e Incremental', 'Ingerir cambios.', 'patrones.cdc'),
                  ('Catálogo', 'Diez capítulos.', 'patrones.catalogo')])])
@@ -219,7 +219,11 @@ M('u6-rag', 'u6', 'RAG', 'Kimothi, cap. 2 · Huyen, cap. 6', 'RAG', 'Recuperar y
                 ('Precision y recall', 'Del retriever.', 'ragret.eval')]),
    ('Retrieval', [('Sparse', 'BM25, términos.', 'ragret.tabla:1'),
                   ('Dense', 'Embeddings.', 'ragret.tabla:1'),
-                  ('Optimizar', 'Chunking, reranking.', 'ragret.opt')])])
+                  ('Optimizar', 'Chunking, reranking.', 'ragret.opt')]),
+   ('LLMs', [('Transformer', 'Tokens, embeddings y atención; genera de a un token.', 'llm.transformer'),
+             ('BERT vs GPT', 'Entender y vectorizar vs generar texto.', 'llm.bert llm.gpt'),
+             ('Prompting, RAG o fine-tuning', 'Orientar, consultar fuentes o reentrenar.', 'llm.prompting'),
+             ('MLOps y LLMOps', 'Operar el ciclo de vida de los modelos.', 'llm.mlops')])])
 
 M('u6-huyen', 'u6', 'Agentes según Huyen y AI PM', 'Huyen, cap. 6 · Nika, cap. 1', 'HUYEN · NIKA', 'Entorno + herramientas',
   'ReAct = pensar, actuar, observar. Memoria: interna, corto, largo plazo.',
