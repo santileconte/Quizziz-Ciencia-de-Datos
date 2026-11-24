@@ -2,6 +2,9 @@ import type { ItemDef, Modalidad, Question, UnitKey } from '../lib/quiz'
 import { parcial2025 } from './parcial-2025'
 import { primerParcial } from './primer-parcial'
 import { propias } from './propias'
+import { modelosIA } from './modelos-ia'
+
+export { MODELOS } from './modelos-ia'
 import { verificadas, reemplazadas } from './verificadas'
 import { bloques } from '../temario'
 
@@ -28,6 +31,7 @@ const todas: Question[] = [
   ...armar('parcial', 'pc25', parcial2025),
   ...armar('primero', 'pp', primerParcial),
   ...armar('propia', 'n', propias),
+  ...armar('modelo', 'ia', modelosIA),
 ]
 
 /** Versiones reemplazadas por otra de mayor jerarquía (ver `verificadas.ts`): se conservan como registro, no se practican. */

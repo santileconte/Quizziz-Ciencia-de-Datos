@@ -111,7 +111,8 @@ type Sub<T extends Question['t']> = {
 function Opciones({ q, answer, onChange, revealed, intento }: Sub<'mc' | 'multi'> & { intento: number }) {
   const multiple = q.t === 'multi'
   const orden = useMemo(
-    () => (sePuedeMezclar(q.o) ? ordenOpciones(q.id, q.o.length, intento) : q.o.map((_, i) => i)),
+    // Los modelos de examen se muestran en el orden del documento, como en un parcial.
+    () => (q.modalidad !== 'modelo' && sePuedeMezclar(q.o) ? ordenOpciones(q.id, q.o.length, intento) : q.o.map((_, i) => i)),
     [q.id, q.o, intento],
   )
   const correctas = q.t === 'multi' ? q.a : [q.a]

@@ -28,6 +28,9 @@ Al hacer push a `main`, `.github/workflows/deploy.yml` publica el sitio en GitHu
      las preguntas del 1er parcial que ahora entran. Se copiaron como están, incluidos sus errores.
    - **Nuevas de este repaso:** 70 preguntas escritas a partir de los libros, con etiqueta y color propios. Cada una cita
      libro, capítulo y página.
+   - **Modelos de examen (IA):** cinco parciales modelo generados con IA (12 consignas y un extra cada uno), copiados con
+     su clave de respuestas. Se resuelven completos y en orden desde «Modelos de examen». No son de la cátedra y sus
+     claves no se contrastaron con los libros.
    - Las preguntas con **clave sin verificar** se pueden responder, pero no suman puntaje ni progreso. Hoy son todas las
      de la cátedra, porque no hay clave oficial.
 3. **Crucigramas.** Uno por mapa mental (16).
@@ -47,6 +50,7 @@ Al hacer push a `main`, `.github/workflows/deploy.yml` publica el sitio en GitHu
 | Segundo parcial 2025 (literal) | `src/cuestionarios/parcial-2025.ts` |
 | Preguntas del 1er parcial que entran ahora (literal) | `src/cuestionarios/primer-parcial.ts` |
 | Preguntas nuevas | `src/cuestionarios/propias.ts` |
+| Modelos de examen generados con IA | `src/cuestionarios/modelos-ia.ts` |
 | Figuras de las preguntas | `src/cuestionarios/img/` |
 | Claves confirmadas | `src/cuestionarios/verificadas.ts` |
 | Apunte de estudio y mapas | `tools/contenido_apunte.py`, `tools/contenido_mapas.py` → `python3 tools/build_apunte.py` |

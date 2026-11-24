@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { questions, quizUnits } from '../cuestionarios'
+import { MODELOS, questions, quizUnits } from '../cuestionarios'
 import { formatoLabel, mezclar, modalidades, puntua, type Formato, type Modalidad, type UnitKey } from '../lib/quiz'
 import { loadRun, saveRun, useQuizStats, type Modo, type Run } from '../lib/quizProgress'
 import { ordenTema, temaDe } from '../temario'
@@ -84,7 +84,8 @@ export function Quizzes() {
   const dominadas = conPuntaje.filter((q) => stats[q.id]?.last === 1).length
   const reales = questions.filter((q) => q.modalidad === 'parcial').length
   const catedra = questions.filter((q) => q.modalidad !== 'parcial' && modalidades.find((m) => m.key === q.modalidad)?.original).length
-  const practica = questions.length - reales - catedra
+  const practica = questions.filter((q) => q.modalidad === 'propia').length
+  const modelos = MODELOS.map((m) => ({ ...m, qs: questions.filter((q) => q.id.startsWith(`${m.prefijo}-`)) }))
   const toggleFormato = (f: Formato) =>
     setFormatos((fs) => (fs.includes(f) ? (fs.length > 1 ? fs.filter((x) => x !== f) : fs) : [...fs, f]))
   const toggleFuente = (f: Modalidad) => {
@@ -105,7 +106,8 @@ export function Quizzes() {
           </h1>
           <p className="lede">
             Las consignas del segundo parcial 2025 y las preguntas del 1er parcial que ahora entran, sin retocar. Aparte,{' '}
-            {practica} preguntas de práctica que no son de la cátedra, escritas a partir de los libros. Cada pregunta dice de
+            {practica} preguntas de práctica que no son de la cátedra, escritas a partir de los libros, y {modelos.length} modelos
+            de examen generados con IA para resolver completos. Cada pregunta dice de
             qué pestaña, libro y página sale. Las de la cátedra no traen clave: se pueden responder, pero no suman hasta que
             confirmes su clave.
           </p>
@@ -217,6 +219,31 @@ export function Quizzes() {
           </button>
         </div>
       </div>
+
+      <section className="group">
+        <div className="section-head">
+          <h2 className="h2">Modelos de examen</h2>
+          <span className="muted small">
+            Generados con IA, no son de la cátedra. Cada uno tiene 12 consignas y un extra, en orden, con la clave del documento.
+            Se resuelven en el modo elegido arriba ({modo === 'practica' ? 'práctica' : 'simulacro'}).
+          </span>
+        </div>
+        <div className="qz-tema-grid">
+          {modelos.map((m) => {
+            const hechas = m.qs.filter((q) => stats[q.id])
+            const suma = hechas.reduce((s, q) => s + stats[q.id].last, 0)
+            return (
+              <button key={m.prefijo} className="qz-tema" onClick={() => empezar(m.qs.map((q) => q.id), m.titulo)}>
+                <span>Parcial {m.n}</span>
+                <span className="muted small">
+                  {hechas.length}/{m.qs.length}
+                  {hechas.length ? ` · ${Math.round((suma / hechas.length) * 100)}%` : ''}
+                </span>
+              </button>
+            )
+          })}
+        </div>
+      </section>
 
       <section className="group">
         <div className="section-head">

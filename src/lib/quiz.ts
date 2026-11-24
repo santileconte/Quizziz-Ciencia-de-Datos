@@ -6,7 +6,7 @@ export type UnitKey = 'u4' | 'u5' | 'u6' | 'pend'
  * De dónde sale la pregunta. Las dos primeras son de la cátedra y se conservan literales;
  * las nuevas son práctica y nunca cuentan como evidencia de lo que se toma.
  */
-export type Modalidad = 'parcial' | 'primero' | 'propia'
+export type Modalidad = 'parcial' | 'primero' | 'propia' | 'modelo'
 
 export const modalidades: { key: Modalidad; label: string; tag: string; hint: string; original: boolean }[] = [
   {
@@ -28,6 +28,13 @@ export const modalidades: { key: Modalidad; label: string; tag: string; hint: st
     label: 'Nuevas de este repaso',
     tag: 'Pregunta nueva (no es de la cátedra)',
     hint: 'Escritas para este repaso a partir de los libros de las carpetas U4, U5 y U6 y de las notas de clase. No son de la cátedra.',
+    original: false,
+  },
+  {
+    key: 'modelo',
+    label: 'Modelos de examen (IA)',
+    tag: 'Modelo de examen generado con IA (no es de la cátedra)',
+    hint: 'Cinco parciales modelo generados con IA, con la clave que trae el mismo documento. No son de la cátedra.',
     original: false,
   },
 ]

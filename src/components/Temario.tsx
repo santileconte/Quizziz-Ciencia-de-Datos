@@ -27,6 +27,13 @@ const REGISTROS: { archivo: string; tipo: string; detalle: string; n: () => numb
     n: () => cuenta(questions, esPrimero),
   },
   {
+    archivo: 'Notas_de_clase_1.pdf · modelos de examen generados con IA',
+    tipo: 'Modelo de examen (IA)',
+    detalle:
+      'Cinco parciales modelo de 12 consignas y un extra, con su «Clave de respuestas». Se copiaron enunciados y claves tal como están; no son de la cátedra y las claves no se contrastaron con los libros.',
+    n: () => cuenta(questions, (q) => q.modalidad === 'modelo'),
+  },
+  {
     archivo: 'Pestaña «Notas de clase»',
     tipo: 'Filtro de temas y prioridades',
     detalle:
